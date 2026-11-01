@@ -4002,7 +4002,26 @@
    "secteur_nom": "Industrie",
    "pilier": "3",
    "titre": "Anacarde : deuxième et troisième transformations",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-007_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-007_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire ambitionne de dépasser le stade de simple exportateur d'amandes blanches pour capter la valeur ajoutée finale sur les marchés de consommation, avec un objectif de 50 % de transformation.",
+   "chiffres": [
+    "Anacarde : 2e produit agricole d'exportation, 9 % du PIB agricole",
+    "34 usines opérationnelles, 400 000 t de capacité annuelle",
+    "14 211 emplois directs, dont 70,5 % occupés par des femmes"
+   ],
+   "segments": [
+    "Torréfaction et enrobage",
+    "Pâte et beurre de cajou",
+    "Lait de cajou",
+    "Extraction de CNSL",
+    "Transformation de la pomme de cajou"
+   ],
+   "incitations": [
+    "Subvention directe de 400 FCFA par kg d'amande transformée localement et vendue"
+   ],
+   "emplois": "Des milliers d'emplois directs dans l'agroalimentaire et la chimie",
+   "montant": ""
   },
   {
    "code": "OP_3.04-008",
@@ -4010,7 +4029,21 @@
    "secteur_nom": "Industrie",
    "pilier": "3",
    "titre": "Filière karité",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-008_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-008_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire ambitionne de passer du statut d'exportateur d'amandes brutes à celui de pôle régional de transformation industrielle du beurre de karité.",
+   "chiffres": [
+    "Les parcs à karité couvrent plus de 50 % du territoire Nord"
+   ],
+   "segments": [
+    "Raffinage et fractionnement",
+    "Cosmétique industrielle"
+   ],
+   "incitations": [
+    "En zone Nord (zone C) : 15 ans d'exonération de BIC et exonérations maximales"
+   ],
+   "emplois": "Revenus améliorés pour plus de 400 000 femmes ; 2 000 à 5 000 emplois industriels directs",
+   "montant": ""
   },
   {
    "code": "OP_3.04-009",
@@ -4018,7 +4051,16 @@
    "secteur_nom": "Industrie",
    "pilier": "3",
    "titre": "Filière cola",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-009_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-009_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire ambitionne de transformer la filière cola, dominée par un commerce d'exportation brut et informel, en une industrie à haute valeur ajoutée.",
+   "chiffres": [
+    "Production annuelle de 250 000 à 300 000 t"
+   ],
+   "segments": [],
+   "incitations": [],
+   "emplois": "Plus de 2 000 emplois industriels directs",
+   "montant": ""
   },
   {
    "code": "OP_3.04-010",
@@ -4026,7 +4068,18 @@
    "secteur_nom": "Industrie",
    "pilier": "3",
    "titre": "Emballage",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-010_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-010_FR.pdf",
+   "localisation": "District d'Abidjan ; zones forestières et hinterland",
+   "resume": "La Côte d'Ivoire veut structurer un cluster emballage performant pour réduire les importations de matières premières, soutenir l'économie circulaire et faire d'Abidjan le hub ouest-africain de l'emballage.",
+   "chiffres": [
+    "Plus de 180 millions de t de matières importées entre 2018 et 2022",
+    "Demande portée à plus de 60 % par l'agro-industrie",
+    "Offre locale en croissance de 15 % sur 10 ans"
+   ],
+   "segments": [],
+   "incitations": [],
+   "emplois": "",
+   "montant": ""
   },
   {
    "code": "OP_3.04-011",
@@ -4034,7 +4087,23 @@
    "secteur_nom": "Industrie",
    "pilier": "3",
    "titre": "Horticulture",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-011_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-011_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire ambitionne la souveraineté alimentaire sur la tomate et l'oignon, en substituant à 100 % les importations de produits transformés comme la pâte de tomate.",
+   "chiffres": [
+    "Tomate et oignon : base de 90 % des préparations culinaires",
+    "Forte demande de la restauration et des ménages"
+   ],
+   "segments": [
+    "Complexes de serres agricoles",
+    "Conserveries",
+    "Logistique froide"
+   ],
+   "incitations": [
+    "Incitations de souveraineté alimentaire sur serres, irrigation et chambres froides"
+   ],
+   "emplois": "Plus de 150 000 emplois agricoles formalisés et 5 000 emplois industriels",
+   "montant": ""
   },
   {
    "code": "OP_3.04-012",
@@ -4042,7 +4111,22 @@
    "secteur_nom": "Industrie",
    "pilier": "3",
    "titre": "Filière ananas",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-012_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-012_FR.pdf",
+   "localisation": "Bonoua, Aboisso, Samo",
+   "resume": "La Côte d'Ivoire veut relancer la filière ananas en passant de l'exportation de fruits frais à une agro-industrie de transformation à forte valeur ajoutée.",
+   "chiffres": [
+    "0,6 % du PIB nominal et 1,6 % du PIB agricole",
+    "15 000 ha sur 135 000 ha de cultures fruitières"
+   ],
+   "segments": [
+    "Jus et concentrés",
+    "Séchage et lyophilisation",
+    "Conserveries",
+    "Fermes agro-industrielles"
+   ],
+   "incitations": [],
+   "emplois": "Plus de 15 000 emplois agricoles relancés et 1 000 à 2 000 emplois en usine",
+   "montant": ""
   },
   {
    "code": "OP_3.04-013",
@@ -4050,7 +4134,24 @@
    "secteur_nom": "Industrie",
    "pilier": "3",
    "titre": "Filière mangue",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-013_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-013_FR.pdf",
+   "localisation": "Nord",
+   "resume": "La Côte d'Ivoire veut réduire les pertes post-récolte, estimées à plus de 40 % de la production, en développant dans le Nord la transformation de la mangue (séchée, purée).",
+   "chiffres": [
+    "Plus de 180 000 t de production nationale",
+    "Environ 10 % de la production fruitière",
+    "Plus de 7 000 producteurs"
+   ],
+   "segments": [
+    "Stations de conditionnement",
+    "Séchage",
+    "Cartonneries industrielles"
+   ],
+   "incitations": [
+    "En zone C : jusqu'à 15 ans d'exonération d'impôt sur les bénéfices"
+   ],
+   "emplois": "Plus de 5 000 emplois industriels directs",
+   "montant": ""
   },
   {
    "code": "OP_3.04-014",
@@ -4058,7 +4159,21 @@
    "secteur_nom": "Industrie",
    "pilier": "3",
    "titre": "Filière riz",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-014_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-014_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire ambitionne l'autosuffisance en riz blanchi d'ici 2030 et une position d'exportateur net vers les pays déficitaires de la CEDEAO.",
+   "chiffres": [
+    "Plus de 1,5 million de t de riz importées par an",
+    "600 milliards FCFA de sorties de devises en 2025"
+   ],
+   "segments": [
+    "Rizeries",
+    "Maintenance",
+    "Logistique"
+   ],
+   "incitations": [],
+   "emplois": "Plus de 10 000 emplois industriels et 200 000 emplois agricoles stabilisés",
+   "montant": ""
   },
   {
    "code": "OP_3.04-015",
@@ -4066,7 +4181,20 @@
    "secteur_nom": "Industrie",
    "pilier": "3",
    "titre": "Tubercules (manioc, igname)",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-015_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-015_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire veut transformer la filière des tubercules, artisanale à plus de 90 %, en véritable industrie agroalimentaire.",
+   "chiffres": [
+    "Manioc : plus de 45 % de la production de tubercules en 2023"
+   ],
+   "segments": [
+    "Minoteries de farine panifiable"
+   ],
+   "incitations": [
+    "Exonérations de TVA, de douane et d'impôt sur les bénéfices pour la transformation vivrière"
+   ],
+   "emplois": "Revenus sécurisés pour plus de 100 000 productrices et transformatrices",
+   "montant": ""
   },
   {
    "code": "OP_3.04-016",
@@ -4074,7 +4202,23 @@
    "secteur_nom": "Industrie",
    "pilier": "3",
    "titre": "Maïs et soja",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-016_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-016_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire vise l'autosuffisance en intrants pour la nutrition animale et humaine, moins d'importations de tourteaux de soja et un réseau de silos contre les pertes post-récolte.",
+   "chiffres": [
+    "Le maïs représente 60 % à 70 % de l'aliment pour volaille",
+    "Production ouest-africaine de maïs d'environ 22 millions de t"
+   ],
+   "segments": [
+    "Trituration de soja",
+    "Provenderies modernes",
+    "Silos de stockage"
+   ],
+   "incitations": [
+    "Exonérations fiscales et douanières sur silos, minoteries et usines d'aliments"
+   ],
+   "emplois": "200 000 emplois agricoles consolidés et 5 000 emplois industriels",
+   "montant": ""
   },
   {
    "code": "OP_3.04-018",
@@ -4082,7 +4226,22 @@
    "secteur_nom": "Industrie",
    "pilier": "3",
    "titre": "Banane dessert",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-018_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-018_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire veut consolider sa place de leader africain de la banane-dessert, passer aux certifications bio et équitable et développer la transformation locale.",
+   "chiffres": [
+    "Environ 10 % du PIB agricole",
+    "1 à 1,5 emploi par hectare de banane industrielle"
+   ],
+   "segments": [
+    "Minoteries de farine de banane",
+    "Purées"
+   ],
+   "incitations": [
+    "Exonérations douanières sur irrigation, conditionnement et transformation"
+   ],
+   "emplois": "Plus de 30 000 emplois directs sécurisés",
+   "montant": ""
   },
   {
    "code": "OP_3.04-019",
@@ -4090,7 +4249,23 @@
    "secteur_nom": "Industrie",
    "pilier": "3",
    "titre": "Hévéa : deuxième et troisième transformations",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-019_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-019_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire veut passer du statut d'exportateur de caoutchouc semi-fini à celui de pôle régional de produits finis en caoutchouc.",
+   "chiffres": [
+    "Environ 80 % de taux de première transformation",
+    "L'Afrique subsaharienne importe plus de 95 % de ses pneus, gants et préservatifs"
+   ],
+   "segments": [
+    "Pneumatique",
+    "Pièces techniques industrielles",
+    "Chimie industrielle"
+   ],
+   "incitations": [
+    "Exonération de BIC de 5 à 15 ans et franchise douanière sur les chaînes de montage"
+   ],
+   "emplois": "Emplois qualifiés dans le pneumatique et l'équipement médical",
+   "montant": ""
   },
   {
    "code": "OP_3.04-020",
@@ -4098,7 +4273,19 @@
    "secteur_nom": "Industrie",
    "pilier": "3",
    "titre": "Filière coco",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-020_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-020_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire veut industrialiser la filière cocotier selon un modèle « zéro déchet » valorisant l'eau, la chair, la coque et la bourre.",
+   "chiffres": [
+    "125 565 t de noix de coco produites en 2024"
+   ],
+   "segments": [
+    "Eau de coco",
+    "Valorisation de la chair, de la coque et de la bourre"
+   ],
+   "incitations": [],
+   "emplois": "10 000 à 15 000 emplois directs en usine",
+   "montant": ""
   },
   {
    "code": "OP_3.03-061",
@@ -4106,7 +4293,20 @@
    "secteur_nom": "Mines, hydrocarbures et énergie",
    "pilier": "3",
    "titre": "Hydrocarbures et dérivés",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.03-061_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.03-061_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire veut faire des hydrocarbures « le second poumon de l'économie » et devenir un hub pétrolier et gazier de référence en Afrique de l'Ouest.",
+   "chiffres": [
+    "Mines, pétrole et énergie : 3,96 % du PIB",
+    "15 % des recettes d'exportation",
+    "20 % des recettes fiscales en 2023 pour le pétrole et le gaz"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonérations d'IS et de TVA pour certaines activités d'exploration et de production"
+   ],
+   "emplois": "Des milliers d'emplois avec la phase 3 du projet Baleine",
+   "montant": ""
   },
   {
    "code": "OP_3.03-064",
@@ -4114,7 +4314,20 @@
    "secteur_nom": "Mines, hydrocarbures et énergie",
    "pilier": "3",
    "titre": "Énergies renouvelables",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.03-064_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.03-064_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire veut devenir un leader énergétique régional et un hub d'exportation d'électricité grâce aux énergies renouvelables.",
+   "chiffres": [
+    "Taux d'accès à l'électricité de 99,2 % en 2025 contre 74 % en 2011"
+   ],
+   "segments": [
+    "Cuisson propre"
+   ],
+   "incitations": [
+    "Exonération de TVA sur les équipements solaires et de production d'énergie renouvelable"
+   ],
+   "emplois": "Création de milliers d'emplois",
+   "montant": ""
   },
   {
    "code": "OP_3.03-065",
@@ -4122,7 +4335,21 @@
    "secteur_nom": "Mines, hydrocarbures et énergie",
    "pilier": "3",
    "titre": "Exploitation des ressources minières",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.03-065_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.03-065_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire veut faire du secteur extractif le « second poumon » de son économie et un hub minier régional.",
+   "chiffres": [
+    "3,96 % du PIB en 2024, 6,5 % visés en 2030",
+    "16,31 % des recettes d'exportation en 2024",
+    "Production minière de 1 111,93 milliards FCFA en 2024"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonérations de TVA et de douane dès la recherche",
+    "Stabilité fiscale en phase d'exploitation"
+   ],
+   "emplois": "Plus de 50 000 emplois attendus avec les nouveaux projets",
+   "montant": ""
   },
   {
    "code": "OP_3.03-068",
@@ -4130,7 +4357,19 @@
    "secteur_nom": "Mines, hydrocarbures et énergie",
    "pilier": "3",
    "titre": "Produits dérivés (pétrochimie, GPL, plastique)",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.03-068_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.03-068_FR.pdf",
+   "localisation": "Abidjan",
+   "resume": "La Côte d'Ivoire vise à réduire de 30 % d'ici 2030 la dépendance aux résines vierges importées et à faire d'Abidjan un hub de la pétrochimie et de la plasturgie.",
+   "chiffres": [
+    "Industrie : environ 20 % du PIB",
+    "La chimie-plasturgie fournit des emballages critiques"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonération de BIC de 5 à 15 ans selon la zone"
+   ],
+   "emplois": "5 000 à 10 000 emplois directs et indirects",
+   "montant": ""
   },
   {
    "code": "OP_3.08-023",
@@ -4138,7 +4377,19 @@
    "secteur_nom": "Tourisme",
    "pilier": "3",
    "titre": "Hébergement et restauration",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.08-023_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.08-023_FR.pdf",
+   "localisation": "",
+   "resume": "Avec la stratégie « Sublime Côte d'Ivoire », le pays vise le top 5 des destinations africaines en 2030 et 10 millions de visiteurs.",
+   "chiffres": [
+    "Croissance du tourisme de 6,4 % par an depuis 2019"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonérations douanières à l'implantation",
+    "Crédit d'impôt"
+   ],
+   "emplois": "700 000 emplois directs visés en 2030 dans le tourisme et les loisirs",
+   "montant": ""
   },
   {
    "code": "OP_3.08-024",
@@ -4146,7 +4397,22 @@
    "secteur_nom": "Tourisme",
    "pilier": "3",
    "titre": "Activités, attractions et loisirs",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.08-024_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.08-024_FR.pdf",
+   "localisation": "",
+   "resume": "Avec la stratégie « Sublime Côte d'Ivoire », le pays vise le top 5 des destinations africaines en 2030 et 10 millions de visiteurs.",
+   "chiffres": [
+    "6,3 millions de visiteurs",
+    "Top 10 des destinations touristiques africaines"
+   ],
+   "segments": [
+    "Activités, attractions et loisirs en PPP"
+   ],
+   "incitations": [
+    "Exonération de douane sur équipements (projets agréés)",
+    "Crédit d'impôt à l'investissement"
+   ],
+   "emplois": "700 000 emplois directs visés en 2030",
+   "montant": ""
   },
   {
    "code": "OP_4.12-084",
@@ -4154,7 +4420,20 @@
    "secteur_nom": "Sport",
    "pilier": "4",
    "titre": "Économie sportive",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_4.12-084_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_4.12-084_FR.pdf",
+   "localisation": "Ebimpé, Anyama",
+   "resume": "Le Gouvernement veut faire du sport un levier de bien-être, de cohésion sociale, de création de richesse et de rayonnement international.",
+   "chiffres": [
+    "Taux de pratique sportive de 27 % en 2020 à 57 % en 2025",
+    "62 fédérations actives",
+    "5 187 jeunes formés aux métiers du sport"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonération temporaire de BIC"
+   ],
+   "emplois": "Plus de 10 000 emplois à terme pour la Cité olympique d'Ebimpé",
+   "montant": ""
   },
   {
    "code": "OP_5.09-001",
@@ -4162,7 +4441,19 @@
    "secteur_nom": "Assainissement et salubrité",
    "pilier": "5",
    "titre": "Assainissement et traitement des boues de vidange",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.09-001_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.09-001_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire vise 90 % d'accès à l'assainissement en 2030 et la valorisation des boues de vidange en ressources.",
+   "chiffres": [
+    "Plus de 5 millions d'habitants concernés par l'amélioration du cadre de vie"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonération de TVA sur équipements de traitement",
+    "Réduction d'impôt sur les bénéfices jusqu'à 15 ans"
+   ],
+   "emplois": "Environ 16 000 emplois directs",
+   "montant": ""
   },
   {
    "code": "OP_5.09-002",
@@ -4170,7 +4461,18 @@
    "secteur_nom": "Assainissement et salubrité",
    "pilier": "5",
    "titre": "Gestion des déchets solides",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.09-002_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.09-002_FR.pdf",
+   "localisation": "Abidjan",
+   "resume": "La Côte d'Ivoire veut faire de la propreté urbaine un levier de santé publique, en réduisant les 25 % de déchets non collectés à Abidjan.",
+   "chiffres": [
+    "25 % des déchets non collectés à Abidjan"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonération d'impôt sur les bénéfices jusqu'à 15 ans selon la région"
+   ],
+   "emplois": "Plus de 150 000 emplois directs et indirects",
+   "montant": ""
   },
   {
    "code": "OP_5.03-034",
@@ -4178,7 +4480,19 @@
    "secteur_nom": "Économie numérique et poste",
    "pilier": "5",
    "titre": "Intelligence artificielle",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-034_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-034_FR.pdf",
+   "localisation": "",
+   "resume": "D'ici 2030, la Côte d'Ivoire veut devenir un leader régional de l'adoption et de l'intégration de l'intelligence artificielle.",
+   "chiffres": [
+    "60,7 millions d'abonnés mobiles en 2025 (185,4 % de pénétration)",
+    "Internet : 40,7 % de la population active en 2024"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonération totale de BIC pendant 5 à 15 ans"
+   ],
+   "emplois": "Plus de 50 000 emplois directs",
+   "montant": ""
   },
   {
    "code": "OP_5.03-035",
@@ -4186,7 +4500,20 @@
    "secteur_nom": "Économie numérique et poste",
    "pilier": "5",
    "titre": "Télécommunications et services postaux",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-035_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-035_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire veut s'imposer comme le hub numérique de l'Afrique de l'Ouest, par l'inclusion numérique et la transformation de l'administration.",
+   "chiffres": [
+    "Plus de 6 % du PIB en 2024",
+    "105 procédures administratives dématérialisées sur 200 prévues"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonération de droits de douane sur équipements",
+    "Exonération de TVA sur certains biens"
+   ],
+   "emplois": "Emplois directs et indirects à forte valeur ajoutée",
+   "montant": ""
   },
   {
    "code": "OP_5.03-036",
@@ -4194,7 +4521,19 @@
    "secteur_nom": "Économie numérique et poste",
    "pilier": "5",
    "titre": "Numérisation des services publics (e-gouvernement)",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-036_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-036_FR.pdf",
+   "localisation": "",
+   "resume": "Le Gouvernement veut réduire les délais de traitement des actes administratifs et améliorer son rang à l'indice e-gouvernement de l'ONU.",
+   "chiffres": [
+    "Budget du numérique en forte progression",
+    "457 000 ménages vulnérables touchés de 2017 à 2024"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonération totale de BIC pendant 5 à 15 ans"
+   ],
+   "emplois": "Plus de 35 000 emplois",
+   "montant": ""
   },
   {
    "code": "OP_5.03-037",
@@ -4202,7 +4541,19 @@
    "secteur_nom": "Économie numérique et poste",
    "pilier": "5",
    "titre": "Logiciels, plateformes numériques et cloud",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-037_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-037_FR.pdf",
+   "localisation": "Abidjan",
+   "resume": "La Côte d'Ivoire veut porter l'accès aux services numériques à 65 % de la population avec des solutions logicielles souveraines, interopérables et hébergées localement.",
+   "chiffres": [
+    "Économie numérique : plus de 6 % du PIB en 2024"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonération de droits de douane sur équipements informatiques",
+    "Exonération ou suspension de TVA"
+   ],
+   "emplois": "Secteur à fort potentiel d'emplois qualifiés",
+   "montant": ""
   },
   {
    "code": "OP_5.03-038",
@@ -4210,7 +4561,19 @@
    "secteur_nom": "Économie numérique et poste",
    "pilier": "5",
    "titre": "Cybersécurité",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-038_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-038_FR.pdf",
+   "localisation": "Abidjan",
+   "resume": "La Côte d'Ivoire veut bâtir un écosystème numérique sécurisé, résilient et souverain, autour de la cybersécurité et des services de confiance.",
+   "chiffres": [
+    "Économie numérique et poste : plus de 6 % du PIB"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonération de droits de douane sur équipements de sécurité",
+    "Exonération ou suspension de TVA"
+   ],
+   "emplois": "",
+   "montant": ""
   },
   {
    "code": "OP_5.03-039",
@@ -4218,7 +4581,19 @@
    "secteur_nom": "Économie numérique et poste",
    "pilier": "5",
    "titre": "Connectivité, réseaux et infrastructures de communication",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-039_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-039_FR.pdf",
+   "localisation": "Abidjan et grandes agglomérations",
+   "resume": "La Côte d'Ivoire veut garantir des services numériques et postaux de qualité à 65 % de sa population en achevant le Réseau national haut débit.",
+   "chiffres": [
+    "Pénétration Internet d'environ 50 % en 2024 contre 30 % auparavant"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonération de droits de douane sur équipements télécoms",
+    "Exonération ou suspension de TVA"
+   ],
+   "emplois": "Emplois liés à l'achèvement du RNHD et au déploiement rural",
+   "montant": ""
   },
   {
    "code": "OP_5.03-040",
@@ -4226,7 +4601,21 @@
    "secteur_nom": "Économie numérique et poste",
    "pilier": "5",
    "titre": "E-commerce",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-040_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-040_FR.pdf",
+   "localisation": "",
+   "resume": "Le Gouvernement veut moderniser la distribution, digitaliser le commerce et faire du pays la passerelle commerciale numérique de la sous-région.",
+   "chiffres": [
+    "E-commerce : environ 3,5 % du commerce de détail",
+    "Plus de 450 milliards FCFA de transactions en ligne en 2022"
+   ],
+   "segments": [
+    "E-commerce spécialisé"
+   ],
+   "incitations": [
+    "Exonération totale de BIC pendant 5 à 10 ans"
+   ],
+   "emplois": "Plus de 80 000 emplois directs et indirects",
+   "montant": ""
   },
   {
    "code": "OP_5.05-001",
@@ -4234,7 +4623,18 @@
    "secteur_nom": "Environnement et développement durable",
    "pilier": "5",
    "titre": "Biodiversité, aires protégées et écotourisme",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.05-001_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.05-001_FR.pdf",
+   "localisation": "Parc national de la Comoé et aires protégées",
+   "resume": "Le Gouvernement veut préserver le capital naturel et faire des aires protégées des pôles de conservation, d'éducation et d'écotourisme.",
+   "chiffres": [
+    "Parc national de la Comoé : 1 149 450 ha"
+   ],
+   "segments": [],
+   "incitations": [
+    "Incitations du Code des investissements à confirmer auprès du CEPICI"
+   ],
+   "emplois": "3 000 à 5 000 emplois directs et indirects",
+   "montant": ""
   },
   {
    "code": "OP_5.05-002",
@@ -4242,7 +4642,18 @@
    "secteur_nom": "Environnement et développement durable",
    "pilier": "5",
    "titre": "Marché carbone et finance climatique",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.05-002_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.05-002_FR.pdf",
+   "localisation": "",
+   "resume": "Le Gouvernement veut structurer un marché carbone national crédible pour mobiliser des financements innovants en faveur de la transition bas carbone.",
+   "chiffres": [
+    "35 millions USD reçus pour 7 millions de t de réductions d'émissions"
+   ],
+   "segments": [],
+   "incitations": [
+    "Avantages du Code des investissements pour les investissements verts"
+   ],
+   "emplois": "5 000 à 15 000 emplois directs et indirects",
+   "montant": ""
   },
   {
    "code": "OP_5.05-003",
@@ -4250,7 +4661,20 @@
    "secteur_nom": "Environnement et développement durable",
    "pilier": "5",
    "titre": "Transition écologique et économie circulaire",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.05-003_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.05-003_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire vise une réduction de 33,07 % de ses émissions d'ici 2035, et jusqu'à 74,29 % avec l'appui des partenaires.",
+   "chiffres": [
+    "Coût de l'inaction climatique estimé à 13 % du PIB d'ici 2050",
+    "Émissions du parc national de Taï réduites de 82 % entre 2018 et 2022"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonération de TVA et de douane sur équipements d'énergies renouvelables",
+    "Crédit d'impôt"
+   ],
+   "emplois": "1 million d'emplois verts d'ici 2035",
+   "montant": ""
   },
   {
    "code": "OP_5.07-001",
@@ -4258,7 +4682,19 @@
    "secteur_nom": "Urbanisme et habitat",
    "pilier": "5",
    "titre": "Bâtiment et matériaux de construction",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.07-001_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.07-001_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire veut devenir le hub industriel des matériaux de construction en Afrique de l'Ouest et réduire de 50 % sa dépendance aux importations d'ici 2030.",
+   "chiffres": [
+    "Déficit commercial sectoriel de 272 millions USD"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonération totale d'impôt sur les bénéfices jusqu'à 15 ans en zone C",
+    "Exonération de TVA"
+   ],
+   "emplois": "Moteur important d'emplois dans le BTP et le logement",
+   "montant": ""
   },
   {
    "code": "OP_5.07-002",
@@ -4266,7 +4702,23 @@
    "secteur_nom": "Urbanisme et habitat",
    "pilier": "5",
    "titre": "Immobilier commercial et de bureaux",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.07-002_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.07-002_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire veut transformer l'habitat et l'urbanisme pour maîtriser le développement urbain face à une urbanisation rapide.",
+   "chiffres": [
+    "Marché du BTP en croissance moyenne de 25 % par an depuis 2011",
+    "Immobilier en croissance de 18 % sur 10 ans"
+   ],
+   "segments": [
+    "Promotion immobilière agréée",
+    "Refinancement hypothécaire"
+   ],
+   "incitations": [
+    "Exonérations pour les promoteurs immobiliers agréés",
+    "Exonération de TVA sur les matériaux"
+   ],
+   "emplois": "Programme d'urgence de 25 000 logements : de 750 000 à 1,5 million d'opportunités d'emplois",
+   "montant": ""
   },
   {
    "code": "OP_6.05-085",
@@ -4274,7 +4726,17 @@
    "secteur_nom": "Communication",
    "pilier": "6",
    "titre": "Nouveaux médias",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_6.05-085_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_6.05-085_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire veut devenir un hub numérique et technologique ouest-africain en développant les nouveaux médias et les services digitaux.",
+   "chiffres": [
+    "Environ 13,4 millions d'internautes",
+    "Près de 49,7 millions de connexions mobiles"
+   ],
+   "segments": [],
+   "incitations": [],
+   "emplois": "Emplois dans les nouveaux médias et l'économie numérique",
+   "montant": ""
   },
   {
    "code": "OP_6.06-086",
@@ -4282,7 +4744,18 @@
    "secteur_nom": "Communication",
    "pilier": "6",
    "titre": "Audiovisuel",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_6.06-086_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_6.06-086_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire veut devenir un hub régional des industries culturelles et créatives en Afrique francophone, autour d'un audiovisuel en pleine mutation.",
+   "chiffres": [
+    "Audience TV quotidienne de 85 % (Médiamétrie, 2021)"
+   ],
+   "segments": [],
+   "incitations": [
+    "Crédits d'impôt et exonération d'IS de 5 à 15 ans"
+   ],
+   "emplois": "Plusieurs milliers d'emplois dans la production et la diffusion",
+   "montant": ""
   },
   {
    "code": "OP_6.07-087",
@@ -4290,7 +4763,18 @@
    "secteur_nom": "Communication",
    "pilier": "6",
    "titre": "Communication publicitaire",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_6.07-087_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_6.07-087_FR.pdf",
+   "localisation": "",
+   "resume": "Le secteur de la publicité et de la communication regroupe agences, régies, événementiel et prestataires, sur un marché en forte croissance.",
+   "chiffres": [
+    "La Côte d'Ivoire s'impose comme l'un des nouveaux relais de croissance du marché publicitaire africain"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonération partielle des droits de douane sur équipements numériques et d'affichage"
+   ],
+   "emplois": "Emplois directs dans les agences et l'événementiel",
+   "montant": ""
   },
   {
    "code": "OP_6.08-088",
@@ -4298,7 +4782,18 @@
    "secteur_nom": "Communication",
    "pilier": "6",
    "titre": "Presse",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_6.08-088_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_6.08-088_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire veut moderniser son écosystème médiatique pour une presse professionnelle, crédible et adaptée au numérique.",
+   "chiffres": [
+    "Marché potentiel important pour la presse et les médias"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonération partielle des droits de douane sur équipements d'imprimerie et numériques"
+   ],
+   "emplois": "Plusieurs milliers d'emplois",
+   "montant": ""
   },
   {
    "code": "OP_x.xx-070",
@@ -4306,7 +4801,19 @@
    "secteur_nom": "Économie circulaire",
    "pilier": "6",
    "titre": "Écoconception",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_x.xx-070_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_x.xx-070_FR.pdf",
+   "localisation": "",
+   "resume": "Le Gouvernement veut faire de la Côte d'Ivoire le hub ouest-africain de l'écoconception industrielle des produits, emballages et matériaux.",
+   "chiffres": [
+    "Industrie : 22,7 % du PIB en 2024",
+    "40 000 à 100 000 t de déchets plastiques par an, dont 5 à 20 % recyclés"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonérations du Code des investissements"
+   ],
+   "emplois": "Environ 190 000 emplois directs et indirects",
+   "montant": ""
   },
   {
    "code": "OP_x.xx-071",
@@ -4314,7 +4821,19 @@
    "secteur_nom": "Économie circulaire",
    "pilier": "6",
    "titre": "Écologie industrielle et territoriale",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_x.xx-071_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_x.xx-071_FR.pdf",
+   "localisation": "PK24 et zones industrielles",
+   "resume": "Le Gouvernement veut faire des zones industrielles des plateformes circulaires, compétitives et bas carbone.",
+   "chiffres": [
+    "Industrie : 22,7 % du PIB en 2024",
+    "573,9 milliards FCFA d'investissements prévisionnels à PK24"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonérations du Code des investissements"
+   ],
+   "emplois": "Environ 210 000 emplois directs et indirects",
+   "montant": ""
   },
   {
    "code": "OP_x.xx-072",
@@ -4322,7 +4841,19 @@
    "secteur_nom": "Économie circulaire",
    "pilier": "6",
    "titre": "Économie de la fonctionnalité",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_x.xx-072_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_x.xx-072_FR.pdf",
+   "localisation": "",
+   "resume": "Le Gouvernement veut faire du pays le hub ouest-africain de l'économie de la fonctionnalité, en passant de l'achat d'actifs à l'accès garanti aux équipements.",
+   "chiffres": [
+    "Encours de crédit-bail de 178,37 milliards FCFA fin 2020",
+    "Une vague de 650 milliards FCFA représenterait 1,1 % du PIB"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonérations du Code des investissements"
+   ],
+   "emplois": "Environ 61 000 emplois directs et indirects",
+   "montant": ""
   },
   {
    "code": "OP_x.xx-074",
@@ -4330,7 +4861,18 @@
    "secteur_nom": "Économie circulaire",
    "pilier": "6",
    "titre": "Allongement de la durée de vie et recyclage",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_x.xx-074_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_x.xx-074_FR.pdf",
+   "localisation": "",
+   "resume": "Le Gouvernement veut faire des déchets une ressource économique et développer des chaînes de valeur vertes fondées sur le recyclage.",
+   "chiffres": [
+    "Plus de 400 000 t de déchets plastiques produites par an"
+   ],
+   "segments": [],
+   "incitations": [
+    "Régime des projets verts du Code des investissements"
+   ],
+   "emplois": "",
+   "montant": ""
   },
   {
    "code": "OP_x.xx-075",
@@ -4338,7 +4880,20 @@
    "secteur_nom": "Économie circulaire",
    "pilier": "6",
    "titre": "Mise en marché de produits circulaires",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_x.xx-075_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_x.xx-075_FR.pdf",
+   "localisation": "Abidjan",
+   "resume": "Le Gouvernement veut faire du pays le hub ouest-africain de commercialisation des produits circulaires : recyclés, réparés, reconditionnés, biosourcés.",
+   "chiffres": [
+    "Distribution informelle à 85 %",
+    "Abidjan : 29 % de la dépense nationale",
+    "35 % des Abidjanais achètent en grande surface"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonérations du Code des investissements"
+   ],
+   "emplois": "Environ 120 000 emplois directs et indirects",
+   "montant": ""
   },
   {
    "code": "OP_x.xx-076",
@@ -4346,7 +4901,20 @@
    "secteur_nom": "Économie circulaire",
    "pilier": "6",
    "titre": "Chaînes de valeur agricoles durables",
-   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_x.xx-076_FR.pdf"
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_x.xx-076_FR.pdf",
+   "localisation": "",
+   "resume": "La Côte d'Ivoire veut devenir un hub régional de chaînes de valeur agro-industrielles durables, circulaires, inclusives et traçables.",
+   "chiffres": [
+    "Agriculture : 15 % à 15,9 % du PIB en 2024",
+    "46 % de la main-d'œuvre",
+    "51,5 % des exportations en 2025"
+   ],
+   "segments": [],
+   "incitations": [
+    "Exonérations du Code des investissements"
+   ],
+   "emplois": "Au moins 105 000 emplois directs et indirects",
+   "montant": ""
   }
  ]
 }
