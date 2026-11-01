@@ -1,10 +1,11 @@
 {% extends "base.html" %}
-{% load radar_tags %}
+{% load radar_tags static %}
 {% block title %}À propos et mentions{% endblock %}
 {% block content %}
 <div class="wrap">
   <div class="phead"><div class="kicker">À propos</div><h1>À propos et mentions</h1></div>
   <div class="prose">
+    <img class="apropos-logo" src="{% static 'img/aic-logo.png' %}" alt="Analytics &amp; Impact Consulting" width="200" height="94">
     <h2>Radar PND</h2>
     <p>Radar PND est une plateforme d'Analytics &amp; Impact Consulting (AIC). Elle accompagne l'ebook consacré au Plan National de Développement (PND) 2026-2030 de Côte d'Ivoire et aide les acteurs non étatiques (entreprises, bureaux d'études, ONG, investisseurs) à repérer les actions du plan qui les concernent.</p>
     <h2>Sources</h2>

@@ -114,7 +114,11 @@ strong, b { font-weight: 700; }
 .brand { display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; margin-right: auto; min-width: 0; }
 .brand:hover { color: #fff; }
 .brand-mark { width: 32px; height: 32px; flex: none; }
-.brand-txt { display: flex; flex-direction: column; line-height: 1.05; }
+.brand-by { flex: none; display: flex; align-items: center; padding-left: 10px; margin-left: 2px; border-left: 1px solid rgba(255, 255, 255, .18); height: 26px; }
+.brand-by img { height: 20px; width: auto; display: block; }
+@media (max-width: 479px) { .brand-by { padding-left: 8px; } .brand-by img { height: 15px; } .brand-txt b { font-size: 16px; } }
+@media (max-width: 359px) { .brand-by { display: none; } }
+.brand-txt { display: flex; flex-direction: column; line-height: 1.05; white-space: nowrap; flex: none; }
 .brand-txt b { font-size: 17.5px; font-weight: 800; letter-spacing: -.02em; }
 .brand-txt span { font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: #9fb0c4; margin-top: 3px; font-weight: 600; }
 .hdr-back { margin-left: -8px; }
@@ -872,6 +876,8 @@ a.t:hover { color: var(--orange-ink); text-decoration: underline; }
 .ftr-cols { display: grid; grid-template-columns: minmax(0, 1fr); gap: 26px; padding-top: 36px; padding-bottom: 24px; }
 @media (min-width: 900px) { .ftr-cols { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) minmax(0, 1.4fr); gap: 36px; padding-top: 48px; } }
 .ftr-brand { display: flex; align-items: center; gap: 10px; color: #fff; font-size: 19px; font-weight: 800; letter-spacing: -.02em; }
+.ftr-aic { display: block; height: 64px; width: auto; margin: 14px 0 10px; }
+.apropos-logo { display: block; height: 72px; width: auto; margin: 4px 0 18px; }
 .ftr-tag { color: var(--orange-2); font-weight: 700; margin: 10px 0 8px; }
 .ftr-h { color: #fff; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; font-weight: 800; margin-bottom: 12px; }
 .ftr a { color: #d3dbe5; text-decoration: none; }
@@ -889,3 +895,7 @@ a.t:hover { color: var(--orange-ink); text-decoration: underline; }
 /* Apparition au défilement (amélioration progressive) */
 .js .reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s var(--ease), transform .6s var(--ease); }
 .js .reveal.in { opacity: 1; transform: none; }
+
+/* header: CTA visible a partir de 640px, sans retour a la ligne */
+.hdr-tools .hdr-cta { display: none; white-space: nowrap; }
+@media (min-width: 640px) { .hdr-tools .hdr-cta { display: inline-flex; } }

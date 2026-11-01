@@ -7,6 +7,7 @@
   <meta name="description" content="{% block description %}Radar PND repère, parmi les 1 480 actions prioritaires et les projets du Plan National de Développement 2026-2030 de Côte d'Ivoire, ceux qui concernent votre organisation.{% endblock %}">
   <meta name="theme-color" content="#0e1a2b">
   <link rel="icon" href="{% static 'img/favicon.svg' %}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{% static 'img/apple-touch-icon.png' %}">
   <link rel="preload" href="{% static 'fonts/plus-jakarta-sans-latin-wght-normal.woff2' %}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{% static 'css/radar.css' %}">
   {% block head %}{% endblock %}
@@ -49,6 +50,7 @@
     <a class="brand" href="{% url 'radar:accueil' %}" aria-label="Radar PND, accueil">
       <img class="brand-mark" src="{% static 'img/radar-mark.svg' %}" alt="" width="32" height="32">
       <span class="brand-txt"><b>Radar PND</b><span>2026-2030</span></span>
+      <span class="brand-by"><img src="{% static 'img/aic-icon-white.png' %}" alt="par Analytics &amp; Impact Consulting" width="66" height="23"></span>
     </a>
     <nav class="hdr-nav" aria-label="Navigation principale">
       <a href="{% url 'radar:radar' %}" {% if u == 'radar' %}aria-current="page"{% endif %}>Mon radar</a>
@@ -116,7 +118,7 @@
   <div class="wrap ftr-cols">
     <div>
       <div class="ftr-brand"><img src="{% static 'img/radar-mark.svg' %}" alt="" width="28" height="28"><b>Radar PND</b></div>
-      <p class="ftr-tag">From data to impact</p>
+      <img class="ftr-aic" src="{% static 'img/aic-logo-white.png' %}" alt="Analytics &amp; Impact Consulting" width="170" height="80" loading="lazy">
       <p>Un service d'Analytics &amp; Impact Consulting (AIC), cabinet indépendant. Radar PND accompagne l'ebook consacré au Plan National de Développement 2026-2030 de Côte d'Ivoire.</p>
     </div>
     <div>
