@@ -39,3 +39,32 @@ def paragraphe(action, indicateurs=None):
     else:
         t += f" Le projet y contribuera à travers {A_COMPLETER}."
     return t
+
+
+def paragraphe_projet(projet, nb_actions=0, action_phare=None):
+    """Paragraphe d'alignement d'un projet du Groupe consultatif sur le PND 2026-2030."""
+    from .gcpnd import md_gc
+
+    sec, pil = projet.secteur, projet.pilier
+    cout = (f"d'un coût estimatif indicatif de {md_gc(projet.cout_millions)} FCFA" if projet.cout_millions is not None
+            else "dont le coût estimatif n'est pas défini à ce stade")
+    t = (
+        f"Le projet {projet.code} « {projet.titre} », {cout}, figure au portefeuille présenté au Groupe consultatif "
+        f"pour le financement du Plan National de Développement (PND) 2026-2030 en tant que "
+        f"{projet.get_type_display().lower()}."
+    )
+    if sec and pil:
+        t += f" Il s'inscrit dans le pilier {pil.numero} ({pil.nom}), secteur {sec.code} {sec.nom}."
+        if sec.resultat:
+            t += f" Il concourt au résultat sectoriel attendu : « {sec.resultat.rstrip('. ')} »."
+        if nb_actions:
+            t += (f" Dans la matrice d'actions prioritaires (Tome 3), ce secteur regroupe {nb_actions} actions pour un "
+                  f"coût programmé de {montant(sec.total)} sur 2026-2030")
+            if action_phare is not None:
+                t += (f", la plus dotée étant l'action {action_phare.code} « {action_phare.label} » "
+                      f"({montant(action_phare.total)})")
+            t += "."
+    elif pil:
+        t += f" Il s'inscrit dans le pilier {pil.numero} ({pil.nom}) du PND."
+    t += f" Le projet y contribuera à travers {A_COMPLETER}."
+    return t

@@ -244,3 +244,88 @@ class Selection(models.Model):
 
     def __str__(self):
         return f"{self.user} : {self.action.code}"
+
+
+# --------------------------------------------------------------------------
+# Groupe consultatif pour le financement du PND 2026-2030 (gcpnd.gouv.ci)
+# --------------------------------------------------------------------------
+
+GCPND_INSCRIPTION = "https://www.gcpnd.gouv.ci/inscription-et-prise-de-rendez-vous"
+
+
+class ProjetGC(models.Model):
+    """Projet présenté au Groupe consultatif (coût estimatif indicatif, en millions de FCFA)."""
+
+    PUB, PPP, PRI = "PUB", "PPP", "PRI"
+    TYPES = [(PUB, "Projet public"), (PPP, "Partenariat public-privé"), (PRI, "Projet privé")]
+    TYPES_COURTS = {PUB: "Public", PPP: "PPP", PRI: "Privé"}
+
+    type = models.CharField(max_length=3, choices=TYPES, db_index=True)
+    code = models.CharField(max_length=16, unique=True)
+    secteur = models.ForeignKey(Secteur, on_delete=models.SET_NULL, null=True, blank=True, related_name="projets_gc")
+    secteur_code = models.CharField("Code secteur (source)", max_length=10, blank=True)
+    secteur_nom = models.CharField("Secteur (source)", max_length=255, blank=True)
+    pilier = models.ForeignKey(Pilier, on_delete=models.SET_NULL, null=True, blank=True, related_name="projets_gc")
+    cout_millions = models.FloatField("Coût estimatif (M FCFA)", null=True, blank=True, db_index=True)
+    titre = models.TextField("Intitulé")
+    pdf_url = models.URLField("Fiche officielle (PDF)", max_length=400, blank=True)
+    ordre = models.PositiveIntegerField(default=0)
+    search_text = models.TextField(editable=False, blank=True)
+
+    class Meta:
+        ordering = ["ordre"]
+        verbose_name = "projet du Groupe consultatif"
+        verbose_name_plural = "projets du Groupe consultatif"
+
+    def __str__(self):
+        return f"{self.code} {self.titre[:80]}"
+
+    def get_absolute_url(self):
+        return reverse("radar:projet_gc", args=[self.code])
+
+    @property
+    def couleur(self):
+        return COULEURS_PILIERS.get(self.pilier.numero if self.pilier_id else self.code.split(".")[0], "#5B6B82")
+
+    @property
+    def type_court(self):
+        return self.TYPES_COURTS.get(self.type, self.type)
+
+
+class Opportunite(models.Model):
+    """Fiche d'opportunité d'investissement sectorielle du Groupe consultatif."""
+
+    code = models.CharField(max_length=20, unique=True)
+    secteur = models.ForeignKey(Secteur, on_delete=models.SET_NULL, null=True, blank=True, related_name="opportunites")
+    secteur_code = models.CharField("Code secteur (source)", max_length=10, blank=True)
+    secteur_nom = models.CharField("Secteur (source)", max_length=255, blank=True)
+    pilier = models.ForeignKey(Pilier, on_delete=models.SET_NULL, null=True, blank=True, related_name="opportunites")
+    titre = models.TextField("Intitulé")
+    pdf_url = models.URLField("Fiche officielle (PDF)", max_length=400, blank=True)
+    localisation = models.TextField(blank=True)
+    resume = models.TextField("Résumé", blank=True)
+    chiffres = models.JSONField("Chiffres clés", default=list, blank=True)
+    segments = models.JSONField(default=list, blank=True)
+    incitations = models.JSONField(default=list, blank=True)
+    emplois = models.TextField(blank=True)
+    montant = models.TextField("Montant", blank=True)
+    ordre = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ["ordre"]
+        verbose_name = "opportunité d'investissement"
+        verbose_name_plural = "opportunités d'investissement"
+
+    def __str__(self):
+        return f"{self.code} {self.titre[:80]}"
+
+    def get_absolute_url(self):
+        return reverse("radar:opportunite", args=[self.code])
+
+    @property
+    def couleur(self):
+        return COULEURS_PILIERS.get(self.pilier.numero if self.pilier_id else "", "#5B6B82")
+
+    @property
+    def detaillee(self):
+        return bool(self.resume or self.chiffres or self.segments or self.incitations)

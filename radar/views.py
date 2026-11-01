@@ -14,8 +14,8 @@ from django.views.decorators.http import require_POST
 from comptes.decorators import acces_requis
 from comptes.models import a_acces
 
-from .models import ANNEES, COULEURS_PILIERS, Action, Famille, Indicateur, Pilier, Profil, Secteur, Selection
-from .services import catalogue, export
+from .models import ANNEES, COULEURS_PILIERS, Action, Famille, Indicateur, Pilier, Profil, ProjetGC, Secteur, Selection
+from .services import catalogue, export, gcpnd
 from .services.alignement import paragraphe
 from .services.formatage import normaliser
 from .services.scoring import PROFILS, PROFILS_PAR_ID, classer, profil_preset
@@ -65,6 +65,7 @@ def accueil(request):
         "piliers": piliers,
         "familles": catalogue.familles_avec_totaux()[:6],
         "profils": PROFILS,
+        "chiffres_gc": gcpnd.chiffres_gc(),
     })
 
 
@@ -113,6 +114,7 @@ def pilier_detail(request, numero):
         "max_secteur": max([s.total for s in secteurs] + [1]),
         "top": top, "nb_actions": nb_actions, "autres": autres, "ids_sel": _ids_selection(request.user),
         "nb_indicateurs": Indicateur.objects.filter(parent__startswith=f"{p.numero}.").count(),
+        "gc": gcpnd.bloc(pilier=p),
     })
 
 
@@ -132,6 +134,7 @@ def secteur_detail(request, code):
         "nb_actions": nb_actions, "familles": familles, "voisins": voisins, "ids_sel": _ids_selection(request.user),
         "graph": {"annees": list(ANNEES), "valeurs": [round(v / 1000, 1) for v in s.couts], "couleur": s.pilier and COULEURS_PILIERS[s.pilier.numero]},
         "part_pilier": s.total / (s.pilier.secteurs.aggregate(t=Sum("total"))["t"] or 1) * 100,
+        "gc": gcpnd.bloc(secteur=s),
     })
 
 
@@ -224,11 +227,14 @@ def mon_radar(request):
     objets = _actions_qs().in_bulk([a["id"] for a, _ in top])
     resultats = [(objets[a["id"]], sc) for a, sc in top if a["id"] in objets]
     piliers = list(Pilier.objects.prefetch_related("secteurs").order_by("numero"))
+    gc_resultats, gc_nb, gc_total = gcpnd.classer_projets(profil)
+    gc_opps, gc_invest = gcpnd.opportunites_profil(profil)
     return render(request, "radar/radar.html", {
         "profil": prof, "profils": PROFILS, "familles": Famille.objects.all(), "piliers": piliers,
         "resultats": resultats, "nb": nb, "montant_total": montant_total,
         "montant_top": sum(a.total for a, _ in resultats), "ids_sel": _ids_selection(request.user),
         "horizons": Profil.HORIZONS, "tailles": Profil.TAILLES,
+        "gc_resultats": gc_resultats, "gc_nb": gc_nb, "gc_total": gc_total, "gc_opps": gc_opps, "gc_invest": gc_invest,
     })
 
 
@@ -248,6 +254,8 @@ def action_detail(request, code):
                   "max_idx": a.couts.index(max(a.couts)) if a.total else -1},
         "part_secteur": a.total / (a.secteur.total or 1) * 100,
         "annees_couts": list(zip(ANNEES, a.couts)),
+        "projets_gc": list(gcpnd.tri_cout(ProjetGC.objects.filter(secteur=a.secteur))[:5]),
+        "nb_projets_gc": ProjetGC.objects.filter(secteur=a.secteur).count(),
     })
 
 

@@ -35,6 +35,8 @@
     {% include "radar/partials/table_actions.html" with lignes=top %}
     {% if not a_acces %}<div class="gate"><p>Les fiches détaillées, les paragraphes d'alignement et les exports sont réservés aux lecteurs de l'ebook.</p><a class="btn btn-sm" href="{% url 'comptes:inscription' %}">Activer mon accès</a></div>{% endif %}
   </section>
+
+  {% with filtre="pilier="|add:pilier.numero %}{% include "radar/partials/bloc_gc.html" with portee="du pilier" cible="à ce pilier" %}{% endwith %}
   <section>
     <h2 style="font-size:19px">Autres piliers</h2>
     <div class="chipnav">{% for p in autres %}<a class="pil-badge" style="--pc:{{ p.couleur }};font-size:13px;padding:5px 12px" href="{{ p.get_absolute_url }}">{{ p.numero }}. {{ p.nom }}</a>{% endfor %}</div>

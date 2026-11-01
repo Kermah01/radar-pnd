@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load radar_tags %}
+{% block title %}{{ o.titre|truncatechars:70 }}{% endblock %}
+{% block content %}
+<div class="band-head" style="--pc:{{ o.couleur }}">
+  <div class="wrap page-head">
+    <div class="kicker"><a href="{% url 'radar:opportunites' %}">Opportunités</a>{% if o.pilier %} / <a href="{{ o.pilier.get_absolute_url }}">Pilier {{ o.pilier.numero }}</a>{% endif %}{% if o.secteur %} / <a href="{{ o.secteur.get_absolute_url }}">{{ o.secteur.code }} {{ o.secteur.nom }}</a>{% else %} / {{ o.secteur_nom }}{% endif %}</div>
+    <div class="code" style="font-size:13px;margin-bottom:6px">Fiche {{ o.code }} · opportunité d'investissement sectorielle</div>
+    <h1 style="font-size:clamp(24px,3.2vw,34px);max-width:32ch">{{ o.titre }}</h1>
+    <div class="row" style="margin-top:12px">
+      {% if o.pilier %}{% badge_pilier o.pilier.numero %}{% endif %}
+      <span class="pill fam">{{ o.secteur_nom }}</span>
+    </div>
+    <div class="row" style="margin-top:18px">
+      {% if o.pdf_url %}<a class="btn" href="{{ o.pdf_url }}" target="_blank" rel="noopener">Fiche officielle (PDF)</a>{% endif %}
+      <a class="btn btn-ghost" href="{{ inscription_url }}" target="_blank" rel="noopener">Exprimer son intérêt sur gcpnd.gouv.ci</a>
+    </div>
+  </div>
+</div>
+
+<div class="wrap" style="padding-top:24px">
+  <div class="grid-side">
+    <div class="stack">
+      {% if o.detaillee %}
+      <section class="panel">
+        <h2>En bref</h2>
+        {% if o.resume %}<p>{{ o.resume }}</p>{% endif %}
+        {% if o.localisation %}<p class="small"><b>Localisation :</b> {{ o.localisation }}</p>{% endif %}
+        {% if o.montant %}<p class="small"><b>Montants indiqués :</b> {{ o.montant }}</p>{% endif %}
+        {% if o.emplois %}<p class="small" style="margin:0"><b>Emplois :</b> {{ o.emplois }}</p>{% endif %}
+      </section>
+      {% if o.chiffres %}<section class="panel"><h2>Chiffres clés</h2><ul class="opp-chiffres big">{% for c in o.chiffres %}<li>{{ c }}</li>{% endfor %}</ul></section>{% endif %}
+      <div class="grid-2">
+        {% if o.segments %}<section class="panel"><h2>Segments porteurs</h2><div class="chips">{% for c in o.segments %}<span class="pill fam">{{ c }}</span>{% endfor %}</div></section>{% endif %}
+        {% if o.incitations %}<section class="panel"><h2>Incitations</h2><ul class="opp-inc">{% for c in o.incitations %}<li>{{ c }}</li>{% endfor %}</ul></section>{% endif %}
+      </div>
+      {% else %}
+      <section class="panel">
+        <h2>Contenu de la fiche</h2>
+        <p>Cette fiche sectorielle n'est pas résumée sur Radar PND. Sa version officielle présente le marché, les segments porteurs, les incitations et les contacts utiles.</p>
+        {% if o.pdf_url %}<a class="btn btn-sm" href="{{ o.pdf_url }}" target="_blank" rel="noopener">Consulter la fiche officielle</a>{% endif %}
+      </section>
+      {% endif %}
+    </div>
+    <aside class="stack">
+      {% if projets %}
+      <section class="panel">
+        <h3>Projets GCPND du même secteur</h3>
+        <div class="hbars">{% for v in projets %}<a class="hbar" style="grid-template-columns:minmax(0,1fr) 84px" href="{{ v.get_absolute_url }}"><span class="nm" title="{{ v.titre }}"><span class="tbadge sm tb-{{ v.type|lower }}">{{ v.type_court }}</span> {{ v.titre }}</span><span class="v">{{ v.cout_millions|md_gc }}</span></a>{% endfor %}</div>
+        <a class="small" style="display:inline-block;margin-top:10px" href="{% url 'radar:projets_gc' %}?secteur={{ o.secteur_code }}">Tous les projets du secteur</a>
+      </section>
+      {% endif %}
+      {% if voisines %}
+      <section class="panel">
+        <h3>Autres opportunités du secteur</h3>
+        <ul class="opp-list">{% for v in voisines %}<li style="--pc:{{ v.couleur }}"><a href="{{ v.get_absolute_url }}">{{ v.titre }}</a></li>{% endfor %}</ul>
+      </section>
+      {% endif %}
+    </aside>
+  </div>
+      {% if actions %}
+      <section class="section">
+        <div class="section-head"><h2 style="font-size:19px">Actions de la matrice du même secteur</h2><a class="btn btn-ghost btn-sm" href="{% url 'radar:explorer' %}?secteur={{ o.secteur.code }}">Toutes les actions du secteur</a></div>
+        {% include "radar/partials/table_actions.html" with lignes=actions %}
+      </section>
+      {% endif %}
+  {% include "radar/partials/source_gc.html" %}
+</div>
+{% endblock %}

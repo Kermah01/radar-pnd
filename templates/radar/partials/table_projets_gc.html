@@ -1,0 +1,18 @@
+{% load radar_tags %}
+<div class="tblwrap"><table class="t-gc">
+  <thead><tr><th>Type</th><th>Code</th><th>Projet</th><th class="num">Coût estimatif</th><th class="hide-m">Fiche officielle</th></tr></thead>
+  <tbody>
+  {% for p in lignes %}
+    <tr class="rowlink" data-href="{{ p.get_absolute_url }}">
+      <td>{% badge_type p.type %}</td>
+      <td class="code nowrap">{{ p.code }}</td>
+      <td><a class="al" href="{{ p.get_absolute_url }}">{{ p.titre }}</a>
+        <div class="sec-gc" style="--pc:{{ p.couleur }}"><span class="dot"></span>{{ p.secteur_code }} {{ p.secteur_nom }}</div></td>
+      <td class="num">{% if p.cout_millions is None %}<span class="nd">Non défini</span>{% else %}{{ p.cout_millions|md_gc }}{% endif %}</td>
+      <td class="pdf-cell">{% if p.pdf_url %}<a class="pdf" href="{{ p.pdf_url }}" target="_blank" rel="noopener">Fiche officielle (PDF)</a>{% endif %}</td>
+    </tr>
+  {% empty %}
+    <tr><td colspan="5">Aucun projet ne correspond. Élargissez les filtres ou modifiez la recherche.</td></tr>
+  {% endfor %}
+  </tbody>
+</table></div>

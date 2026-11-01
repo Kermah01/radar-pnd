@@ -37,6 +37,24 @@
         {% empty %}<div class="panel">Sélectionnez au moins une famille de prestations pour voir les actions correspondantes.</div>{% endfor %}
       </div>
       {% if nb > resultats|length %}<div class="gate"><p>Le radar affiche les {{ resultats|length }} actions les mieux classées. Pour parcourir les {{ nb|nombre }} correspondances ({{ montant_total|fcfa }}), utilisez l'explorateur avec vos filtres.</p><a class="btn btn-sm" href="{% url 'radar:explorer' %}">Ouvrir l'explorateur</a></div>{% endif %}
+      <div class="gc-radar" id="groupe-consultatif">
+        <div class="rhead">
+          <div><div class="kicker" style="margin-bottom:4px">Financer · Groupe consultatif</div><h2>Projets et opportunités du Groupe consultatif pour votre profil</h2></div>
+          {% if gc_nb %}<span class="note">{{ gc_nb }} projet{{ gc_nb|pluralize }} dans vos secteurs · {{ gc_total|md_gc }} FCFA estimés</span>{% endif %}
+        </div>
+        <div class="results">
+          {% for p, sc, raisons in gc_resultats %}{% include "radar/partials/rcard_gc.html" %}
+          {% empty %}<div class="panel">Aucun projet du Groupe consultatif dans vos secteurs suivis. Ajoutez des secteurs à votre profil.</div>{% endfor %}
+        </div>
+        {% if gc_opps %}
+        <div class="panel opp-strip" style="margin-top:12px">
+          <h3>Opportunités d'investissement {% if gc_invest %}à saisir{% else %}dans vos secteurs{% endif %}</h3>
+          <ul class="opp-list">{% for o, raison in gc_opps %}<li style="--pc:{{ o.couleur }}"><a href="{{ o.get_absolute_url }}">{{ o.titre }}</a> <span class="note">· {{ o.secteur_nom }}, {{ raison }}</span></li>{% endfor %}</ul>
+        </div>
+        {% endif %}
+        <div class="row" style="margin-top:12px"><a class="btn btn-ghost btn-sm" href="{% url 'radar:projets_gc' %}">Tous les projets GCPND</a><a class="btn btn-ghost btn-sm" href="{% url 'radar:opportunites' %}">Toutes les opportunités</a></div>
+        <p class="note" style="margin-top:10px">Score sur 100 : secteur suivi (45) ou secteur clé de votre métier (25), type de projet selon votre profil (30, 20 ou 10), taille et coût renseigné (25). Source : Groupe consultatif pour le financement du PND 2026-2030 (gcpnd.gouv.ci). Coûts estimatifs indicatifs.</p>
+      </div>
       <p class="disclaimer">Le score (sur 100) combine famille de prestations (40 points), secteur suivi (25), calendrier (15), dynamique budgétaire (10) et taille (10). C'est une aide à la priorisation, pas une probabilité d'obtenir un marché. <a href="{% url 'radar:methode' %}">Comprendre le score</a>.</p>
     </section>
   </div>

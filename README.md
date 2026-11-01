@@ -14,11 +14,13 @@ Une réalisation d'**Analytics & Impact Consulting (AIC)**, *From data to impact
 | Référentiel PND, radar, fiches, sélection, exports | `radar/` |
 | Score de pertinence (9 profils types) | `radar/services/scoring.py` |
 | Paragraphe d'alignement | `radar/services/alignement.py` |
+| Projets et opportunités du Groupe consultatif (pages, classement par profil, CSV) | `radar/views_gc.py`, `radar/services/gcpnd.py` |
 | Exports Word et CSV | `radar/services/export.py` |
 | Comptes, codes d'accès, inscription | `comptes/` |
 | Gabarits HTML | `templates/` |
 | CSS, JS, polices et Chart.js 4.4.7 auto-hébergés | `static/` |
 | Données extraites du Tome 3 | `data/pnd.json` |
+| Projets et opportunités du Groupe consultatif (gcpnd.gouv.ci, consulté le 1er novembre 2026) | `data/gcpnd.json` |
 | Captures d'écran | `docs/screenshots/` |
 
 ### Pages
@@ -27,6 +29,18 @@ Une réalisation d'**Analytics & Impact Consulting (AIC)**, *From data to impact
   Méthode RADAR, À propos et mentions.
 * **Réservées aux lecteurs disposant d'un code actif** : Mon radar, Explorer complet (pagination, export CSV), fiches action,
   Ma sélection (notes, export Word et CSV), fiche Word d'une action.
+
+### Groupe consultatif pour le financement du PND (GCPND)
+
+* **Projets GCPND** (`/projets-gcpnd/`) : 337 projets publics (207), en partenariat public-privé (98) et privés (32),
+  filtrables par type, pilier, secteur, tranche de coût et mot-clé, avec lien vers la fiche officielle (PDF).
+  Aperçu public limité aux 20 premières lignes (`APERCU_GC`) ; liste complète, fiches projet et export CSV avec un code actif.
+* **Fiche projet** : coût estimatif, paragraphe d'alignement au PND, actions de la matrice du même secteur, autres projets
+  du secteur et lien vers l'inscription et la prise de rendez-vous sur gcpnd.gouv.ci.
+* **Opportunités** (`/opportunites/`) : 66 fiches sectorielles regroupées par pilier et secteur, dont 22 résumées
+  (chiffres clés, segments, incitations, emplois). Intitulés publics, contenu et fiches détaillées avec un code actif.
+* Les pages Pilier et Secteur, les fiches action, Mon radar (classement par profil) et l'accueil reprennent ces données.
+* Les coûts du Groupe consultatif sont des **coûts estimatifs indicatifs**, à ne pas additionner aux coûts programmés de la matrice.
 
 ### Accès par code (vente via Chariow)
 
@@ -48,6 +62,7 @@ pip install -r requirements.txt
 export DEBUG=True                    # Windows : set DEBUG=True
 python manage.py migrate
 python manage.py load_pnd            # charge data/pnd.json (relançable sans doublon)
+python manage.py load_gcpnd          # charge data/gcpnd.json, après load_pnd
 python manage.py init_demo           # admin, compte démo et codes de démonstration
 python manage.py runserver
 ```
@@ -66,8 +81,9 @@ Laissez `CREATE_DEMO=0` en production. Les codes d'accès commerciaux se génèr
 python manage.py test
 ```
 
-Douze tests couvrent le score de pertinence, le formatage des montants, le chargement idempotent des données
-et le parcours d'inscription par code (code invalide, code déjà utilisé, prolongation, exports).
+Dix-sept tests couvrent le score de pertinence, le formatage des montants, le chargement idempotent des données
+(PND et Groupe consultatif), le parcours d'inscription par code (code invalide, code déjà utilisé, prolongation, exports)
+et la liste des projets du Groupe consultatif (filtres, tri, aperçu public, accès aux fiches, export CSV, radar).
 
 ## Déployer sur Render
 
@@ -80,7 +96,7 @@ et le parcours d'inscription par code (code invalide, code déjà utilisé, prol
 4. Si le service a un autre nom que `radar-pnd`, ajuster `CSRF_TRUSTED_ORIGINS`
    (l'hôte Render est de toute façon ajouté automatiquement via `RENDER_EXTERNAL_HOSTNAME`).
    Pour un domaine personnalisé, l'ajouter à `ALLOWED_HOSTS` et `CSRF_TRUSTED_ORIGINS`.
-5. Le build exécute : installation, `collectstatic`, `migrate`, `load_pnd`, puis `init_demo` (avec codes de démonstration
+5. Le build exécute : installation, `collectstatic`, `migrate`, `load_pnd`, `load_gcpnd`, puis `init_demo` (avec codes de démonstration
    si `CREATE_DEMO=1`, sans codes de démonstration si seul `ADMIN_PASSWORD` est défini).
 
 Notes : la base PostgreSQL gratuite de Render expire après 30 jours, passez à une offre payante avant le lancement
@@ -98,12 +114,17 @@ commercial. Le service gratuit se met en veille après 15 minutes d'inactivité 
 | `CHARIOW_URL` | lien « Acheter l'ebook » | vide (lien masqué) |
 | `CONTACT_EMAIL` | adresse affichée en pied de page | `contact@aic-consulting.ci` |
 | `APERCU_LIGNES` | lignes visibles dans l'explorateur public | `15` |
+| `APERCU_GC` | projets du Groupe consultatif visibles dans l'aperçu public | `20` |
 
 ## Mettre à jour les données
 
 Remplacer `data/pnd.json` (même structure), puis `python manage.py load_pnd`. La commande met à jour les enregistrements
 existants et conserve les sélections et notes des utilisateurs. `--supprimer-absents` retire les actions et indicateurs
 absents du nouveau fichier.
+
+Pour le Groupe consultatif : remplacer `data/gcpnd.json`, puis `python manage.py load_gcpnd` (`--supprimer-absents`
+retire les projets et opportunités absents). Les projets sont rattachés aux secteurs par leur code ; les six fiches
+« Économie circulaire » (code `x.xx`) n'ont pas de secteur dans la matrice.
 
 Particularités de la source : l'action `3.07.2.3.2` apparaît deux fois dans le Tome 3 avec des montants différents ; la
 seconde occurrence est conservée sous le code `3.07.2.3.2-bis`. Le produit `5.06.4.0` n'a pas de libellé dans la source.

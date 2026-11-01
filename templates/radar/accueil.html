@@ -88,6 +88,27 @@
 
 <section class="section">
   <div class="wrap">
+    <div class="gc-band">
+      <div class="gc-band-txt">
+        <div class="kicker" style="color:var(--orange)">Groupe consultatif pour le financement du PND</div>
+        <h2>{{ chiffres_gc.nb_projets }} projets et {{ chiffres_gc.nb_opportunites }} opportunités présentés aux investisseurs</h2>
+        <p>Projets publics, partenariats public-privé et projets privés, chacun relié à son secteur du PND et à sa fiche officielle sur gcpnd.gouv.ci.</p>
+        <div class="row" style="margin-top:14px">
+          <a class="btn btn-cta btn-sm" href="{% url 'radar:projets_gc' %}">Voir les projets</a>
+          <a class="btn btn-ondark btn-sm" href="{% url 'radar:opportunites' %}">Opportunités d'investissement</a>
+        </div>
+      </div>
+      <div class="gc-band-figs">
+        {% for k in chiffres_gc.par_type %}<a class="gc-fig" href="{% url 'radar:projets_gc' %}?type={{ k.type }}"><span class="tbadge tb-{{ k.type|lower }}">{{ k.court }}</span><b>{{ k.t|md_nombre }}<small> Md</small></b><span>{{ k.n }} projets · {{ k.nom|lower }}</span></a>{% endfor %}
+        <a class="gc-fig" href="{% url 'radar:opportunites' %}"><span class="tbadge">Opportunités</span><b>{{ chiffres_gc.nb_opportunites }}</b><span>fiches sectorielles d'investissement</span></a>
+      </div>
+      <p class="gc-band-src">Source : Groupe consultatif pour le financement du PND 2026-2030 (gcpnd.gouv.ci). Coûts estimatifs indicatifs.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
     <div class="section-head"><div><div class="kicker">La méthode RADAR</div><h2>Du document public à votre plan d'action</h2></div>
       <a class="btn btn-ghost btn-sm" href="{% url 'radar:methode' %}">Lire la méthode</a></div>
     <div class="steps">

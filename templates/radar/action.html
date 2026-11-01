@@ -79,6 +79,15 @@
         <div class="hbars">{% for v in voisines %}<a class="hbar" style="grid-template-columns:minmax(0,1fr) 80px" href="{{ v.get_absolute_url }}"><span class="nm" title="{{ v.label }}"><span class="code">{{ v.code }}</span> {{ v.label }}</span><span class="v">{{ v.total|md }}</span></a>{% endfor %}</div>
       </section>
       {% endif %}
+      <section class="panel">
+        <div class="kicker" style="margin-bottom:4px">Financer</div>
+        <h3>Projets GCPND du même secteur</h3>
+        {% if projets_gc %}
+        <div class="hbars">{% for v in projets_gc %}<a class="hbar" style="grid-template-columns:minmax(0,1fr) 84px" href="{{ v.get_absolute_url }}"><span class="nm" title="{{ v.titre }}"><span class="tbadge sm tb-{{ v.type|lower }}">{{ v.type_court }}</span> {{ v.titre }}</span><span class="v">{{ v.cout_millions|md_gc }}</span></a>{% endfor %}</div>
+        {% if nb_projets_gc > 5 %}<a class="small" style="display:inline-block;margin-top:10px" href="{% url 'radar:projets_gc' %}?secteur={{ a.secteur.code }}">Les {{ nb_projets_gc }} projets du secteur {{ a.secteur.code }}</a>{% endif %}
+        <p class="note" style="margin:10px 0 0">Projets présentés au Groupe consultatif pour le financement du PND (gcpnd.gouv.ci). Coûts estimatifs indicatifs.</p>
+        {% else %}<p class="muted small" style="margin:0">Aucun projet du Groupe consultatif n'est rattaché au secteur {{ a.secteur.code }}.</p>{% endif %}
+      </section>
     </aside>
   </div>
   <p class="disclaimer">Coût programmé dans la matrice d'actions prioritaires : ce n'est ni un budget voté ni un marché. Source : PND 2026-2030, Tome 3{% if a.page %}, page {{ a.page }}{% endif %}.</p>

@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Action, Effet, Famille, Indicateur, Pilier, Produit, Profil, Secteur, Selection
+from .models import Action, Effet, Famille, Indicateur, Opportunite, Pilier, Produit, Profil, ProjetGC, Secteur, Selection
 
 
 @admin.register(Pilier)
@@ -60,3 +60,20 @@ class SelectionAdmin(admin.ModelAdmin):
     list_display = ("user", "action", "created_at")
     search_fields = ("user__email", "action__code")
     raw_id_fields = ("action",)
+
+
+@admin.register(ProjetGC)
+class ProjetGCAdmin(admin.ModelAdmin):
+    list_display = ("code", "type", "titre", "secteur_code", "secteur_nom", "cout_millions")
+    list_filter = ("type", "pilier")
+    search_fields = ("code", "titre", "secteur_nom")
+    raw_id_fields = ("secteur",)
+    readonly_fields = ("search_text",)
+
+
+@admin.register(Opportunite)
+class OpportuniteAdmin(admin.ModelAdmin):
+    list_display = ("code", "titre", "secteur_code", "secteur_nom", "pilier")
+    list_filter = ("pilier",)
+    search_fields = ("code", "titre", "secteur_nom", "resume")
+    raw_id_fields = ("secteur",)

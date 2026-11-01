@@ -162,3 +162,145 @@ class AccesTests(TestCase):
         pro.refresh_from_db()
         self.assertGreater(pro.expires, fin1)
         self.assertEqual((pro.expires - fin1).days, 366)
+
+
+MINI_GC = {
+    "source": "test",
+    "projets": [
+        {"type": "PUB", "code": "5.01-001", "secteur": "5.01", "secteur_nom": "Infrastructures routières", "pilier": "5",
+         "cout": 250000.0, "titre": "Autoroute de test", "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-001_FR.pdf"},
+        {"type": "PPP", "code": "5.01-002", "secteur": "5.01", "secteur_nom": "Infrastructures routières", "pilier": "5",
+         "cout": None, "titre": "Pont à péage de Bouaké", "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-002_FR.pdf"},
+        {"type": "PRI", "code": "9.99-001", "secteur": "9.99", "secteur_nom": "Secteur inconnu", "pilier": "5",
+         "cout": 1500.0, "titre": "Projet hors matrice", "pdf": ""},
+    ],
+    "opportunites": [
+        {"code": "OP_5.01-001", "secteur": "5.01", "secteur_nom": "Infrastructures routières", "pilier": "5",
+         "titre": "Entretien routier", "pdf": "https://www.gcpnd.gouv.ci/x.pdf", "resume": "Marché en croissance.",
+         "chiffres": ["10 000 km"], "segments": ["Entretien"], "incitations": ["Exonérations"], "emplois": "5 000", "montant": ""},
+        {"code": "OP_x.xx-070", "secteur": "x.xx", "secteur_nom": "Économie circulaire", "pilier": "5",
+         "titre": "Écoconception", "pdf": "https://www.gcpnd.gouv.ci/y.pdf"},
+    ],
+}
+
+
+def charger_mini_gc():
+    charger_mini(None)
+    tmp = Path(tempfile.mkdtemp()) / "gc.json"
+    tmp.write_text(json.dumps(MINI_GC), encoding="utf-8")
+    call_command("load_gcpnd", fichier=str(tmp), verbosity=0, stdout=open("/dev/null", "w"))
+    return tmp
+
+
+class LoadGcpndTests(TestCase):
+    def test_chargement_idempotent_et_rattachement(self):
+        from radar.models import Opportunite, ProjetGC
+
+        f = charger_mini_gc()
+        self.assertEqual(ProjetGC.objects.count(), 3)
+        p = ProjetGC.objects.get(code="5.01-001")
+        self.assertEqual(p.secteur.code, "5.01")
+        self.assertEqual(p.pilier.numero, "5")
+        self.assertEqual(p.cout_millions, 250000.0)
+        self.assertIn("autoroute", p.search_text)
+        self.assertIsNone(ProjetGC.objects.get(code="5.01-002").cout_millions)
+        hors = ProjetGC.objects.get(code="9.99-001")
+        self.assertIsNone(hors.secteur)
+        self.assertEqual(hors.pilier.numero, "5")
+        o = Opportunite.objects.get(code="OP_5.01-001")
+        self.assertTrue(o.detaillee)
+        self.assertEqual(o.chiffres, ["10 000 km"])
+        circ = Opportunite.objects.get(code="OP_x.xx-070")
+        self.assertIsNone(circ.secteur)
+        self.assertFalse(circ.detaillee)
+        call_command("load_gcpnd", fichier=str(f), verbosity=0, stdout=open("/dev/null", "w"))
+        self.assertEqual(ProjetGC.objects.count(), 3)
+        self.assertEqual(Opportunite.objects.count(), 2)
+
+    def test_donnees_reelles(self):
+        from radar.models import Opportunite, ProjetGC
+        from radar.services.gcpnd import chiffres_gc, invalider_cache_gc
+
+        call_command("load_pnd", verbosity=0, stdout=open("/dev/null", "w"))
+        call_command("load_gcpnd", verbosity=0, stdout=open("/dev/null", "w"))
+        self.assertEqual(ProjetGC.objects.count(), 337)
+        self.assertEqual(Opportunite.objects.count(), 66)
+        self.assertFalse(ProjetGC.objects.filter(secteur__isnull=True).exists())
+        self.assertEqual(Opportunite.objects.filter(secteur__isnull=True).count(), 6)  # Économie circulaire
+        invalider_cache_gc()
+        c = {k["type"]: k for k in chiffres_gc()["par_type"]}
+        self.assertEqual((c["PUB"]["n"], c["PPP"]["n"], c["PRI"]["n"]), (207, 98, 32))
+        self.assertEqual(round(c["PUB"]["t"] / 1000), 24125)
+        self.assertEqual(round(c["PPP"]["t"] / 1000), 42576)
+        self.assertEqual(round(c["PRI"]["t"] / 1000), 14808)
+
+
+class ProjetsGcVueTests(TestCase):
+    def setUp(self):
+        from django.core.cache import cache
+
+        cache.clear()
+        charger_mini_gc()
+
+    def _connecter(self):
+        code = CodeAcces.generer(1, CodeAcces.DECOUVERTE, "test")[0]
+        self.client.post("/compte/inscription/", {
+            "code": code.code, "prenom": "Awa", "nom": "Koné", "email": "gc@exemple.ci", "organisation": "",
+            "password1": "Plan-2026-solide", "password2": "Plan-2026-solide",
+        })
+
+    def test_liste_publique_filtres_et_tri(self):
+        r = self.client.get("/projets-gcpnd/")
+        self.assertEqual(r.status_code, 200)
+        self.assertContains(r, "Autoroute de test")
+        self.assertContains(r, "250 Md")
+        self.assertContains(r, "Non défini")
+        self.assertContains(r, "Fiche officielle (PDF)")
+        self.assertContains(r, "gcpnd.gouv.ci). Coûts estimatifs indicatifs.")
+        self.assertNotContains(r, "Exporter en CSV")
+        self.assertEqual([p.code for p in r.context["lignes"]], ["5.01-001", "9.99-001", "5.01-002"])
+        r = self.client.get("/projets-gcpnd/?type=PPP")
+        self.assertEqual([p.code for p in r.context["lignes"]], ["5.01-002"])
+        self.assertEqual({k["type"]: k["n"] for k in r.context["kpis"]}, {"PUB": 1, "PPP": 1, "PRI": 1})
+        r = self.client.get("/projets-gcpnd/?q=peage")
+        self.assertEqual([p.code for p in r.context["lignes"]], ["5.01-002"])
+        r = self.client.get("/projets-gcpnd/?cout=gt1000")  # plus de 1 000 Md : aucun
+        self.assertEqual(r.context["nb"], 0)
+        r = self.client.get("/projets-gcpnd/?cout=50-250&tri=titre")
+        self.assertEqual([p.code for p in r.context["lignes"]], [])
+        r = self.client.get("/projets-gcpnd/?cout=250-1000")
+        self.assertEqual([p.code for p in r.context["lignes"]], ["5.01-001"])
+
+    def test_apercu_public_limite(self):
+        from django.test import override_settings
+        from django.conf import settings
+
+        with override_settings(RADAR={**settings.RADAR, "APERCU_GC": 2}):
+            r = self.client.get("/projets-gcpnd/")
+        self.assertEqual(len(r.context["lignes"]), 2)
+        self.assertContains(r, "Aperçu limité aux 2 premiers projets")
+
+    def test_acces_detail_export(self):
+        for url in ("/projets-gcpnd/5.01-001/", "/opportunites/OP_5.01-001/"):
+            self.assertEqual(self.client.get(url).status_code, 302, url)
+        self.assertEqual(self.client.get("/projets-gcpnd/?format=csv").status_code, 302)
+        r = self.client.get("/opportunites/")
+        self.assertContains(r, "Entretien routier")
+        self.assertNotContains(r, "Marché en croissance.")
+        self.assertContains(self.client.get("/secteur/5.01/"), "Projets du Groupe consultatif")
+        self._connecter()
+        r = self.client.get("/projets-gcpnd/5.01-001/")
+        self.assertContains(r, "inscription-et-prise-de-rendez-vous")
+        self.assertContains(r, "5.01.2.1.1")  # action de la matrice du même secteur
+        self.assertContains(r, "pilier 5 (Infrastructures stratégiques), secteur 5.01 Infrastructures routières")
+        self.assertContains(self.client.get("/opportunites/"), "Marché en croissance.")
+        self.assertEqual(self.client.get("/opportunites/OP_x.xx-070/").status_code, 200)
+        self.assertContains(self.client.get("/action/5.01.2.1.1/"), "Projets GCPND du même secteur")
+        r = self.client.get("/projets-gcpnd/?format=csv")
+        txt = r.content.decode("utf-8-sig")
+        self.assertIn("Autoroute de test", txt)
+        self.assertIn(";250\u00a0000;250;", txt)
+        self.client.post("/radar/", {"type": "btp", "appliquer_preset": "1"})
+        r = self.client.get("/radar/")
+        self.assertContains(r, "Projets et opportunités du Groupe consultatif pour votre profil")
+        self.assertEqual(r.context["gc_resultats"][0][0].code, "5.01-001")

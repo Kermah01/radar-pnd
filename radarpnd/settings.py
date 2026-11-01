@@ -154,6 +154,8 @@ RADAR = {
     "CONTACT_EMAIL": env("CONTACT_EMAIL", default="contact@aic-consulting.ci"),
     # Nombre de lignes visibles dans l'aperçu public de l'explorateur
     "APERCU_LIGNES": int(env("APERCU_LIGNES", default="15")),
+    # Nombre de projets du Groupe consultatif visibles dans l'aperçu public
+    "APERCU_GC": int(env("APERCU_GC", default="20")),
 }
 
 LOGGING = {

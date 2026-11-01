@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load radar_tags %}
+{% block title %}Opportunités d'investissement{% endblock %}
+{% block description %}Les {{ chiffres_gc.nb_opportunites }} fiches d'opportunités d'investissement sectorielles présentées au Groupe consultatif pour le financement du PND 2026-2030.{% endblock %}
+{% block content %}
+<div class="wrap">
+  <div class="page-head">
+    <div class="kicker">Investir · Groupe consultatif pour le financement du PND 2026-2030</div>
+    <h1>Opportunités d'investissement</h1>
+    <p class="lede">{{ chiffres_gc.nb_opportunites }} fiches sectorielles présentent aux investisseurs les marchés à saisir : segments porteurs, chiffres clés, incitations et emplois attendus. {{ chiffres_gc.nb_opportunites_detaillees }} d'entre elles sont résumées ici ; toutes renvoient à leur fiche officielle sur gcpnd.gouv.ci.</p>
+    <nav class="chipnav" aria-label="Piliers" style="margin-top:6px">{% for g in groupes %}<a class="pil-badge" style="--pc:{{ g.pilier.couleur }};font-size:13px;padding:5px 12px" href="#pilier-{{ g.pilier.numero }}">{{ g.pilier.numero }}. {{ g.pilier.nom|truncatechars:42 }} ({{ g.nb }})</a>{% endfor %}</nav>
+  </div>
+
+  {% if not a_acces %}<div class="gate" style="margin:0 0 8px"><p><b>Aperçu : intitulés des fiches.</b> Activez votre accès pour lire les résumés, chiffres clés, segments porteurs et incitations, et relier chaque opportunité aux projets et actions du même secteur.</p><a class="btn btn-sm" href="{% url 'comptes:inscription' %}">Activer mon accès</a></div>{% endif %}
+
+  {% for g in groupes %}
+  <section class="section opp-pilier" id="pilier-{{ g.pilier.numero }}" style="--pc:{{ g.pilier.couleur }}">
+    <h2 class="opp-ph"><span class="bignum">{{ g.pilier.numero }}.</span>{{ g.pilier.nom }} <span class="note">{{ g.nb }} fiche{{ g.nb|pluralize }}</span></h2>
+    {% for s in g.secteurs %}
+    <div class="opp-sec">
+      <h3>{% if s.secteur %}<a href="{{ s.secteur.get_absolute_url }}"><span class="code">{{ s.code }}</span> {{ s.nom }}</a>{% else %}{{ s.nom }} <span class="note">(transversal)</span>{% endif %}</h3>
+      {% if a_acces %}
+        {% if s.detaillees %}<div class="opp-grid">{% for o in s.detaillees %}
+        <article class="opp-card">
+          <div class="code">{{ o.code }}</div>
+          <h4><a href="{{ o.get_absolute_url }}">{{ o.titre }}</a></h4>
+          {% if o.resume %}<p class="small">{{ o.resume }}</p>{% endif %}
+          {% if o.chiffres %}<div class="opp-lab">Chiffres clés</div><ul class="opp-chiffres">{% for c in o.chiffres|slice:":4" %}<li>{{ c }}</li>{% endfor %}</ul>{% endif %}
+          {% if o.segments %}<div class="opp-lab">Segments porteurs</div><div class="chips">{% for c in o.segments %}<span class="pill fam">{{ c }}</span>{% endfor %}</div>{% endif %}
+          {% if o.incitations %}<div class="opp-lab">Incitations</div><ul class="opp-inc">{% for c in o.incitations %}<li>{{ c }}</li>{% endfor %}</ul>{% endif %}
+          {% if o.emplois %}<p class="opp-emplois"><b>Emplois :</b> {{ o.emplois }}</p>{% endif %}
+          <div class="row opp-links"><a class="btn btn-ghost btn-sm" href="{{ o.get_absolute_url }}">Voir la fiche</a>{% if o.pdf_url %}<a class="pdf small" href="{{ o.pdf_url }}" target="_blank" rel="noopener">Fiche officielle (PDF)</a>{% endif %}</div>
+        </article>{% endfor %}</div>{% endif %}
+        {% if s.simples %}<ul class="opp-rows">{% for o in s.simples %}<li><span class="code">{{ o.code }}</span><a class="t" href="{{ o.get_absolute_url }}">{{ o.titre }}</a>{% if o.pdf_url %}<a class="pdf small" href="{{ o.pdf_url }}" target="_blank" rel="noopener">Consulter la fiche officielle</a>{% endif %}</li>{% endfor %}</ul>{% endif %}
+      {% else %}
+        <ul class="opp-rows">{% for o in s.detaillees %}<li><span class="code">{{ o.code }}</span><span class="t">{{ o.titre }}</span><span class="pill t-up">fiche détaillée</span></li>{% endfor %}{% for o in s.simples %}<li><span class="code">{{ o.code }}</span><span class="t">{{ o.titre }}</span></li>{% endfor %}</ul>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </section>
+  {% endfor %}
+  {% include "radar/partials/source_gc.html" with extra="Contenus résumés à partir des fiches d'opportunités : se reporter à la fiche officielle avant toute décision d'investissement." %}
+</div>
+{% endblock %}

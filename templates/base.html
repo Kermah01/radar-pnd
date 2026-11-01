@@ -25,6 +25,8 @@
       <a href="{% url 'radar:radar' %}" {% if u == 'radar' %}aria-current="page"{% endif %}>Mon radar</a>
       <a href="{% url 'radar:explorer' %}" {% if u == 'explorer' or u == 'action' %}aria-current="page"{% endif %}>Explorer</a>
       <a href="{% url 'radar:tendances' %}" {% if u == 'tendances' or u == 'pilier' or u == 'secteur' %}aria-current="page"{% endif %}>Tendances</a>
+      <a href="{% url 'radar:projets_gc' %}" {% if u == 'projets_gc' or u == 'projet_gc' %}aria-current="page"{% endif %}>Projets GCPND</a>
+      <a href="{% url 'radar:opportunites' %}" {% if u == 'opportunites' or u == 'opportunite' %}aria-current="page"{% endif %}>Opportunités</a>
       <a href="{% url 'radar:selection' %}" {% if u == 'selection' %}aria-current="page"{% endif %}>Ma sélection<span class="count" id="sel-count" {% if not nb_selection %}hidden{% endif %}>{{ nb_selection }}</span></a>
       <a href="{% url 'radar:methode' %}" {% if u == 'methode' %}aria-current="page"{% endif %}>Méthode</a>
       <div class="nav-user">
@@ -60,6 +62,8 @@
         <li><a href="{% url 'radar:radar' %}">Mon radar</a></li>
         <li><a href="{% url 'radar:explorer' %}">Explorer la matrice</a></li>
         <li><a href="{% url 'radar:tendances' %}">Tendances</a></li>
+        <li><a href="{% url 'radar:projets_gc' %}">Projets du Groupe consultatif</a></li>
+        <li><a href="{% url 'radar:opportunites' %}">Opportunités d'investissement</a></li>
         <li><a href="{% url 'radar:methode' %}">Méthode RADAR</a></li>
         <li><a href="{% url 'radar:apropos' %}">À propos et mentions</a></li>
       </ul>
@@ -67,6 +71,7 @@
     <div>
       <h4>Source et précautions</h4>
       <p>PND 2026-2030, Tome 3 : Matrice d'actions prioritaires et cadre de résultats (document public). Coûts programmés convertis de millions en milliards de FCFA.</p>
+      <p>Projets et opportunités : Groupe consultatif pour le financement du PND 2026-2030 (gcpnd.gouv.ci). Coûts estimatifs indicatifs.</p>
       <p><strong style="color:#fff">Les coûts programmés ne sont ni des budgets votés ni des marchés.</strong> Le score de pertinence est une aide à la priorisation, pas une probabilité d'obtenir un marché.</p>
     </div>
   </div>

@@ -8,6 +8,7 @@ pip install -r requirements.txt
 python manage.py collectstatic --noinput
 python manage.py migrate --noinput
 python manage.py load_pnd
+python manage.py load_gcpnd
 
 # Comptes administrateur et démonstration (idempotent).
 # CREATE_DEMO=1 crée aussi les codes de démonstration DEMO-DECO-000x / DEMO-PRO0-000x.

@@ -1,6 +1,6 @@
 from django.urls import path
 
-from . import views
+from . import views, views_gc
 
 app_name = "radar"
 
@@ -19,4 +19,8 @@ urlpatterns = [
     path("action/<str:code>/note/", views.selection_note, name="selection_note"),
     path("ma-selection/", views.selection, name="selection"),
     path("ma-selection/export.<str:fmt>", views.export_selection, name="selection_export"),
+    path("projets-gcpnd/", views_gc.projets_gc, name="projets_gc"),
+    path("projets-gcpnd/<str:code>/", views_gc.projet_gc, name="projet_gc"),
+    path("opportunites/", views_gc.opportunites, name="opportunites"),
+    path("opportunites/<str:code>/", views_gc.opportunite, name="opportunite"),
 ]

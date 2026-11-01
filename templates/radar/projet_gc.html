@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load radar_tags %}
+{% block title %}{{ p.code }} {{ p.titre|truncatechars:60 }}{% endblock %}
+{% block content %}
+<div class="band-head" style="--pc:{{ p.couleur }}">
+  <div class="wrap page-head">
+    <div class="kicker"><a href="{% url 'radar:projets_gc' %}">Projets GCPND</a>{% if p.pilier %} / <a href="{{ p.pilier.get_absolute_url }}">Pilier {{ p.pilier.numero }}</a>{% endif %}{% if p.secteur %} / <a href="{{ p.secteur.get_absolute_url }}">{{ p.secteur.code }} {{ p.secteur.nom }}</a>{% endif %}</div>
+    <div class="code" style="font-size:13px;margin-bottom:6px">Projet {{ p.code }} · Groupe consultatif pour le financement du PND 2026-2030</div>
+    <h1 style="font-size:clamp(24px,3.2vw,34px);max-width:32ch">{{ p.titre }}</h1>
+    <div class="row" style="margin-top:12px">
+      {% badge_type p.type True %}
+      {% if p.pilier %}{% badge_pilier p.pilier.numero %}{% endif %}
+      {% if p.secteur %}<a class="pill fam" href="{{ p.secteur.get_absolute_url }}" style="text-decoration:none">{{ p.secteur.code }} {{ p.secteur.nom }}</a>{% endif %}
+    </div>
+    <div class="row" style="margin-top:18px">
+      {% if p.pdf_url %}<a class="btn" href="{{ p.pdf_url }}" target="_blank" rel="noopener">Fiche officielle (PDF)</a>{% endif %}
+      <a class="btn btn-ghost" href="{{ inscription_url }}" target="_blank" rel="noopener">Soumissionner sur gcpnd.gouv.ci</a>
+    </div>
+  </div>
+</div>
+
+<div class="wrap" style="padding-top:24px">
+  <div class="kpis fiche-kpis" style="margin-bottom:20px">
+    <div class="kpi"><b>{% if p.cout_millions is None %}Non défini{% else %}{{ p.cout_millions|md_gc }}{% endif %}</b><span>{% if p.cout_millions is not None %}FCFA, {% endif %}coût estimatif indicatif</span></div>
+    <div class="kpi"><b class="txt">{{ p.get_type_display }}</b><span>catégorie du Groupe consultatif</span></div>
+    <div class="kpi"><b class="txt">{{ p.secteur_code }} {{ p.secteur_nom }}</b><span>secteur du PND{% if p.pilier %}, pilier {{ p.pilier.numero }}{% endif %}</span></div>
+    <div class="kpi"><b>{{ nb_meme_secteur }}</b><span>projet{{ nb_meme_secteur|pluralize }} GCPND dans ce secteur</span></div>
+  </div>
+
+  <div class="grid-side">
+    <div class="stack">
+      <section class="panel" id="alignement">
+        <div class="section-head"><div><div class="kicker" style="margin-bottom:4px">Rédiger</div><h2>Paragraphe d'alignement</h2></div>
+          <button class="btn btn-sm" type="button" data-copy="para">Copier le paragraphe</button></div>
+        <div class="align-box" id="para" data-text="{{ paragraphe }}">{{ paragraphe }}</div>
+        <p class="note" style="margin-top:10px">Remplacez le texte entre crochets par la contribution propre de votre offre ou de votre investissement. Vérifiez le coût et le périmètre du projet sur la fiche officielle avant tout dépôt.</p>
+      </section>
+
+    </div>
+
+    <aside class="stack">
+      <section class="panel">
+        <div class="kicker" style="margin-bottom:4px">Se positionner</div>
+        <h3>Soumissionner</h3>
+        <p class="small">Le site du Groupe consultatif publie la fiche de chaque projet. Partenaires techniques et financiers, investisseurs et opérateurs y expriment leur intérêt en s'inscrivant et en prenant rendez-vous avec les porteurs.</p>
+        <ol class="steps-mini">
+          <li>Lire la <a href="{{ p.pdf_url }}" target="_blank" rel="noopener">fiche officielle du projet {{ p.code }}</a>.</li>
+          <li>S'inscrire et demander un rendez-vous sur <a href="{{ inscription_url }}" target="_blank" rel="noopener">gcpnd.gouv.ci</a>.</li>
+          <li>Citer le code {{ p.code }} et le secteur {{ p.secteur_code }} du PND dans vos échanges.</li>
+        </ol>
+      </section>
+      {% if autres %}
+      <section class="panel">
+        <h3>Autres projets du secteur</h3>
+        <div class="hbars">{% for v in autres %}<a class="hbar" style="grid-template-columns:minmax(0,1fr) 84px" href="{{ v.get_absolute_url }}"><span class="nm" title="{{ v.titre }}"><span class="tbadge sm tb-{{ v.type|lower }}">{{ v.type_court }}</span> {{ v.titre }}</span><span class="v">{{ v.cout_millions|md_gc }}</span></a>{% endfor %}</div>
+        {% if nb_meme_secteur > autres|length|add:1 %}<a class="small" style="display:inline-block;margin-top:10px" href="{% url 'radar:projets_gc' %}?secteur={{ p.secteur_code }}">Les {{ nb_meme_secteur }} projets du secteur</a>{% endif %}
+      </section>
+      {% endif %}
+      {% if opportunites %}
+      <section class="panel">
+        <h3>Opportunités d'investissement du secteur</h3>
+        <ul class="opp-list">{% for o in opportunites %}<li style="--pc:{{ o.couleur }}"><a href="{{ o.get_absolute_url }}">{{ o.titre }}</a></li>{% endfor %}</ul>
+      </section>
+      {% endif %}
+    </aside>
+  </div>
+  <section class="section">
+        <div class="section-head"><div><h2 style="font-size:19px">Actions de la matrice du même secteur</h2><p class="note" style="margin:4px 0 0">Les {{ actions|length }} actions les plus dotées du secteur {{ p.secteur_code }} sur {{ nb_actions }}, coûts programmés 2026-2030.</p></div>
+          {% if p.secteur %}<a class="btn btn-ghost btn-sm" href="{% url 'radar:explorer' %}?secteur={{ p.secteur.code }}">Toutes les actions du secteur</a>{% endif %}</div>
+        {% if actions %}{% include "radar/partials/table_actions.html" with lignes=actions %}
+        {% else %}<p class="muted">Ce projet n'est rattaché à aucun secteur de la matrice d'actions prioritaires.</p>{% endif %}
+      </section>
+  {% include "radar/partials/source_gc.html" with extra="Le coût estimatif provient de la fiche projet ; il ne se compare pas directement aux coûts programmés de la matrice (Tome 3)." %}
+</div>
+{% endblock %}

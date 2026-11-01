@@ -31,6 +31,23 @@ def nombre(v, decimales=0):
 
 
 @register.filter
+def md_gc(v):
+    """Coût estimatif du Groupe consultatif -> '34,4 Md' ou 'Non défini'."""
+    from ..services.gcpnd import md_gc as _md_gc
+
+    return _md_gc(v)
+
+
+@register.simple_tag
+def badge_type(code, long=False):
+    """Badge du type de projet du Groupe consultatif (Public, PPP, Privé)."""
+    from ..models import ProjetGC
+
+    txt = dict(ProjetGC.TYPES).get(code, code) if long else ProjetGC.TYPES_COURTS.get(code, code)
+    return format_html('<span class="tbadge tb-{}">{}</span>', code.lower(), txt)
+
+
+@register.filter
 def multip(v):
     return formatage.multiplicateur(v)
 

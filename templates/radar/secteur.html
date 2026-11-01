@@ -35,6 +35,8 @@
     {% if not a_acces %}<div class="gate"><p>Aperçu limité aux cinq premières actions. Activez votre accès pour les fiches détaillées, la sélection et les exports Word.</p><a class="btn btn-sm" href="{% url 'comptes:inscription' %}">Activer mon accès</a></div>{% endif %}
   </section>
 
+  {% with filtre="secteur="|add:secteur.code %}{% include "radar/partials/bloc_gc.html" with portee="du secteur" cible="à ce secteur" %}{% endwith %}
+
   <div class="grid-2">
     <section class="panel">
       <div class="section-head"><h2>Indicateurs du résultat sectoriel</h2><span class="note">{{ ind_resultat|length }}</span></div>

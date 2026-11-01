@@ -1,0 +1,4352 @@
+{
+ "source": "Site du Groupe consultatif pour le financement du PND 2026-2030 (gcpnd.gouv.ci), consulté le 1er novembre 2026",
+ "projets": [
+  {
+   "type": "PUB",
+   "code": "1.02-001",
+   "secteur": "1.02",
+   "secteur_nom": "Défense",
+   "pilier": "1",
+   "cout": 34375.0,
+   "titre": "Construction et équipement de l'académie internationale de lutte contre le terrorisme (AILTC) - phase 2",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/1.02-001_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "1.02-004",
+   "secteur": "1.02",
+   "secteur_nom": "Défense",
+   "pilier": "1",
+   "cout": 4000.0,
+   "titre": "Construction et équipement d'un centre d'essais et d'analyses du matériel militaire",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/1.02-004_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "1.03-005",
+   "secteur": "1.03",
+   "secteur_nom": "Sécurité et protection civile",
+   "pilier": "1",
+   "cout": 60000.0,
+   "titre": "Construire l'hôpital de la police à Jacqueville",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/1.03-005_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "1.03-009",
+   "secteur": "1.03",
+   "secteur_nom": "Sécurité et protection civile",
+   "pilier": "1",
+   "cout": 20000.0,
+   "titre": "Déploiement et renforcement des capacités opérationnelles de la police technique et scientifique",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/1.03-009_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "2.01-002",
+   "secteur": "2.01",
+   "secteur_nom": "Agriculture",
+   "pilier": "2",
+   "cout": 350000.0,
+   "titre": "Projet de pôle Agro-Industriel dans le Nord ouest de la Côte d'Ivoire",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/2.01-002_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "2.01-004",
+   "secteur": "2.01",
+   "secteur_nom": "Agriculture",
+   "pilier": "2",
+   "cout": 300000.0,
+   "titre": "Projet de pôle Agro-Industriel dans le centre ouest de la Côte d'Ivoire (Agro-Pôle centre ouest)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/2.01-004_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "2.01-012",
+   "secteur": "2.01",
+   "secteur_nom": "Agriculture",
+   "pilier": "2",
+   "cout": 200000.0,
+   "titre": "Modernisation et renforcement du système national de statistiques agricoles (SNSA)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/2.01-012_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "2.01-015",
+   "secteur": "2.01",
+   "secteur_nom": "Agriculture",
+   "pilier": "2",
+   "cout": 100000.0,
+   "titre": "Projet de développement du sous secteur Semencier",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/2.01-015_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "2.01-017",
+   "secteur": "2.01",
+   "secteur_nom": "Agriculture",
+   "pilier": "2",
+   "cout": 80000.0,
+   "titre": "Projet d'appui à la réduction des pertes Post récolte",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/2.01-017_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "2.01-032",
+   "secteur": "2.01",
+   "secteur_nom": "Agriculture",
+   "pilier": "2",
+   "cout": 274470.0,
+   "titre": "Projet de pôle Agro-Industriel dans le Nord est de la Côte d'Ivoire",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/2.01-032_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "2.02-008",
+   "secteur": "2.02",
+   "secteur_nom": "Ressources animales et halieutiques",
+   "pilier": "2",
+   "cout": 35090.0,
+   "titre": "Construction et équipement de nouveaux débarcadères",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/2.02-008_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "2.02-009",
+   "secteur": "2.02",
+   "secteur_nom": "Ressources animales et halieutiques",
+   "pilier": "2",
+   "cout": 76852.0,
+   "titre": "Programme de développement de systèmes de productions animales Resilients et d'amélioration des moyens d'existences des femmes et des jeunes dans le secteur de l'élevage",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/2.02-009_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "2.02-012",
+   "secteur": "2.02",
+   "secteur_nom": "Ressources animales et halieutiques",
+   "pilier": "2",
+   "cout": 94763.0,
+   "titre": "Programme national de développement durable de l'Aquaculture (PNDA - économie bleue)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/2.02-012_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.06-003",
+   "secteur": "3.06",
+   "secteur_nom": "Artisanat",
+   "pilier": "3",
+   "cout": 51000.0,
+   "titre": "Mise en place de plateforme numérique pour le développement et la promotion de l'artisanat (PNDPA)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.06-003_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.06-004",
+   "secteur": "3.06",
+   "secteur_nom": "Artisanat",
+   "pilier": "3",
+   "cout": 39000.0,
+   "titre": "Construction de 8 marchés métaux mécaniques/bois avec centre de ressource professionnelle",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.06-004_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.05-002",
+   "secteur": "3.05",
+   "secteur_nom": "Commerce",
+   "pilier": "3",
+   "cout": 25254.0,
+   "titre": "Construction des marchés de gros man, Korhogo, Divo et Bongouanou (phase 2)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.05-002_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.05-003",
+   "secteur": "3.05",
+   "secteur_nom": "Commerce",
+   "pilier": "3",
+   "cout": 67186.0,
+   "titre": "Construction de 29 marches relais des marches de gros",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.05-003_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.05-004",
+   "secteur": "3.05",
+   "secteur_nom": "Commerce",
+   "pilier": "3",
+   "cout": 35096.0,
+   "titre": "Construction de dix (10) marchés de détail de quartier dans le district d'Abidjan",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.05-004_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.05-005",
+   "secteur": "3.05",
+   "secteur_nom": "Commerce",
+   "pilier": "3",
+   "cout": 115656.0,
+   "titre": "Reconstruction de dix-huit (18) marches de détail incendies",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.05-005_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.05-006",
+   "secteur": "3.05",
+   "secteur_nom": "Commerce",
+   "pilier": "3",
+   "cout": 45093.0,
+   "titre": "Construction et équipement de 104 marchés de proximité",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.05-006_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.07-002",
+   "secteur": "3.07",
+   "secteur_nom": "Culture et francophonie",
+   "pilier": "3",
+   "cout": 32500.0,
+   "titre": "Projet de rénovation et équipement de la bibliothèque nationale et des bibliothèques et centres de lecture communale",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.07-002_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.07-003",
+   "secteur": "3.07",
+   "secteur_nom": "Culture et francophonie",
+   "pilier": "3",
+   "cout": 50000.0,
+   "titre": "Projet de renforcement des infrastructures Museales : nouveau musée de Côte d'Ivoire",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.07-003_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.07-007",
+   "secteur": "3.07",
+   "secteur_nom": "Culture et francophonie",
+   "pilier": "3",
+   "cout": 10000.0,
+   "titre": "Projet de construction de l'institut dédié aux métiers des ICC de Yamoussoukro",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.07-007_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.03-001",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 38400.0,
+   "titre": "Projet d'édification de l'infrastructure Géo scientifique de Côte d'Ivoire",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-001_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.03-067",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 461344.0,
+   "titre": "Programme national d'amélioration de l'efficacité énergétique du parc national d'éclairage public",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-067_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.03-068",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 166503.0,
+   "titre": "Programme électricité pour tous (PEPT)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-068_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.03-069",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 264000.0,
+   "titre": "Programme d'accès à l'électricité et au numérique dans le Nord et le nord-ouest de la Côte d'Ivoire (NEDA) / phase II",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-069_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.03-070",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 57710.0,
+   "titre": "Construction du poste 225/90 KV de Minignan",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-070_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.03-072",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 782400.0,
+   "titre": "Programme de construction d'ouvrages du système électrique",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-072_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.03-074",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 98000.0,
+   "titre": "Programme pour le renforcement du réseau électrique",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-074_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.03-075",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 4830.0,
+   "titre": "Construction de deux (02) câbles 90 KV entre Bia sud et Vridi",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-075_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.03-076",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 9780.0,
+   "titre": "Construction de la ligne 90 KV Yamoussoukro 1-Yamoussoukro 2",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-076_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.03-077",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 16480.0,
+   "titre": "Construction d'un poste 90 KV à Bocanda en antenne sur le poste de Bouake 2",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-077_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.03-078",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 11080.0,
+   "titre": "Construction du poste 90 KV d'Issia",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-078_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.03-079",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 54430.0,
+   "titre": "Construction d'un poste 400/225 KV à grand-Lahou",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-079_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.03-080",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 26690.0,
+   "titre": "Construction d'une ligne 225 KV Louga 2 - grand-Lahou",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-080_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.03-081",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 80390.0,
+   "titre": "Projet de réalisation de la centrale solaire de Minignan (80 MW)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-081_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.03-093",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 285000.0,
+   "titre": "Projet de construction et mise en service de la centrale thermique sur barge à Azito (230 MW)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-093_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.03-096",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 1047020.0,
+   "titre": "Programme national d'extension du réseau (PRONEX)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-096_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.02-001",
+   "secteur": "3.02",
+   "secteur_nom": "Promotion des petites et moyennes entreprises",
+   "pilier": "3",
+   "cout": 52400.0,
+   "titre": "Appui à l'Operationnalisation du GUDE PME/projet Choose Africa 2",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.02-001_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.02-002",
+   "secteur": "3.02",
+   "secteur_nom": "Promotion des petites et moyennes entreprises",
+   "pilier": "3",
+   "cout": 10780.0,
+   "titre": "Programme performance PME",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.02-002_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.02-003",
+   "secteur": "3.02",
+   "secteur_nom": "Promotion des petites et moyennes entreprises",
+   "pilier": "3",
+   "cout": 253000.0,
+   "titre": "Mettre en place un complexe de Labellisation Multisectoriel (univers des métiers)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.02-003_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "3.02-004",
+   "secteur": "3.02",
+   "secteur_nom": "Promotion des petites et moyennes entreprises",
+   "pilier": "3",
+   "cout": 22300.0,
+   "titre": "Mise en place d'un Cluster maintenance automobile digitale",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.02-004_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.01-001",
+   "secteur": "4.01",
+   "secteur_nom": "Éducation nationale",
+   "pilier": "4",
+   "cout": 1180655.0,
+   "titre": "Construction et équipement de 1552 collèges à base 2 et base 4",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.01-001_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.01-002",
+   "secteur": "4.01",
+   "secteur_nom": "Éducation nationale",
+   "pilier": "4",
+   "cout": 1186048.0,
+   "titre": "Construction et équipement de 24 562 salles de classe du pré primaire et du primaire",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.01-002_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.01-013",
+   "secteur": "4.01",
+   "secteur_nom": "Éducation nationale",
+   "pilier": "4",
+   "cout": 89900.0,
+   "titre": "Construction et équipement de 4 485 salles de classe du préscolaire",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.01-013_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.01-014",
+   "secteur": "4.01",
+   "secteur_nom": "Éducation nationale",
+   "pilier": "4",
+   "cout": 273744.0,
+   "titre": "Projet de reconstruction et d'équipement de 5 669 salles de classe en matériaux précaires",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.01-014_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.06-001",
+   "secteur": "4.06",
+   "secteur_nom": "Emploi et travail",
+   "pilier": "4",
+   "cout": 187416.0,
+   "titre": "Programme d'investissement en protection sociale (PIPS) dans les secteurs agricole et informel en Côte d'Ivoire",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.06-001_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.06-005",
+   "secteur": "4.06",
+   "secteur_nom": "Emploi et travail",
+   "pilier": "4",
+   "cout": 45132.0,
+   "titre": "Projet d'appui à l'Operationnalisation et à l'extension du système d'observation et de suivi du travail des enfants (PAOE-SOSTECI 2 - 2027-2030)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.06-005_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.03-002",
+   "secteur": "4.03",
+   "secteur_nom": "Enseignement supérieur et recherche scientifique",
+   "pilier": "4",
+   "cout": 201433.0,
+   "titre": "Construction de la première phase de la ville universitaire d'Adiaké",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.03-002_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.03-003",
+   "secteur": "4.03",
+   "secteur_nom": "Enseignement supérieur et recherche scientifique",
+   "pilier": "4",
+   "cout": 126852.0,
+   "titre": "Construction et équipement de l'université de Dabou",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.03-003_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.03-004",
+   "secteur": "4.03",
+   "secteur_nom": "Enseignement supérieur et recherche scientifique",
+   "pilier": "4",
+   "cout": 121412.0,
+   "titre": "Construction de la 1ère phase de l'université de Daoukro",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.03-004_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.03-005",
+   "secteur": "4.03",
+   "secteur_nom": "Enseignement supérieur et recherche scientifique",
+   "pilier": "4",
+   "cout": 125375.0,
+   "titre": "Construction de la 1ère phase de l'université de Abengourou",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.03-005_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.03-008",
+   "secteur": "4.03",
+   "secteur_nom": "Enseignement supérieur et recherche scientifique",
+   "pilier": "4",
+   "cout": 125000.0,
+   "titre": "Construction de trois instituts universitaires de technologies",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.03-008_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.03-009",
+   "secteur": "4.03",
+   "secteur_nom": "Enseignement supérieur et recherche scientifique",
+   "pilier": "4",
+   "cout": 185996.0,
+   "titre": "Construction et équipement de l'université de Bouaké la neuve (1ère phase)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.03-009_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.03-012",
+   "secteur": "4.03",
+   "secteur_nom": "Enseignement supérieur et recherche scientifique",
+   "pilier": "4",
+   "cout": 185291.0,
+   "titre": "Construction et équipement de nouvelles résidences de 2 000 lits au CROU Bouake",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.03-012_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.03-013",
+   "secteur": "4.03",
+   "secteur_nom": "Enseignement supérieur et recherche scientifique",
+   "pilier": "4",
+   "cout": 50000.0,
+   "titre": "Construction et équipement de nouvelles résidences de 500 lits au CROU Abidjan-1",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.03-013_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.03-016",
+   "secteur": "4.03",
+   "secteur_nom": "Enseignement supérieur et recherche scientifique",
+   "pilier": "4",
+   "cout": 10588.0,
+   "titre": "Mise en œuvre des trois programmes nationaux de recherche (PNR)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.03-016_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.03-018",
+   "secteur": "4.03",
+   "secteur_nom": "Enseignement supérieur et recherche scientifique",
+   "pilier": "4",
+   "cout": 52000.0,
+   "titre": "Extension des infrastructures et équipement de l'institut pasteur de Côte d'Ivoire (IPCI)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.03-018_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.02-001",
+   "secteur": "4.02",
+   "secteur_nom": "Enseignement technique et formation professionnelle",
+   "pilier": "4",
+   "cout": 120000.0,
+   "titre": "Construction de 10 lycées professionnels",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.02-001_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.02-002",
+   "secteur": "4.02",
+   "secteur_nom": "Enseignement technique et formation professionnelle",
+   "pilier": "4",
+   "cout": 60000.0,
+   "titre": "Construction et équipement de 04 lycées d'enseignement techniques et professionnels",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.02-002_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.02-003",
+   "secteur": "4.02",
+   "secteur_nom": "Enseignement technique et formation professionnelle",
+   "pilier": "4",
+   "cout": 160000.0,
+   "titre": "Construction et équipement de 20 collèges d'enseignement technique et professionnel",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.02-003_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.02-009",
+   "secteur": "4.02",
+   "secteur_nom": "Enseignement technique et formation professionnelle",
+   "pilier": "4",
+   "cout": 175524.0,
+   "titre": "Réhabilitation et équipement de 33 établissements d'enseignement technique et de formation professionnelle",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.02-009_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.02-011",
+   "secteur": "4.02",
+   "secteur_nom": "Enseignement technique et formation professionnelle",
+   "pilier": "4",
+   "cout": 140000.0,
+   "titre": "Mise en œuvre de l'école de la seconde chance",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.02-011_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.11-001",
+   "secteur": "4.11",
+   "secteur_nom": "Genre, enfant et égalité des sexes",
+   "pilier": "4",
+   "cout": 75000.0,
+   "titre": "Construction et équipement de 50 institutions de formation et d'éducation féminine (IFEF)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.11-001_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.11-007",
+   "secteur": "4.11",
+   "secteur_nom": "Genre, enfant et égalité des sexes",
+   "pilier": "4",
+   "cout": 29261.0,
+   "titre": "Projet de développement des capacités économiques féminines en vue de leur Autonomisation (DICEFA)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.11-007_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.10-003",
+   "secteur": "4.10",
+   "secteur_nom": "Inclusion sociale",
+   "pilier": "4",
+   "cout": 383773.0,
+   "titre": "Programme Multisectoriel d'appui au système national des filets sociaux (PAFS)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.10-003_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.07-001",
+   "secteur": "4.07",
+   "secteur_nom": "Jeunesse",
+   "pilier": "4",
+   "cout": 203328.0,
+   "titre": "Programme de développement des compétences au profit de 635 774 jeunes",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.07-001_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.07-006",
+   "secteur": "4.07",
+   "secteur_nom": "Jeunesse",
+   "pilier": "4",
+   "cout": 284819.0,
+   "titre": "Programme Entreprenariat (AGR, micros et petites entreprises et projets Structurants, avec, THIMO) au profit de 375 938 jeunes",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.07-006_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.07-009",
+   "secteur": "4.07",
+   "secteur_nom": "Jeunesse",
+   "pilier": "4",
+   "cout": 10000.0,
+   "titre": "Projet de soutien à l'innovation Entrepreneuriale des jeunes en Côte d'Ivoire (PSIEJ-CI)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.07-009_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.04-001",
+   "secteur": "4.04",
+   "secteur_nom": "Santé",
+   "pilier": "4",
+   "cout": 300000.0,
+   "titre": "Construction et équipement de 1 200 établissements sanitaires de premier contact",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.04-001_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.04-002",
+   "secteur": "4.04",
+   "secteur_nom": "Santé",
+   "pilier": "4",
+   "cout": 105000.0,
+   "titre": "Réhabilitation et équipement de 1 000 établissements sanitaires de premier contact",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.04-002_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.04-003",
+   "secteur": "4.04",
+   "secteur_nom": "Santé",
+   "pilier": "4",
+   "cout": 187500.0,
+   "titre": "Réhabilitation et mise aux normes de 25 hôpitaux généraux (hg)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.04-003_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.04-004",
+   "secteur": "4.04",
+   "secteur_nom": "Santé",
+   "pilier": "4",
+   "cout": 105000.0,
+   "titre": "Réhabilitation et mise aux normes de 10 centres hospitaliers régionaux",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.04-004_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.04-009",
+   "secteur": "4.04",
+   "secteur_nom": "Santé",
+   "pilier": "4",
+   "cout": 107000.0,
+   "titre": "Réhabilitation, extension et équipement du CHU de Treichville",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.04-009_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.04-013",
+   "secteur": "4.04",
+   "secteur_nom": "Santé",
+   "pilier": "4",
+   "cout": 380000.0,
+   "titre": "Construction de 04 centres hospitaliers universitaires (CHU)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.04-013_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.04-014",
+   "secteur": "4.04",
+   "secteur_nom": "Santé",
+   "pilier": "4",
+   "cout": 150000.0,
+   "titre": "Construction de l'hôpital international de Yamoussoukro",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.04-014_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.04-015",
+   "secteur": "4.04",
+   "secteur_nom": "Santé",
+   "pilier": "4",
+   "cout": 175500.0,
+   "titre": "Construction de 08 hôpitaux généraux",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.04-015_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.04-016",
+   "secteur": "4.04",
+   "secteur_nom": "Santé",
+   "pilier": "4",
+   "cout": 371000.0,
+   "titre": "Construction de 07 centres hospitaliers régionaux",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.04-016_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.04-030",
+   "secteur": "4.04",
+   "secteur_nom": "Santé",
+   "pilier": "4",
+   "cout": 33364.0,
+   "titre": "Projet d'implémentation du réseau de soins de proximité (Télémédecine)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.04-030_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.04-036",
+   "secteur": "4.04",
+   "secteur_nom": "Santé",
+   "pilier": "4",
+   "cout": 50000.0,
+   "titre": "Projet d'accélération de la digitalisation hospitalière et des services de santé (PADHSS)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.04-036_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.12-002",
+   "secteur": "4.12",
+   "secteur_nom": "Sport",
+   "pilier": "4",
+   "cout": 70000.0,
+   "titre": "Programme de réhabilitations et de construction des infrastructures sportives (PRECIS)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.12-002_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "4.12-005",
+   "secteur": "4.12",
+   "secteur_nom": "Sport",
+   "pilier": "4",
+   "cout": 30583.0,
+   "titre": "Construction et exploitation du lycée sport-études de Bouaké",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.12-005_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.09-005",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "cout": 135660.0,
+   "titre": "Système de collecte et de transfert des eaux usées du Nord de la lagune vers les communes du sud, 1ère tranche : STEP d'Adjahui",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.09-005_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.09-006",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "cout": 128475.0,
+   "titre": "Projet d'aménagement du grand Talweg d'Abobo-Nord",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.09-006_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.09-007",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "cout": 162126.0,
+   "titre": "Projet de construction d'ouvrages de drainage dans des chefs-lieux de région et certaines villes secondaires",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.09-007_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.09-009",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "cout": 160000.0,
+   "titre": "Projet de réhabilitation et d'extension du réseau d'eaux usées à Abidjan et à l'intérieur du pays",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.09-009_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.09-026",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "cout": 50000.0,
+   "titre": "Concevoir, financer, construire et exploiter un Éco-Centre de traitement des déchets dangereux dans le district autonome d'Abidjan",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.09-026_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.09-027",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "cout": 20000.0,
+   "titre": "Modernisation et gestion intercommunale des déchets solides ménagers dans la zone Nord (Korhogo, Sinematiali, Ferkessedougou, Ouangolodougou)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.09-027_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.09-028",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "cout": 25000.0,
+   "titre": "Modernisation et gestion intercommunale des déchets solides ménagers dans la zone centre (Toumodi, Yakro, Tiebissou, Djebonoua, Bouake)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.09-028_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.09-029",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "cout": 38080.0,
+   "titre": "Subventionner 100 000 ménages pour la construction de latrines améliorées dans les 31 régions et districts",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.09-029_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.09-030",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "cout": 39162.0,
+   "titre": "Projet d'amélioration de la gestion des matières de vidange (PAGEMV phase 2) dans 12 chefs-lieux de région",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.09-030_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.09-031",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "cout": 160000.0,
+   "titre": "Projet de réalisation d'ouvrages primaires de drainage dans le district autonome d'Abidjan",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.09-031_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.06-002",
+   "secteur": "5.06",
+   "secteur_nom": "Eaux et forêts",
+   "pilier": "5",
+   "cout": 29520.0,
+   "titre": "Projet de production de semences et plants forestiers améliorés",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.06-002_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.03-005",
+   "secteur": "5.03",
+   "secteur_nom": "Économie numérique et poste",
+   "pilier": "5",
+   "cout": 7556.0,
+   "titre": "Programme national de connectivité rurale (PNCR) 500 localités",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.03-005_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.03-008",
+   "secteur": "5.03",
+   "secteur_nom": "Économie numérique et poste",
+   "pilier": "5",
+   "cout": 89780.0,
+   "titre": "Projet d'accélération du digital en Côte d'Ivoire (PAD-CI)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.03-008_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.03-012",
+   "secteur": "5.03",
+   "secteur_nom": "Économie numérique et poste",
+   "pilier": "5",
+   "cout": 50000.0,
+   "titre": "Poursuite de l'aménagement et du développement de la ZBTIC de grand-Bassam",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.03-012_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.03-022",
+   "secteur": "5.03",
+   "secteur_nom": "Économie numérique et poste",
+   "pilier": "5",
+   "cout": 70000.0,
+   "titre": "Construction d'une Technopole pour les entreprises numériques à la ZBTIC de grand-Bassam",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.03-022_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.03-023",
+   "secteur": "5.03",
+   "secteur_nom": "Économie numérique et poste",
+   "pilier": "5",
+   "cout": 57184.0,
+   "titre": "Construction d'un centre de digitalisation (digital Factory) des services de l'administration",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.03-023_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.03-025",
+   "secteur": "5.03",
+   "secteur_nom": "Économie numérique et poste",
+   "pilier": "5",
+   "cout": 42362.0,
+   "titre": "Mise en place d'un Datacenter national",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.03-025_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.05-001",
+   "secteur": "5.05",
+   "secteur_nom": "Environnement et développement durable",
+   "pilier": "5",
+   "cout": 19500.0,
+   "titre": "Promotion des modèles Agroforestiers durables en zone de savane (PROMAS)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.05-001_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.05-003",
+   "secteur": "5.05",
+   "secteur_nom": "Environnement et développement durable",
+   "pilier": "5",
+   "cout": 146877.0,
+   "titre": "Programme de lutte contre les changements climatiques dans le Nexus énergie-eau-forêt-agriculture au centre et au Nord",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.05-003_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.05-006",
+   "secteur": "5.05",
+   "secteur_nom": "Environnement et développement durable",
+   "pilier": "5",
+   "cout": 11371.0,
+   "titre": "Programme national de reboisement des Mangroves et de restauration des tourbières",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.05-006_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.08-003",
+   "secteur": "5.08",
+   "secteur_nom": "Hydraulique",
+   "pilier": "5",
+   "cout": 423780.0,
+   "titre": "Fourniture et pose de 14 126 pompes à motricité solaire ou humaine pour des localités ou campements",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.08-003_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.08-004",
+   "secteur": "5.08",
+   "secteur_nom": "Hydraulique",
+   "pilier": "5",
+   "cout": 225600.0,
+   "titre": "Transformation de 564 systèmes d'hydraulique villageoise améliorée en systèmes d'hydraulique urbaine",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.08-004_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.08-005",
+   "secteur": "5.08",
+   "secteur_nom": "Hydraulique",
+   "pilier": "5",
+   "cout": 648000.0,
+   "titre": "Construction de 810 systèmes Multi-Villages y compris branchements pour le raccordement de 5 000 villages",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.08-005_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.08-006",
+   "secteur": "5.08",
+   "secteur_nom": "Hydraulique",
+   "pilier": "5",
+   "cout": 220000.0,
+   "titre": "Projet d'alimentation en eau potable de 549 localités de plus de 4 000 habitants",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.08-006_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.08-008",
+   "secteur": "5.08",
+   "secteur_nom": "Hydraulique",
+   "pilier": "5",
+   "cout": 33000.0,
+   "titre": "Projet de réhabilitation de 27 retenues d'eau et seuils destines à l'adduction en eau potable",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.08-008_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.08-009",
+   "secteur": "5.08",
+   "secteur_nom": "Hydraulique",
+   "pilier": "5",
+   "cout": 160000.0,
+   "titre": "Optimisation des réseaux d'Abidjan, Yamoussoukro et Bouaké (capteurs, logiciel de supervision et de gestion en temps réel)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.08-009_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-001",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 454750.0,
+   "titre": "Aménagement et bitumage de l'autoroute Yamoussoukro-Bouaflé-Daloa",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-001_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-002",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 187250.0,
+   "titre": "Aménagement et bitumage de l'autoroute Thomasset-Adzopé",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-002_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-003",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 379850.0,
+   "titre": "Aménagement et bitumage de l'autoroute Bingerville-Aboisso-frontière Ghana",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-003_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-004",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 117700.0,
+   "titre": "Aménagement et bitumage de l'autoroute Ferké-Ouangolo",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-004_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-005",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 93625.0,
+   "titre": "Aménagement et bitumage de l'autoroute de contournement de la ville de Yamoussoukro",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-005_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-007",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 39270.0,
+   "titre": "Aménagement et bitumage de la route Koun Fao-Transua-frontière Ghana",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-007_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-008",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 26950.0,
+   "titre": "Aménagement et bitumage de la route Tanda-Assuéfry-frontière Ghana",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-008_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-009",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 53928.0,
+   "titre": "Aménagement et bitumage de la route Groumania-Sandégué",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-009_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-010",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 51681.0,
+   "titre": "Aménagement et bitumage de la route Satama Sokoura-Bassawa-Groumania",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-010_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-011",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 73402.0,
+   "titre": "Aménagement et bitumage de la route Tiémé-Séguelon-Morondo",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-011_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-012",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 26215.0,
+   "titre": "Aménagement et bitumage de la route Séguélon-Madinani (B317)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-012_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-013",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 101864.0,
+   "titre": "Aménagement et bitumage de la route Sassandra-Gueyo-Gagnoa",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-013_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-014",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 52360.0,
+   "titre": "Aménagement et bitumage de la route Gueyo-Soubré",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-014_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-015",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 32207.0,
+   "titre": "Aménagement et bitumage de la route Goumere-Assuefry-Transua",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-015_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-016",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 26950.0,
+   "titre": "Aménagement et bitumage de la route Tanda-Assuéfry-frontière Ghana (tronçon 2)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-016_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-017",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 14980.0,
+   "titre": "Aménagement et bitumage de la route Niamasso-Sirana",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-017_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-018",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 73150.0,
+   "titre": "Aménagement et bitumage de la route Danané-Sipilou (B208)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-018_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-019",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 18480.0,
+   "titre": "Aménagement et bitumage de la route Tougbo-Bavé",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-019_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-021",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 16940.0,
+   "titre": "Aménagement et bitumage de la route Ouaninou-Santa-frontière Guinée",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-021_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-022",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 35420.0,
+   "titre": "Aménagement et bitumage de la route Bako-Booko",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-022_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-023",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 15400.0,
+   "titre": "Aménagement et bitumage de la route Booko-Manhandougou",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-023_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-024",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 56924.0,
+   "titre": "Aménagement et bitumage de la route Yaga-Gansé",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-024_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-025",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 47187.0,
+   "titre": "Aménagement et bitumage de la route ganse-Dabakala",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-025_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-026",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 74900.0,
+   "titre": "Aménagement et bitumage de la route Seguela-Kongasso-Kounahiri",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-026_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-027",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 46200.0,
+   "titre": "Aménagement et bitumage de la route Fadiadougou-Dianra",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-027_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-028",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 100366.0,
+   "titre": "Aménagement et bitumage de la route Grabo-Taï",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-028_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-029",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 50932.0,
+   "titre": "Aménagement et bitumage de la route tabou-Grabo",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-029_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-030",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 29260.0,
+   "titre": "Renforcement, aménagement et bitumage de la route Apprompronou-Amoriakro-Comoé",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-030_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-031",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 31458.0,
+   "titre": "Aménagement et bitumage de la route Katiola-Marabadiassa",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-031_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-032",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 72380.0,
+   "titre": "Aménagement et bitumage de la route grand-Lahou-Bacanda-Tiassalé",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-032_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-033",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 84700.0,
+   "titre": "Aménagement et bitumage de la route Kouto-Sanhala-Goulia",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-033_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-034",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 38500.0,
+   "titre": "Aménagement et bitumage de la route Goulia-Tienko-Kemissiga",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-034_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-035",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 107800.0,
+   "titre": "Aménagement et bitumage de la route Vavoua-Kouibly",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-035_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-036",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 28462.0,
+   "titre": "Aménagement et bitumage de la route Groumania-Prikro",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-036_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-037",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 64680.0,
+   "titre": "Aménagement et bitumage de la route Sifié-Man",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-037_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-038",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 49280.0,
+   "titre": "Aménagement et bitumage de la route Kanakono-M'Bengue",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-038_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-039",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 24640.0,
+   "titre": "Aménagement et bitumage de la route Sirasso-Odia-Séguétielé",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-039_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-040",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 30030.0,
+   "titre": "Aménagement et bitumage de la route Boron-Tortya",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-040_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-042",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 46200.0,
+   "titre": "Aménagement et bitumage de la route Elibou-Agboville",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-042_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-043",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 38500.0,
+   "titre": "Aménagement et bitumage de la route Agboville (Laouguié)-Afféry",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-043_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-044",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 24717.0,
+   "titre": "Aménagement et bitumage de la route Gouméré-Tabagne et bretelle Amanvi",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-044_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-045",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 76398.0,
+   "titre": "Aménagement et bitumage de la route Menni-Kodioussou-Lobo Akoudzin-Assikoi-Adzopé et bretelle Abié",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-045_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-046",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 7490.0,
+   "titre": "Aménagement et bitumage de la route Yezimala-Sapli",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-046_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-063",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 29513.0,
+   "titre": "Construction de l'échangeur du carrefour sable",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-063_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-064",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 11000.0,
+   "titre": "Construction de l'échangeur carrefour cimetière",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-064_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-065",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 5000.0,
+   "titre": "Construction de l'échangeur carrefour Bimbresso",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-065_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-066",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 9500.0,
+   "titre": "Aménagement et construction de l'échangeur du carrefour zone",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-066_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-067",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 212990.0,
+   "titre": "Aménagement de la liaison routière Bingerville-Grand-Bassam",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-067_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-068",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 267000.0,
+   "titre": "Aménagement de la liaison routière port-Bouët-Koumassi-Cocody",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-068_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-069",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 23600.0,
+   "titre": "Construction de l'échangeur carrefour Siporex",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-069_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-070",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 25000.0,
+   "titre": "Construction de l'échangeur carrefour Djéni Kobenan",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-070_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-071",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 17523.0,
+   "titre": "Construction de l'échangeur carrefour d'Abatta",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-071_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-072",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 19470.0,
+   "titre": "Construction de l'échangeur Mel Théodore",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-072_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-073",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 24190.0,
+   "titre": "Construction des échangeurs de la tendresse et de la mosquée Riviera golf",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-073_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-074",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 20650.0,
+   "titre": "Construction de l'échangeur carrefour Saint-Jean de Cocody",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-074_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-075",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 19470.0,
+   "titre": "Construction de l'échangeur lycée Blaise pascal",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-075_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-076",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 11500.0,
+   "titre": "Construction de l'échangeur ancien camp Akouédo",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-076_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-077",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 21000.0,
+   "titre": "Construction de l'échangeur carrefour Anani",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-077_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-078",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 15000.0,
+   "titre": "Construction de l'échangeur carrefour CHU de Treichville",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-078_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-079",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 292125.0,
+   "titre": "Construction du pont de Yopougon (île Boulay)-Vridi (continuité V28)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-079_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-080",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 80000.0,
+   "titre": "Construction du pont Vridi-Marcory",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-080_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-081",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 12000.0,
+   "titre": "Construction de l'échangeur carrefour CMEAU",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-081_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-082",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 26250.0,
+   "titre": "Construction de l'échangeur jonction Y4 à Jacqueville",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-082_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-084",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 124000.0,
+   "titre": "Construction de l'ouvrage d'art du canal de Vridi",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-084_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-085",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 36190.0,
+   "titre": "Dédoublement du pont de Jacqueville",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-085_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-086",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 65756.0,
+   "titre": "Construction du pont de Yopougon Saint-Pierre-Azito-Île Boulay (continuité V28)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-086_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-123",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 22470.0,
+   "titre": "Aménagement et bitumage de la route Bondoukou-Sorobango",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-123_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-124",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 26950.0,
+   "titre": "Aménagement et bitumage de la route Boron-Sononzo-Carrefour Bielou (route Dianra)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-124_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-125",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 91745.0,
+   "titre": "Construction de la ligne de BRT sur le boulevard principal de Yopougon (8,7 km)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-125_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-126",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 77482.0,
+   "titre": "Construction de la ligne de BRT sur la voie express Abidjan-Grand-Bassam (11,7 km)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-126_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-127",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 305902.0,
+   "titre": "Construction de la ligne de BRT sur la Y4 (31 km)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-127_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.01-129",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 120000.0,
+   "titre": "Bitumage de la route Madinani-Kadiasso-Fengolo-Sanhala-Wahire-Gbeya (90 km)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-129_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.02-007",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 86035.0,
+   "titre": "Construction de la ligne de BRT sur la route du zoo (10 km)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-007_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.02-011",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 120000.0,
+   "titre": "Acquisition de 1 000 autobus neufs",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-011_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.02-027",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 114700.0,
+   "titre": "Construction de 5 gares lagunaires et d'un deuxième chantier naval, acquisition de 50 bateaux modernes et de 50 navettes améliorées",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-027_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.02-028",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 34659.0,
+   "titre": "Construction de 4 gares lagunaires à Bingerville, Moossou, Vridi Tripostal et Songon Kassemblé",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-028_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.02-029",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 160000.0,
+   "titre": "Construction de 5 gares lagunaires et d'un deuxième chantier naval, acquisition de 50 bateaux modernes et de 50 navettes améliorées (volet 2)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-029_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.02-030",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 32708.0,
+   "titre": "Acquisition de 25 bateaux-bus de grande capacité",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-030_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.02-031",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 382200.0,
+   "titre": "Extension et modernisation de l'aéroport international Félix Houphouët-Boigny",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-031_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.02-032",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 153750.0,
+   "titre": "Construction de l'aéroport international de San Pedro",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-032_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.02-035",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 70000.0,
+   "titre": "Construction de l'aéroport de Bondoukou",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-035_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.02-037",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 161000.0,
+   "titre": "Renouvellement de la flotte d'Air Côte d'Ivoire",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-037_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.02-042",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 12000.0,
+   "titre": "Académie nationale des métiers du transport routier (ANMTR)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-042_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.02-044",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 60000.0,
+   "titre": "Programme logistique urbaine durable d'Abidjan (PLUDA)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-044_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.02-091",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 10000.0,
+   "titre": "Construction et équipement du centre de recyclage des déchets automobiles",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-091_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.02-093",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 15000.0,
+   "titre": "Implanter un système d'autobus électriques avec la SOTRA",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-093_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.02-094",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 11000.0,
+   "titre": "Introduction des véhicules électriques dans le parc automobile de l'administration publique",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-094_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.07-006",
+   "secteur": "5.07",
+   "secteur_nom": "Urbanisme et habitat",
+   "pilier": "5",
+   "cout": 220000.0,
+   "titre": "Construction de 9 centres administratifs dans les 9 grands pôles économiques régionaux",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.07-006_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "5.07-007",
+   "secteur": "5.07",
+   "secteur_nom": "Urbanisme et habitat",
+   "pilier": "5",
+   "cout": 100000.0,
+   "titre": "Réhabilitation de la tour D de la cité administrative",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.07-007_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "6.02-003",
+   "secteur": "6.02",
+   "secteur_nom": "Gouvernance locale",
+   "pilier": "6",
+   "cout": 50000.0,
+   "titre": "Construction, équipement et numérisation du centre national d'archivage de Yamoussoukro",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/6.02-003_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "6.07-002",
+   "secteur": "6.07",
+   "secteur_nom": "Intégration régionale",
+   "pilier": "6",
+   "cout": 16216.0,
+   "titre": "Projet de développement intégré du Nimba",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/6.07-002_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "6.04-002",
+   "secteur": "6.04",
+   "secteur_nom": "Justice et droits de l’homme",
+   "pilier": "6",
+   "cout": 16330.0,
+   "titre": "Construction et équipement des tribunaux administratifs d'Abidjan, Bouaké, Daloa et Korhogo",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/6.04-002_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "6.04-004",
+   "secteur": "6.04",
+   "secteur_nom": "Justice et droits de l’homme",
+   "pilier": "6",
+   "cout": 66524.0,
+   "titre": "Construction et équipement des tribunaux de première instance (Dabakala, Tengréla, Attiégouakro, Ferkessédougou)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/6.04-004_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "6.04-005",
+   "secteur": "6.04",
+   "secteur_nom": "Justice et droits de l’homme",
+   "pilier": "6",
+   "cout": 139520.0,
+   "titre": "Construction et équipement de 4 nouvelles maisons d'arrêt et de correction et leurs cités pénitentiaires",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/6.04-005_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "6.04-006",
+   "secteur": "6.04",
+   "secteur_nom": "Justice et droits de l’homme",
+   "pilier": "6",
+   "cout": 40000.0,
+   "titre": "Programme de transformation numérique de la justice ivoirienne",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/6.04-006_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "6.04-007",
+   "secteur": "6.04",
+   "secteur_nom": "Justice et droits de l’homme",
+   "pilier": "6",
+   "cout": 56743.0,
+   "titre": "Construction de l'école nationale de formation du personnel pénitentiaire",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/6.04-007_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "6.04-008",
+   "secteur": "6.04",
+   "secteur_nom": "Justice et droits de l’homme",
+   "pilier": "6",
+   "cout": 80141.0,
+   "titre": "Reconstruction, mise aux normes et équipement de 7 maisons d'arrêt et de correction",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/6.04-008_FR.pdf"
+  },
+  {
+   "type": "PUB",
+   "code": "6.04-011",
+   "secteur": "6.04",
+   "secteur_nom": "Justice et droits de l’homme",
+   "pilier": "6",
+   "cout": 30000.0,
+   "titre": "Construction et équipement d'un hôpital pénitentiaire de référence",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/6.04-011_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "1.02-003",
+   "secteur": "1.02",
+   "secteur_nom": "Défense",
+   "pilier": "1",
+   "cout": 150000.0,
+   "titre": "Construction et équipement d'une unité de production des HCCA (habillement, couchage, campement, ameublement) des FACI",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/1.02-003_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "1.02-005",
+   "secteur": "1.02",
+   "secteur_nom": "Défense",
+   "pilier": "1",
+   "cout": 25000.0,
+   "titre": "Construction et équipement d'une usine de fabrication de munitions d'armes de petit calibre",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/1.02-005_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "1.02-007",
+   "secteur": "1.02",
+   "secteur_nom": "Défense",
+   "pilier": "1",
+   "cout": 84000.0,
+   "titre": "Construction et équipement d'une unité de montage de Drones",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/1.02-007_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "1.02-012",
+   "secteur": "1.02",
+   "secteur_nom": "Défense",
+   "pilier": "1",
+   "cout": 25000.0,
+   "titre": "Construction d'une unité de montage d'équipements de radiocommunication",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/1.02-012_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "1.02-014",
+   "secteur": "1.02",
+   "secteur_nom": "Défense",
+   "pilier": "1",
+   "cout": 15000.0,
+   "titre": "Digitalisation de la gestion des actifs, de la maintenance et des opérations des forces armées de Côte d'Ivoire",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/1.02-014_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "2.01-016",
+   "secteur": "2.01",
+   "secteur_nom": "Agriculture",
+   "pilier": "2",
+   "cout": 300000.0,
+   "titre": "Création et réhabilitation des aménagements Hydro-Agricoles avec maîtrise de l'eau",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/2.01-016_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "2.01-027",
+   "secteur": "2.01",
+   "secteur_nom": "Agriculture",
+   "pilier": "2",
+   "cout": 300000.0,
+   "titre": "Projet de développement de la mécanisation agricole",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/2.01-027_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "2.02-010",
+   "secteur": "2.02",
+   "secteur_nom": "Ressources animales et halieutiques",
+   "pilier": "2",
+   "cout": 56500.0,
+   "titre": "Construction d'infrastructures d'abattage, de commercialisation de bétail et de l'institut de santé publique vétérinaire",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/2.02-010_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.06-005",
+   "secteur": "3.06",
+   "secteur_nom": "Artisanat",
+   "pilier": "3",
+   "cout": 21668.0,
+   "titre": "Mise en place d'un Cluster maintenance automobile digitale",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.06-005_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.05-007",
+   "secteur": "3.05",
+   "secteur_nom": "Commerce",
+   "pilier": "3",
+   "cout": 94656.0,
+   "titre": "Construction et aménagement de huit (8) dépôts spécialisés aux frontières terrestres",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.05-007_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.07-004",
+   "secteur": "3.07",
+   "secteur_nom": "Culture et francophonie",
+   "pilier": "3",
+   "cout": 45000.0,
+   "titre": "Construction des centres culturels intégrés (Cci)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.07-004_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.04-010",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "cout": 40000.0,
+   "titre": "Construction de la zone franche de l'île Boulay et de la Presqu'île Songon-Jacqueville",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.04-010_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.04-012",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "cout": 27227.0,
+   "titre": "Aménagement de la zone industrielle de Bouaké (150 ha)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.04-012_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.04-013",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "cout": 48551.0,
+   "titre": "Aménagement de la zone industrielle de Bonoua (329 ha)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.04-013_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.04-014",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "cout": 66397.0,
+   "titre": "Aménagement d'une zone industrielle à Yamoussoukro (500 ha)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.04-014_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.04-015",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "cout": 72456.0,
+   "titre": "Aménagement de la zone industrielle de San-Pédro (540 ha)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.04-015_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.04-016",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "cout": 11567.0,
+   "titre": "Aménagement de la zone industrielle d'Assouba (23 ha)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.04-016_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.04-017",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "cout": 44539.0,
+   "titre": "Aménagement de la zone industrielle d'Adzopé (300 ha)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.04-017_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-007",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 6200000.0,
+   "titre": "Projet de développement minier intégré de l'ouest (PDMIO)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-007_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-011",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 185250.0,
+   "titre": "Construction d'une nouvelle unité de Reforming Régénératif (CCR) par la SIR",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-011_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-015",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 128000.0,
+   "titre": "Construction des sphères de stockage de butane de 50 000 TM à Vridi Ako",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-015_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-016",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 374000.0,
+   "titre": "Approvisionnement en gaz naturel liquéfié par un terminal flottant de stockage et de Regazéification (FSRU)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-016_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-017",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 596500.0,
+   "titre": "Pipeline Abidjan-Ferkessédougou pour le transport de produits pétroliers",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-017_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-018",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 435500.0,
+   "titre": "Pipeline Abidjan-Ferkessédougou pour le transport de gaz naturel",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-018_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-019",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 135000.0,
+   "titre": "Construction d'un nouvel Appontement en lagune par PETROCI",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-019_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-020",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 35000.0,
+   "titre": "Construction de dépôts d'hydrocarbures de 30 000 M3 à Odienné",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-020_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-027",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 277800.0,
+   "titre": "Centrale thermique à cycle combiné de Jacqueville (450 MW)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-027_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-032",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 227340.0,
+   "titre": "Centrale hydroélectrique de Boutoubré (140 MW)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-032_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-039",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 89000.0,
+   "titre": "Centrale solaire de Kong (120 MWc / 120 MWh)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-039_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-048",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 93000.0,
+   "titre": "Centrale solaire de Tengréla (100 MWc) avec stockage par batteries de 100 MWh",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-048_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-050",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 72000.0,
+   "titre": "Centrale solaire de Dabakala (100 MWc / 80 MW / 33 MWh)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-050_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-052",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 60655.0,
+   "titre": "Centrale solaire de Soubré phase 2 (32 MW) avec stockage par batterie de 45 MWh",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-052_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-053",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 59000.0,
+   "titre": "Centrale solaire de Gribo Popoli (32 MW) avec stockage par batterie de 45 MWh",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-053_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-082",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 42000.0,
+   "titre": "Installation de batteries de stockage 1 (200 MWh)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-082_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-083",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 42000.0,
+   "titre": "Installation de batteries de stockage 2 (200 MWh)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-083_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-084",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 42000.0,
+   "titre": "Installation de batteries de stockage 3 (200 MWh)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-084_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-085",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 42000.0,
+   "titre": "Installation de batteries de stockage 4 (200 MWh)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-085_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-086",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 42000.0,
+   "titre": "Installation de batteries de stockage 5 (200 MWh)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-086_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-087",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 42000.0,
+   "titre": "Installation de batteries de stockage 8 (200 MWh)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-087_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-092",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 10000.0,
+   "titre": "Projet Colombo-Tantalite, Lithium et terres rares de Sakassou",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-092_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-094",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 89000.0,
+   "titre": "Centrale solaire de Sérébou (120 MWc / 96 MW / 120 MWh)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-094_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.03-095",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "cout": 53590.0,
+   "titre": "Centrale solaire de Niakara (100 MWc / 80 MW / 33 MWh)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.03-095_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.08-004",
+   "secteur": "3.08",
+   "secteur_nom": "Tourisme",
+   "pilier": "3",
+   "cout": 900000.0,
+   "titre": "Aménagement et valorisation des sites touristiques d'Assinie, de Jacqueville et de San Pedro",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.08-004_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.08-005",
+   "secteur": "3.08",
+   "secteur_nom": "Tourisme",
+   "pilier": "3",
+   "cout": 250000.0,
+   "titre": "Construction de réceptifs hôteliers sous le label « Éco-Hôtels » de 3 à 5 étoiles",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.08-005_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.08-007",
+   "secteur": "3.08",
+   "secteur_nom": "Tourisme",
+   "pilier": "3",
+   "cout": 30000.0,
+   "titre": "Projet Akwaba Park",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.08-007_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.08-008",
+   "secteur": "3.08",
+   "secteur_nom": "Tourisme",
+   "pilier": "3",
+   "cout": 30000.0,
+   "titre": "Projet au paradis, entre mer et nature",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.08-008_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.08-009",
+   "secteur": "3.08",
+   "secteur_nom": "Tourisme",
+   "pilier": "3",
+   "cout": 30000.0,
+   "titre": "Projet belles plages pour tous",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.08-009_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "3.08-011",
+   "secteur": "3.08",
+   "secteur_nom": "Tourisme",
+   "pilier": "3",
+   "cout": 6000000.0,
+   "titre": "Création du plus grand parc touristique d'afrique de l'ouest",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.08-011_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "4.03-017",
+   "secteur": "4.03",
+   "secteur_nom": "Enseignement supérieur et recherche scientifique",
+   "pilier": "4",
+   "cout": 45000.0,
+   "titre": "Développement de l'ingénierie automobile et production de prototypes de véhicules à l'INP-HB",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.03-017_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "4.04-035",
+   "secteur": "4.04",
+   "secteur_nom": "Santé",
+   "pilier": "4",
+   "cout": 400000.0,
+   "titre": "Mise en place du Technopole pharmaceutique en Côte d'Ivoire",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.04-035_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "4.12-001",
+   "secteur": "4.12",
+   "secteur_nom": "Sport",
+   "pilier": "4",
+   "cout": 400000.0,
+   "titre": "Construction et exploitation de la cité olympique d'Ebimpé",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/4.12-001_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.09-016",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "cout": 24000.0,
+   "titre": "3 centres de transfert et 1 centre de valorisation et d'enfouissement technique à Bloléquin, Guiglo et Duékoué",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.09-016_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.09-017",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "cout": 25000.0,
+   "titre": "6 centres de transfert et 1 centre de valorisation et d'enfouissement technique à Daloa, Gonaté, Bonon et Bouaflé",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.09-017_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.09-018",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "cout": 15000.0,
+   "titre": "3 centres de transfert et 1 centre de valorisation et d'enfouissement technique à San Pedro et Sassandra",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.09-018_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.09-019",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "cout": 15000.0,
+   "titre": "4 centres de transfert et 1 centre de valorisation et d'enfouissement technique à Agboville, Adzopé et Akoupé",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.09-019_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.09-020",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "cout": 20000.0,
+   "titre": "6 centres de transfert et 1 centre de valorisation et d'enfouissement technique à Gagnoa, Lakota et Divo",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.09-020_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.09-021",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "cout": 16625.0,
+   "titre": "3 centres de transfert et 1 centre de valorisation et d'enfouissement technique à Yabayo, Soubré et Méagui",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.09-021_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.09-022",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "cout": 17846.0,
+   "titre": "3 centres de transfert et 1 centre de valorisation et d'enfouissement technique à Daoukro, Bongouanou et Arrah",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.09-022_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.09-023",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "cout": 89700.0,
+   "titre": "Concevoir, financer et construire vingt (20) décharges contrôlées dans les villes de l'intérieur",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.09-023_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.09-025",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "cout": 45000.0,
+   "titre": "Centre de gestion intégrée des déchets sanitaires dans le grand Abidjan",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.09-025_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.06-007",
+   "secteur": "5.06",
+   "secteur_nom": "Eaux et forêts",
+   "pilier": "5",
+   "cout": 26150.0,
+   "titre": "Mise en œuvre des CAFAD et restauration des Agro-Forêts",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.06-007_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.03-002",
+   "secteur": "5.03",
+   "secteur_nom": "Économie numérique et poste",
+   "pilier": "5",
+   "cout": 98390.0,
+   "titre": "Poursuite du déploiement de la fibre optique pour l'interconnexion de toutes les sous-préfectures",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.03-002_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.03-009",
+   "secteur": "5.03",
+   "secteur_nom": "Économie numérique et poste",
+   "pilier": "5",
+   "cout": 250000.0,
+   "titre": "Construction de la cité de l'innovation et de la culture",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.03-009_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.03-010",
+   "secteur": "5.03",
+   "secteur_nom": "Économie numérique et poste",
+   "pilier": "5",
+   "cout": 10700.0,
+   "titre": "Projet pilote de villes intelligentes (Smart City) durables dans 10 agglomérations",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.03-010_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.03-018",
+   "secteur": "5.03",
+   "secteur_nom": "Économie numérique et poste",
+   "pilier": "5",
+   "cout": 98390.0,
+   "titre": "Extension du réseau national haut débit (RNHD)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.03-018_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.03-019",
+   "secteur": "5.03",
+   "secteur_nom": "Économie numérique et poste",
+   "pilier": "5",
+   "cout": 50000.0,
+   "titre": "Mise en œuvre du Backbone unifié de service (BUS)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.03-019_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.03-020",
+   "secteur": "5.03",
+   "secteur_nom": "Économie numérique et poste",
+   "pilier": "5",
+   "cout": 10700.0,
+   "titre": "Construction et équipement de dix (10) centres régionaux et universitaires d'innovation avec Fab Labs",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.03-020_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.05-002",
+   "secteur": "5.05",
+   "secteur_nom": "Environnement et développement durable",
+   "pilier": "5",
+   "cout": 103049.0,
+   "titre": "Programme d'Opérationnalisation de l'économie circulaire",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.05-002_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.01-128",
+   "secteur": "5.01",
+   "secteur_nom": "Infrastructures routières",
+   "pilier": "5",
+   "cout": 170000.0,
+   "titre": "5 parkings à camions poids lourds à Abidjan et système d'appel et de gestion des camions au PAA",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.01-128_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.02-009",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 270000.0,
+   "titre": "Construction d'une gare routière internationale à Abidjan",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-009_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.02-010",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 26325.0,
+   "titre": "Construction d'une gare routière internationale à Bouaké",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-010_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.02-012",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 450000.0,
+   "titre": "Poursuite de la construction de la ligne 1 du métro d'Abidjan (37 km)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-012_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.02-013",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 859000.0,
+   "titre": "Réhabilitation de l'axe ferroviaire Abidjan-Ouagadougou-Kaya",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-013_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.02-014",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 123000.0,
+   "titre": "Construction de la ligne ferroviaire Ouangolodougou-Niellé-Sikasso (188 km)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-014_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.02-015",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 872000.0,
+   "titre": "Construction de la ligne ferroviaire San Pedro-Odienné-frontière Mali (872 km)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-015_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.02-016",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 1000000.0,
+   "titre": "Construction du train à grande vitesse Abidjan-Bouaké-Korhogo-Ferkessédougou (640 km)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-016_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.02-021",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 100000.0,
+   "titre": "Transport de fret par barge sur la lagune",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-021_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.02-022",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 65000.0,
+   "titre": "Aménagement du terminal polyvalent commercial",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-022_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.02-023",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 406000.0,
+   "titre": "Déplacement et extension du terminal à conteneurs",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-023_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.02-026",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 500000.0,
+   "titre": "Construction d'un terminal minéralier au port de San Pedro",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-026_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.02-033",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 144000.0,
+   "titre": "Construction d'un Hub de fret aérien à l'aéroport de Bouaké",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-033_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.02-034",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 71000.0,
+   "titre": "Réhabilitation et mise aux normes des aéroports de Bouaké et Yamoussoukro",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-034_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.02-040",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 15000.0,
+   "titre": "Transport de fret par ballons dirigeables (Flying Whales)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-040_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.02-041",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 295000.0,
+   "titre": "Programme de dragage, Dépollution et navigabilité de la lagune Ébrié (PDNLE)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-041_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.02-088",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 10000.0,
+   "titre": "Création d'une flotte nationale",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-088_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.02-090",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 250000.0,
+   "titre": "Création d'une compagnie de transport Fluvio-Lagunaire et maritime",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-090_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.02-092",
+   "secteur": "5.02",
+   "secteur_nom": "Transport",
+   "pilier": "5",
+   "cout": 42000.0,
+   "titre": "Construction de la plateforme logistique de Bouaké",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.02-092_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.07-003",
+   "secteur": "5.07",
+   "secteur_nom": "Urbanisme et habitat",
+   "pilier": "5",
+   "cout": 9300000.0,
+   "titre": "Développement des Smart Cities (villes nouvelles) dans le grand Abidjan",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.07-003_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.07-004",
+   "secteur": "5.07",
+   "secteur_nom": "Urbanisme et habitat",
+   "pilier": "5",
+   "cout": 6000000.0,
+   "titre": "Transfert effectif de la capitale politique à Yamoussoukro",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.07-004_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.07-005",
+   "secteur": "5.07",
+   "secteur_nom": "Urbanisme et habitat",
+   "pilier": "5",
+   "cout": 690000.0,
+   "titre": "Construction de cinq (5) tours administratives à Abidjan-Plateau",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.07-005_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.07-008",
+   "secteur": "5.07",
+   "secteur_nom": "Urbanisme et habitat",
+   "pilier": "5",
+   "cout": 500000.0,
+   "titre": "Programme d'urgence de construction de 25 000 logements",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.07-008_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.07-009",
+   "secteur": "5.07",
+   "secteur_nom": "Urbanisme et habitat",
+   "pilier": "5",
+   "cout": 356150.0,
+   "titre": "Création d'une zone franche et Écoparc de la construction et du Btp",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.07-009_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.07-011",
+   "secteur": "5.07",
+   "secteur_nom": "Urbanisme et habitat",
+   "pilier": "5",
+   "cout": 50000.0,
+   "titre": "Réhabilitation de la tour E de la cité administrative",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.07-011_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.07-012",
+   "secteur": "5.07",
+   "secteur_nom": "Urbanisme et habitat",
+   "pilier": "5",
+   "cout": 20000.0,
+   "titre": "Réhabilitation de l'immeuble BICICI",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.07-012_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "5.07-013",
+   "secteur": "5.07",
+   "secteur_nom": "Urbanisme et habitat",
+   "pilier": "5",
+   "cout": 20000.0,
+   "titre": "Réhabilitation de l'immeuble pyramide",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/5.07-013_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "6.05-001",
+   "secteur": "6.05",
+   "secteur_nom": "Communication",
+   "pilier": "6",
+   "cout": 51728.0,
+   "titre": "Construction des studios Babywood",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/6.05-001_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "6.05-002",
+   "secteur": "6.05",
+   "secteur_nom": "Communication",
+   "pilier": "6",
+   "cout": 104000.0,
+   "titre": "Construction de la cité des médias",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/6.05-002_FR.pdf"
+  },
+  {
+   "type": "PPP",
+   "code": "6.07-001",
+   "secteur": "6.07",
+   "secteur_nom": "Intégration régionale",
+   "pilier": "6",
+   "cout": 15500.0,
+   "titre": "Construire une usine régionale de Bio-Larvicides",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/6.07-001_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "2.02-015",
+   "secteur": "2.02",
+   "secteur_nom": "Ressources animales et halieutiques",
+   "pilier": "2",
+   "cout": 238293.0,
+   "titre": "Programme de développement des filières ruminants (PDFIR)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/2.02-015_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "2.02-017",
+   "secteur": "2.02",
+   "secteur_nom": "Ressources animales et halieutiques",
+   "pilier": "2",
+   "cout": 249960.0,
+   "titre": "Programme de renforcement des élevages à cycle court",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/2.02-017_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "2.02-018",
+   "secteur": "2.02",
+   "secteur_nom": "Ressources animales et halieutiques",
+   "pilier": "2",
+   "cout": 172988.0,
+   "titre": "Programme intégré d'amélioration de la sécurité alimentaire et de la Résilience des populations vulnérables dans le Nord",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/2.02-018_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-001",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 130000.0,
+   "titre": "Hub logistique Aéroportuaire et plateforme de chaîne de froid à Yamoussoukro (à l'instar du marché de Rungis)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-001_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-002",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 500000.0,
+   "titre": "Hub régional de Datacenters privés",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-002_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-003",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 3000000.0,
+   "titre": "Zone industrielle, commerciale et logistique entre le PK 103 et le PK 120 de l'autoroute du Nord",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-003_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-004",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 500000.0,
+   "titre": "Création d'un Technopole pharmaceutique et biotechnologie",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-004_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-005",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 190000.0,
+   "titre": "Usine de production de papier à base de rafle de palmier à huile",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-005_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-006",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 20000.0,
+   "titre": "Usine de production de palettes et meubles",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-006_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-007",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 10000.0,
+   "titre": "Usine de textile et de teinture biologique à Bouaké (Réplicable à Dimbokro et Katiola)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-007_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-008",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 120000.0,
+   "titre": "Usine de production de tissus à base de textile recyclé",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-008_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-009",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 100000.0,
+   "titre": "Usine d'assemblage de machines agricoles et de Drones agricoles",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-009_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-010",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 1240000.0,
+   "titre": "Usine de production d'urée, d'énergie et d'hélium à partir du gaz découvert",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-010_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-011",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 100000.0,
+   "titre": "Projet intégré de production et de transformation de riz, tomate, soja et maïs sur 40 000 ha dans le nord-ouest",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-011_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-012",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 100000.0,
+   "titre": "Production industrielle de fleurs (roses, tulipes, orchidées, lys...) sur 10 000 ha",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-012_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-013",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 1000000.0,
+   "titre": "Nettoyage du fond lagunaire par la valorisation des déchets en énergie et Intrants industriels",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-013_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-015",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": null,
+   "titre": "Projet intégré de développement urbain, touristique et écologique de Jacqueville",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-015_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-016",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 47000.0,
+   "titre": "Plantations intégrées d'igname et unités de transformation (Gbêkê, Hambol, Gontougo)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-016_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-017",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 6090.0,
+   "titre": "Plantations intégrées de banane plantain et unités de transformation",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-017_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-018",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 15000.0,
+   "titre": "Unités de conditionnement et de transformation de fruits frais (Poro, Loh-Djiboua, Agnéby-Tiassa)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-018_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-019",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 4000.0,
+   "titre": "Fermes Aquacoles en périphérie d'Abidjan, à Toumodi et à Yamoussoukro",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-019_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-020",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 25000.0,
+   "titre": "Usine d'aliments pour animaux en périphérie d'Abidjan",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-020_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-021",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 7716.0,
+   "titre": "Usine d'huile à base de beurre de Karité (1 000 T/an), 2PAI-Nord",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-021_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-022",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 36728.0,
+   "titre": "Usine de farine de maïs (90 000 T/an), 2PAI-Nord",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-022_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-023",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 41106.0,
+   "titre": "Usine de production de viande (13 300 T/an), 2PAI-Nord",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-023_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-024",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 468090.0,
+   "titre": "Usine de jus de mangue et de pomme de cajou, 2PAI-Nord",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-024_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-025",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 41307.0,
+   "titre": "Usine de conditionnement de produits maraîchers (54 000 T/an), 2PAI-Nord",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-025_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-026",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 6090.0,
+   "titre": "Usine d'huile et d'aliment de bétail à base de graines de coton, 2PAI-Nord",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-026_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-027",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 19020.0,
+   "titre": "Usine de séchage de mangues et de légumes, 2PAI-Nord",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-027_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-028",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": null,
+   "titre": "Aménagement urbain « Boribana, Paradise Of Attécoubé »",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-028_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-029",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 420000.0,
+   "titre": "Réduction des pertes Post-Récolte, stockage, transformation et marchés de gros vivriers",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-029_FR.pdf"
+  },
+  {
+   "type": "PRI",
+   "code": "3.01-030",
+   "secteur": "3.01",
+   "secteur_nom": "Promotion des investissements privés",
+   "pilier": "3",
+   "cout": 6000000.0,
+   "titre": "Construction du port lagunaire de Dabou",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/projets/fr/3.01-030_FR.pdf"
+  }
+ ],
+ "opportunites": [
+  {
+   "code": "OP_2.01-054",
+   "secteur": "2.01",
+   "secteur_nom": "Agriculture",
+   "pilier": "2",
+   "titre": "Agroéquipement (mécanisation, tracteurs, matériel d'irrigation)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_2.01-054_FR.pdf",
+   "localisation": "Bélier, Poro, Tchologo, Tonkpi ; Savanes, Denguélé, Woroba, Zanzan ; zones industrielles PK24, San Pedro, Bouaké",
+   "resume": "Le secteur de l'agroéquipement vise à combler un déficit de mécanisation qui limite la productivité agricole. Le marché reste dépendant des importations, mais l'État soutient sa structuration.",
+   "chiffres": [
+    "Taux de mécanisation inférieur à 30 %",
+    "10 000 tracteurs à déployer",
+    "100 000 ha supplémentaires en riz et maïs",
+    "agriculture : 15,9 % du PIB et 50 % des emplois"
+   ],
+   "segments": [
+    "Unités de production",
+    "Vente et maintenance",
+    "Centres de prestation de services mécanisés",
+    "Montage de petite mécanisation",
+    "Maintenance d'engins",
+    "Irrigation goutte-à-goutte et stockage"
+   ],
+   "incitations": [
+    "Exonération des droits de douane et suspension de TVA sur matériels importés",
+    "Exonérations de 5 à 15 ans selon la zone",
+    "Réduction BIC jusqu'à 50 % du bénéfice réinvesti",
+    "Crédit d'impôt PME"
+   ],
+   "emplois": "Dizaines de milliers d'emplois directs et indirects",
+   "montant": ""
+  },
+  {
+   "code": "OP_2.01-055",
+   "secteur": "2.01",
+   "secteur_nom": "Agriculture",
+   "pilier": "2",
+   "titre": "Services et conseil agricoles (recherche, formation, conseil, commercialisation)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_2.01-055_FR.pdf",
+   "localisation": "Toutes régions, en particulier Nawa, San-Pedro, Indénié-Djuablin, Haut-Sassandra, Poro, Tchologo, Béré ; innovation à Abidjan et Yamoussoukro",
+   "resume": "Le conseil agricole s'ouvre au privé, longtemps dominé par l'ANADER. La demande de services pour faire des planteurs de véritables entrepreneurs agricoles est très forte.",
+   "chiffres": [
+    "1 930 480 exploitants (2024)",
+    "631 043 exploitants encadrés par l'ANADER",
+    "1 890 775 t de cacao (2024)",
+    "1 549 221 t d'anacarde (2025)"
+   ],
+   "segments": [
+    "Centres de formation et d'incubation en PPP",
+    "Plateformes AgriTech (conseil SMS, drones, météo)",
+    "Traçabilité blockchain pour l'export",
+    "R&D et IA agronomique",
+    "Centres de services dans les agropôles"
+   ],
+   "incitations": [
+    "Exonérations de patente et d'impôt sur les bénéfices de 5 à 15 ans",
+    "Régime start-up pour le numérique agricole",
+    "Agrément à partir de 50 millions FCFA"
+   ],
+   "emplois": "",
+   "montant": ""
+  },
+  {
+   "code": "OP_2.01-056",
+   "secteur": "2.01",
+   "secteur_nom": "Agriculture",
+   "pilier": "2",
+   "titre": "Industrie d'intrants agricoles (semences, engrais)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_2.01-056_FR.pdf",
+   "localisation": "District d'Abidjan, San Pedro, Bélier, Poro, Kabadougou, Tonkpi, Nawa, PK24, Bouaké",
+   "resume": "La Côte d'Ivoire veut bâtir une industrie locale d'intrants agricoles pour substituer les importations et sécuriser les rendements. Le marché reste sous-utilisé, avec 18 kg d'engrais par hectare contre 50 kg recommandés.",
+   "chiffres": [
+    "Plus de 100 milliards FCFA de chiffre d'affaires annuel",
+    "573 123 t d'engrais importés en 2024",
+    "18 kg/ha contre 50 kg recommandés"
+   ],
+   "segments": [
+    "Unités semencières industrielles",
+    "Biofertilisants et biopesticides",
+    "Blending d'engrais sur mesure",
+    "Laboratoires d'analyse des sols",
+    "Compostage des déchets agricoles",
+    "Semences de riz, maïs et soja"
+   ],
+   "incitations": [
+    "Exonération des droits de douane sur équipements",
+    "Imposition de 50 % du bénéfice pendant 4 exercices",
+    "Code des investissements",
+    "Subventions jusqu'à 90 % des coûts d'investissement (2PAI)"
+   ],
+   "emplois": "Emplois qualifiés (agronomes, généticiens, logisticiens, techniciens)",
+   "montant": "80,99 Md FCFA (2PAI-Bélier) ; 163,81 Md FCFA (2PAI-Nord)"
+  },
+  {
+   "code": "OP_2.01-058",
+   "secteur": "2.01",
+   "secteur_nom": "Agriculture",
+   "pilier": "2",
+   "titre": "Unités de montage d'équipements de petite mécanisation",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_2.01-058_FR.pdf",
+   "localisation": "Vallée du Bandama, Zanzan, Hambol, Béré, Poro, Nawa, San-Pedro, Guémon, Haut-Sassandra, Bélier, Marahoué, Kabadougou, Tchologo, Folon, Abidjan",
+   "resume": "Le pays vise à faire passer la mécanisation agricole d'environ 12 % à 40 % d'ici 2030. Importation, fabrication et location d'agroéquipements sont éligibles au Code des investissements.",
+   "chiffres": [
+    "Moins de 2 tracteurs pour 1 000 ha",
+    "plus de 20 % de pertes post-récolte",
+    "plus de 3,5 millions d'hectares cultivés",
+    "moins de 5 000 unités opérationnelles"
+   ],
+   "segments": [
+    "Importation et distribution d'agroéquipements",
+    "Fabrication et assemblage local",
+    "Location et gestion de parcs mécanisés",
+    "Maintenance et formation",
+    "Irrigation"
+   ],
+   "incitations": [
+    "Exonération de patente et de BIC de 5 à 15 ans",
+    "Exonération de droits de douane sur agroéquipements neufs",
+    "TVA à taux zéro sur certains intrants et matériels"
+   ],
+   "emplois": "Plusieurs dizaines de milliers d'emplois directs et indirects",
+   "montant": "Agrément : 10 à 50 millions FCFA selon l'activité"
+  },
+  {
+   "code": "OP_2.02-035",
+   "secteur": "2.02",
+   "secteur_nom": "Ressources animales et halieutiques",
+   "pilier": "2",
+   "titre": "Filière avicole",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_2.02-035_FR.pdf",
+   "localisation": "Gbêkê, Poro, Hambol, Tchologo, Abidjan, Yamoussoukro, Indénié-Djuablin, Sud-Comoé, Mé, Agnéby-Tiassa, Tonkpi, Cavally, Guémon",
+   "resume": "La Côte d'Ivoire vise l'autosuffisance en œufs et une hausse de sa production de volaille d'ici 2030. La filière génère environ 380 milliards FCFA de chiffre d'affaires et offre des débouchés aux femmes et aux jeunes.",
+   "chiffres": [
+    "380 milliards FCFA de chiffre d'affaires",
+    "280 000 emplois",
+    "objectif 450 000 t de poulets de chair et 200 000 t d'œufs par an"
+   ],
+   "segments": [
+    "Fermes avicoles modernes",
+    "Abattoirs et unités de découpe",
+    "Usines d'aliments composés",
+    "Couvoirs",
+    "Charcuteries et rôtisseries",
+    "Compost de résidus d'élevage"
+   ],
+   "incitations": [
+    "Exonération partielle des droits de douane",
+    "Exonération ou suspension de TVA à l'installation",
+    "Code des investissements"
+   ],
+   "emplois": "Plus de 120 000 emplois supplémentaires d'ici 2030",
+   "montant": ""
+  },
+  {
+   "code": "OP_2.02-037",
+   "secteur": "2.02",
+   "secteur_nom": "Ressources animales et halieutiques",
+   "pilier": "2",
+   "titre": "Filière bovin lait",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_2.02-037_FR.pdf",
+   "localisation": "Folon, Béré, Tonkpi, Haut-Sassandra, Marahoué, Yamoussoukro, Gbêkê, Poro, Tchologo, Bagoué, Gontougo, Bounkani, Kabadougou",
+   "resume": "La production nationale de lait ne couvre que 15 % des besoins. Le gouvernement vise une hausse de 35 % de la production locale d'ici 2030 et la transformation de 50 % du lait produit.",
+   "chiffres": [
+    "15 % des besoins couverts",
+    "85 % d'importations",
+    "375 548 tonnes équivalent lait",
+    "62 milliards FCFA",
+    "7,9 kg par habitant et par an"
+   ],
+   "segments": [
+    "Lait liquide, en poudre, concentré",
+    "Yaourt, beurre, fromage",
+    "Lait bio et labellisé",
+    "Traçabilité numérique",
+    "Valorisation du lactosérum",
+    "Matériels d'élevage et industriels"
+   ],
+   "incitations": [
+    "Code des investissements (catégorie 1)",
+    "Accompagnement du CEPICI",
+    "Fonds d'investissement technologique prévu par le PND"
+   ],
+   "emplois": "35 000 à 50 000 emplois directs et indirects",
+   "montant": ""
+  },
+  {
+   "code": "OP_2.02-038",
+   "secteur": "2.02",
+   "secteur_nom": "Ressources animales et halieutiques",
+   "pilier": "2",
+   "titre": "Filière bovin viande",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_2.02-038_FR.pdf",
+   "localisation": "Poro, Tchologo, Bagoué, Hambol, Gbêkê, Bounkani, Gontougo, Kabadougou, Bafing, Worodougou ; débouchés Abidjan, Bouaké, San Pedro",
+   "resume": "La filière bovin viande vise à porter à 75 % la couverture des besoins en protéines animales d'ici 2030, alors que la couverture bovine n'est que de 25 %. Le marché dépend aujourd'hui du bétail sahélien importé.",
+   "chiffres": [
+    "Cheptel de 1 896 358 têtes (2024)",
+    "264 092 bovins importés chaque année",
+    "100 milliards FCFA d'importations estimées en 2025"
+   ],
+   "segments": [
+    "Fermes bovines modernes",
+    "Provenderies industrielles",
+    "Abattoirs aux normes",
+    "Boucheries modernes",
+    "Valorisation des sous-produits",
+    "Forages"
+   ],
+   "incitations": [
+    "Exonérations sur équipements et intrants",
+    "Garantie de crédit du FPPAH",
+    "Financements mixtes",
+    "Code des investissements"
+   ],
+   "emplois": "Potentiel important sur toute la chaîne de valeur",
+   "montant": ""
+  },
+  {
+   "code": "OP_2.02-039",
+   "secteur": "2.02",
+   "secteur_nom": "Ressources animales et halieutiques",
+   "pilier": "2",
+   "titre": "Filière ovine",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_2.02-039_FR.pdf",
+   "localisation": "16 régions de production, dont le Nord et le Centre",
+   "resume": "La filière ovine vise l'autosuffisance et une moindre dépendance aux importations sahéliennes. Elle offre un fort potentiel de production et d'emploi rural.",
+   "chiffres": [
+    "2 535 285 têtes (2023)",
+    "30 530 t de viande (2023)",
+    "73 % de taux de couverture"
+   ],
+   "segments": [
+    "Fermes ovines modernes (2 472)",
+    "Centres de groupage de bétail (110)",
+    "Boucheries modernes (105)",
+    "Provenderies industrielles (4)"
+   ],
+   "incitations": [
+    "Exonérations sur équipements et intrants",
+    "Garantie FPPAH pour l'accès au crédit"
+   ],
+   "emplois": "62 000 emplois à créer d'ici 2030",
+   "montant": ""
+  },
+  {
+   "code": "OP_2.02-040",
+   "secteur": "2.02",
+   "secteur_nom": "Ressources animales et halieutiques",
+   "pilier": "2",
+   "titre": "Filière porcine",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_2.02-040_FR.pdf",
+   "localisation": "Côte d'Ivoire",
+   "resume": "La filière porcine est jugée stratégique par la PONADEPA II 2026-2030 pour réduire la dépendance aux importations. Elle répond à une forte demande urbaine et dispose de matières premières locales.",
+   "chiffres": [
+    "136 620 t importées (2024)",
+    "11 000 t produites localement (2025)",
+    "déficit de 89 000 t"
+   ],
+   "segments": [
+    "Complexes intégrés naissage-engraissement",
+    "Abattage et transformation",
+    "Aliments composés",
+    "Biodigesteurs"
+   ],
+   "incitations": [
+    "Code des investissements (catégorie 1)",
+    "Exonérations partielles de douane et suspension de TVA à l'installation"
+   ],
+   "emplois": "Plus de 162 300 emplois d'ici 2030",
+   "montant": ""
+  },
+  {
+   "code": "OP_2.02-042",
+   "secteur": "2.02",
+   "secteur_nom": "Ressources animales et halieutiques",
+   "pilier": "2",
+   "titre": "Filière cunicole (lapin)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_2.02-042_FR.pdf",
+   "localisation": "Côte d'Ivoire",
+   "resume": "La filière cunicole, encore artisanale, doit devenir un sous-secteur moderne et intégré selon la PONADEPA 2026-2030. Elle vise à réduire les importations de viande et à diversifier les protéines animales.",
+   "chiffres": [
+    "Environ 50 t de viande aujourd'hui",
+    "29 813 t visées en 2030",
+    "58 000 t d'aliments industriels visés"
+   ],
+   "segments": [
+    "Fermes de production",
+    "Fermes de multiplication",
+    "Usines d'aliments",
+    "Abattoirs et chambres froides"
+   ],
+   "incitations": [
+    "Exonérations fiscales et TVA réduite",
+    "Accès au fonds de garantie"
+   ],
+   "emplois": "Plus de 30 000 emplois supplémentaires",
+   "montant": ""
+  },
+  {
+   "code": "OP_2.02-043",
+   "secteur": "2.02",
+   "secteur_nom": "Ressources animales et halieutiques",
+   "pilier": "2",
+   "titre": "Pêche",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_2.02-043_FR.pdf",
+   "localisation": "Littoral et plans d'eau",
+   "resume": "Le gouvernement vise 70 % de couverture des besoins en protéines halieutiques d'ici 2030, contre 12 % en 2023. La pêche reste sous-exploitée malgré un littoral de 550 km.",
+   "chiffres": [
+    "94 553 t en 2024",
+    "728 000 t de poissons importées par an",
+    "455 milliards FCFA de sorties de devises en 2023"
+   ],
+   "segments": [
+    "Débarcadères aux normes",
+    "Chambres froides et entrepôts frigorifiques",
+    "Marchés à poisson modernes",
+    "Chantier naval de pêche"
+   ],
+   "incitations": [
+    "Exonération partielle des droits de douane",
+    "Suspension de TVA et crédits d'impôt sur la chaîne du froid"
+   ],
+   "emplois": "100 000 emplois directs et 580 000 indirects aujourd'hui",
+   "montant": ""
+  },
+  {
+   "code": "OP_2.02-044",
+   "secteur": "2.02",
+   "secteur_nom": "Ressources animales et halieutiques",
+   "pilier": "2",
+   "titre": "Aquaculture",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_2.02-044_FR.pdf",
+   "localisation": "Côte d'Ivoire",
+   "resume": "L'aquaculture est stratégique pour la souveraineté alimentaire et l'économie bleue. Le PND vise à faire passer la production de 9 915 t à 149 064 t d'ici 2030.",
+   "chiffres": [
+    "9 915 t en 2024",
+    "149 064 t visées en 2030",
+    "313 millions d'alevins à produire par an"
+   ],
+   "segments": [
+    "Fermes aquacoles industrielles",
+    "Écloseries privées",
+    "Aliments composés",
+    "Stockage, transformation et commercialisation"
+   ],
+   "incitations": [
+    "Exonération partielle des droits de douane",
+    "Suspension de TVA sur intrants à l'installation"
+   ],
+   "emplois": "84 780 emplois nouveaux d'ici 2030",
+   "montant": ""
+  },
+  {
+   "code": "OP_2.02-045",
+   "secteur": "2.02",
+   "secteur_nom": "Ressources animales et halieutiques",
+   "pilier": "2",
+   "titre": "Santé publique vétérinaire",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_2.02-045_FR.pdf",
+   "localisation": "Abidjan, Daloa, Bouaké, Korhogo, San Pedro",
+   "resume": "Le pays vise un système de santé publique vétérinaire moderne fondé sur l'approche « Une seule santé ». Les services vétérinaires privés sont éligibles au Code des investissements.",
+   "chiffres": [
+    "48 milliards FCFA de pertes annuelles",
+    "400 milliards FCFA de denrées animales importées par an"
+   ],
+   "segments": [
+    "Cliniques vétérinaires",
+    "Laboratoires d'analyses",
+    "Distribution et production de vaccins",
+    "Traçabilité numérique du bétail"
+   ],
+   "incitations": [
+    "Exonération partielle des droits de douane sur équipements et réactifs",
+    "Suspension de TVA sur médicaments et vaccins à l'installation"
+   ],
+   "emplois": "Plusieurs milliers d'emplois qualifiés",
+   "montant": "3,8 Md FCFA (projet INAVET)"
+  },
+  {
+   "code": "OP_2.02-051",
+   "secteur": "2.02",
+   "secteur_nom": "Ressources animales et halieutiques",
+   "pilier": "2",
+   "titre": "Production d'intrants et de matériel d'élevage",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_2.02-051_FR.pdf",
+   "localisation": "Tout le territoire",
+   "resume": "La production locale d'intrants et de matériels d'élevage et halieutiques reste faible et dépendante des importations. Le pays vise à couvrir 75 % des besoins en protéines animales et halieutiques d'ici 2030.",
+   "chiffres": [
+    "12 % de couverture en produits halieutiques",
+    "49 % en viandes et abats",
+    "782 milliards FCFA d'importations"
+   ],
+   "segments": [
+    "Aliments pour bétail, volailles et poissons",
+    "Matériels d'élevage et d'aquaculture",
+    "Alevins et poussins d'un jour",
+    "Produits vétérinaires"
+   ],
+   "incitations": [
+    "TVA réduite à 9 % sur intrants, aliments et emballages",
+    "Exonérations de 5 à 15 ans via l'agrément CEPICI"
+   ],
+   "emplois": "Plus de 700 000 emplois d'ici 2030",
+   "montant": ""
+  },
+  {
+   "code": "OP_3.05-051",
+   "secteur": "3.05",
+   "secteur_nom": "Commerce",
+   "pilier": "3",
+   "titre": "Commerce de détail",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.05-051_FR.pdf",
+   "localisation": "Toutes les régions",
+   "resume": "La Côte d'Ivoire veut transformer un commerce de détail majoritairement informel en réseau structuré et digitalisé. Les supermarchés progressent vite et le paiement mobile favorise l'inclusion financière.",
+   "chiffres": [
+    "29 803 boutiques",
+    "358 supermarchés",
+    "8 000 milliards FCFA"
+   ],
+   "segments": [
+    "Supermarchés et supérettes",
+    "E-commerce et commerce mobile",
+    "Franchises et enseignes",
+    "Centres commerciaux"
+   ],
+   "incitations": [
+    "Exonération partielle des droits de douane (agrément)",
+    "Exonération d'impôt sur les sociétés de 5 à 15 ans selon les zones"
+   ],
+   "emplois": "Environ 3,5 millions d'emplois attendus",
+   "montant": ""
+  },
+  {
+   "code": "OP_3.05-052",
+   "secteur": "3.05",
+   "secteur_nom": "Commerce",
+   "pilier": "3",
+   "titre": "Commerce de gros",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.05-052_FR.pdf",
+   "localisation": "Côte d'Ivoire, hub vers 8 pays enclavés",
+   "resume": "Le commerce de gros progresse fortement (+33 % en décembre 2025 en glissement annuel). Le port d'Abidjan donne accès à huit pays enclavés de la sous-région.",
+   "chiffres": [
+    "16,4 %",
+    "8 000 milliards FCFA",
+    "500 000 unités économiques"
+   ],
+   "segments": [
+    "Plateformes logistiques et entrepôts",
+    "Grossistes agroalimentaires",
+    "Marketplaces B2B",
+    "Grossistes pharmaceutiques"
+   ],
+   "incitations": [
+    "Exonération d'impôt sur les sociétés de 5 à 15 ans selon les zones",
+    "Exonération ou suspension de TVA sur équipements"
+   ],
+   "emplois": "80 000 emplois attendus en 2030",
+   "montant": ""
+  },
+  {
+   "code": "OP_3.07-022",
+   "secteur": "3.07",
+   "secteur_nom": "Culture et francophonie",
+   "pilier": "3",
+   "titre": "Industries culturelles et créatives (cinéma, édition, jeux vidéo)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.07-022_FR.pdf",
+   "localisation": "Côte d'Ivoire",
+   "resume": "Les industries culturelles et créatives visent à faire du pays le carrefour ouest-africain de la création numérique et de l'audiovisuel. Le secteur s'appuie sur un marché de plus de 30 millions d'habitants très jeune.",
+   "chiffres": [
+    "171,18 milliards FCFA de chiffre d'affaires en 2024",
+    "6 070 entreprises culturelles",
+    "plus de 30 millions d'habitants"
+   ],
+   "segments": [
+    "Salles multifonctionnelles",
+    "Studios de tournage et post-production",
+    "Édition et imprimeries",
+    "Plateformes de diffusion de contenus"
+   ],
+   "incitations": [
+    "Exonérations douanières sur matériel non disponible localement",
+    "Régimes du Code des investissements pour les start-up TIC"
+   ],
+   "emplois": "150 000 emplois projetés en 2030",
+   "montant": ""
+  },
+  {
+   "code": "OP_3.07-023",
+   "secteur": "3.07",
+   "secteur_nom": "Culture et francophonie",
+   "pilier": "3",
+   "titre": "Design, arts visuels et architecture d'intérieur",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.07-023_FR.pdf",
+   "localisation": "Abidjan et régions",
+   "resume": "Le design, les arts visuels et l'architecture d'intérieur bénéficient de la croissance du BTP et de la montée de la création ivoirienne. Le pays veut structurer une filière créative à forte valeur ajoutée.",
+   "chiffres": [
+    "Activités culturelles : 4,3 % du PIB en 2024",
+    "7,37 % de l'emploi (2019)",
+    "croissance annuelle du BTP de 8 % à 12 %"
+   ],
+   "segments": [
+    "Mobilier design haut de gamme",
+    "Galeries d'art immersives",
+    "Matériaux de construction innovants",
+    "Cités de l'art (co-working, FabLabs, résidences)"
+   ],
+   "incitations": [
+    "Exonération des droits de douane sur le matériel technique",
+    "Allègements d'impôt sur les bénéfices selon la localisation"
+   ],
+   "emplois": "Plus de 10 000 emplois d'ici 2030",
+   "montant": ""
+  },
+  {
+   "code": "OP_3.04-003",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "titre": "Industrie pharmaceutique",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-003_FR.pdf",
+   "localisation": "District d'Abidjan (PK24 Akoupé-Zeudji, Yopougon), Grand-Bassam (zone franche VITIB)",
+   "resume": "Le pays veut réduire sa vulnérabilité sanitaire en développant la production locale de médicaments, alors que plus de 90 % des besoins sont importés. L'objectif est de porter la part de la production locale de moins de 6 % à 30 % d'ici 2030.",
+   "chiffres": [
+    "Marché de plus de 250 milliards FCFA",
+    "Plus de 90 % des produits de santé importés",
+    "Production locale de moins de 6 % à 30 % en 2030"
+   ],
+   "segments": [
+    "Usines de génériques",
+    "Bioproduction, solutés et dispositifs médicaux",
+    "Excipients locaux",
+    "Sérialisation et traçabilité",
+    "Logistique sous température dirigée",
+    "Laboratoires de bioéquivalence"
+   ],
+   "incitations": [
+    "Exonération de douane et de TVA sur équipements",
+    "Exonération de BIC de 5 à 15 ans",
+    "Marge de préférence de 15 % dans les appels d'offres de la NPSP"
+   ],
+   "emplois": "1 000 emplois directs en production, 3 000 à 4 000 indirects",
+   "montant": ""
+  },
+  {
+   "code": "OP_3.04-004",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "titre": "Industrie textile",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-004_FR.pdf",
+   "localisation": "Côte d'Ivoire",
+   "resume": "La Côte d'Ivoire veut bâtir une chaîne textile intégrée pour cesser d'exporter son coton brut. Le secteur est très intensif en main-d'œuvre et fait vivre près de 3,5 millions de personnes.",
+   "chiffres": [
+    "Plus de 300 000 t de coton graine par an",
+    "moins de 5 % transformés localement, cible 50 % en 2030",
+    "plus de 95 % de la fibre exportée brute"
+   ],
+   "segments": [
+    "Filature",
+    "Tissage et tricotage",
+    "Confection",
+    "Équipementiers textiles (fils, boutons, étiquettes)"
+   ],
+   "incitations": [
+    "Exonération totale des droits de douane sur équipements",
+    "Exonération de BIC de 5 à 15 ans"
+   ],
+   "emplois": "50 000 à 100 000 emplois industriels d'ici 2030",
+   "montant": ""
+  },
+  {
+   "code": "OP_3.04-005",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "titre": "Automobile et pièces détachées",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-005_FR.pdf",
+   "localisation": "Abidjan, San-Pédro",
+   "resume": "La Côte d'Ivoire veut bâtir une industrie automobile intégrée et devenir le hub d'assemblage de la CEDEAO. Le secteur crée des emplois qualifiés et s'appuie sur le port d'Abidjan.",
+   "chiffres": [
+    "24 633 véhicules neufs immatriculés en 2024",
+    "420 milliards FCFA de chiffre d'affaires",
+    "185 milliards FCFA de recettes fiscales"
+   ],
+   "segments": [
+    "Assemblage de camions, remorques et autobus",
+    "Assemblage de véhicules citadins",
+    "Composants et pièces de rechange",
+    "Gestion connectée de flottes"
+   ],
+   "incitations": [
+    "Exonérations sur composants et machines-outils",
+    "Facilités d'immatriculation des véhicules assemblés localement"
+   ],
+   "emplois": "Milliers d'emplois directs, dizaines de milliers indirects",
+   "montant": ""
+  },
+  {
+   "code": "OP_3.04-006",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "titre": "Cacao : deuxième et troisième transformations",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-006_FR.pdf",
+   "localisation": "San-Pédro, Abidjan",
+   "resume": "Le pays veut passer de premier broyeur mondial à acteur majeur des deuxième et troisième transformations du cacao. San-Pédro et Abidjan sont les pôles visés pour l'industrie chocolatière.",
+   "chiffres": [
+    "2,2 millions de t de fèves par an",
+    "plus de 1,1 million de t de capacité de broyage",
+    "taux de première transformation passé de 26 % à 41 % (2021-2025)"
+   ],
+   "segments": [
+    "Chocolateries industrielles",
+    "Pressage de la liqueur",
+    "Beurre de cacao pour cosmétique et pharmacie",
+    "Produits diététiques à base de cacao"
+   ],
+   "incitations": [
+    "Exonérations d'impôt sur les bénéfices et de douane (catégorie 1)",
+    "Droit unique de sortie réduit pour les produits transformés"
+   ],
+   "emplois": "Plusieurs milliers d'emplois qualifiés",
+   "montant": ""
+  },
+  {
+   "code": "OP_3.04-007",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "titre": "Anacarde : deuxième et troisième transformations",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-007_FR.pdf"
+  },
+  {
+   "code": "OP_3.04-008",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "titre": "Filière karité",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-008_FR.pdf"
+  },
+  {
+   "code": "OP_3.04-009",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "titre": "Filière cola",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-009_FR.pdf"
+  },
+  {
+   "code": "OP_3.04-010",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "titre": "Emballage",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-010_FR.pdf"
+  },
+  {
+   "code": "OP_3.04-011",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "titre": "Horticulture",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-011_FR.pdf"
+  },
+  {
+   "code": "OP_3.04-012",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "titre": "Filière ananas",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-012_FR.pdf"
+  },
+  {
+   "code": "OP_3.04-013",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "titre": "Filière mangue",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-013_FR.pdf"
+  },
+  {
+   "code": "OP_3.04-014",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "titre": "Filière riz",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-014_FR.pdf"
+  },
+  {
+   "code": "OP_3.04-015",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "titre": "Tubercules (manioc, igname)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-015_FR.pdf"
+  },
+  {
+   "code": "OP_3.04-016",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "titre": "Maïs et soja",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-016_FR.pdf"
+  },
+  {
+   "code": "OP_3.04-018",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "titre": "Banane dessert",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-018_FR.pdf"
+  },
+  {
+   "code": "OP_3.04-019",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "titre": "Hévéa : deuxième et troisième transformations",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-019_FR.pdf"
+  },
+  {
+   "code": "OP_3.04-020",
+   "secteur": "3.04",
+   "secteur_nom": "Industrie",
+   "pilier": "3",
+   "titre": "Filière coco",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.04-020_FR.pdf"
+  },
+  {
+   "code": "OP_3.03-061",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "titre": "Hydrocarbures et dérivés",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.03-061_FR.pdf"
+  },
+  {
+   "code": "OP_3.03-064",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "titre": "Énergies renouvelables",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.03-064_FR.pdf"
+  },
+  {
+   "code": "OP_3.03-065",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "titre": "Exploitation des ressources minières",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.03-065_FR.pdf"
+  },
+  {
+   "code": "OP_3.03-068",
+   "secteur": "3.03",
+   "secteur_nom": "Mines, hydrocarbures et énergie",
+   "pilier": "3",
+   "titre": "Produits dérivés (pétrochimie, GPL, plastique)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.03-068_FR.pdf"
+  },
+  {
+   "code": "OP_3.08-023",
+   "secteur": "3.08",
+   "secteur_nom": "Tourisme",
+   "pilier": "3",
+   "titre": "Hébergement et restauration",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.08-023_FR.pdf"
+  },
+  {
+   "code": "OP_3.08-024",
+   "secteur": "3.08",
+   "secteur_nom": "Tourisme",
+   "pilier": "3",
+   "titre": "Activités, attractions et loisirs",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_3.08-024_FR.pdf"
+  },
+  {
+   "code": "OP_4.12-084",
+   "secteur": "4.12",
+   "secteur_nom": "Sport",
+   "pilier": "4",
+   "titre": "Économie sportive",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_4.12-084_FR.pdf"
+  },
+  {
+   "code": "OP_5.09-001",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "titre": "Assainissement et traitement des boues de vidange",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.09-001_FR.pdf"
+  },
+  {
+   "code": "OP_5.09-002",
+   "secteur": "5.09",
+   "secteur_nom": "Assainissement et salubrité",
+   "pilier": "5",
+   "titre": "Gestion des déchets solides",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.09-002_FR.pdf"
+  },
+  {
+   "code": "OP_5.03-034",
+   "secteur": "5.03",
+   "secteur_nom": "Économie numérique et poste",
+   "pilier": "5",
+   "titre": "Intelligence artificielle",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-034_FR.pdf"
+  },
+  {
+   "code": "OP_5.03-035",
+   "secteur": "5.03",
+   "secteur_nom": "Économie numérique et poste",
+   "pilier": "5",
+   "titre": "Télécommunications et services postaux",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-035_FR.pdf"
+  },
+  {
+   "code": "OP_5.03-036",
+   "secteur": "5.03",
+   "secteur_nom": "Économie numérique et poste",
+   "pilier": "5",
+   "titre": "Numérisation des services publics (e-gouvernement)",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-036_FR.pdf"
+  },
+  {
+   "code": "OP_5.03-037",
+   "secteur": "5.03",
+   "secteur_nom": "Économie numérique et poste",
+   "pilier": "5",
+   "titre": "Logiciels, plateformes numériques et cloud",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-037_FR.pdf"
+  },
+  {
+   "code": "OP_5.03-038",
+   "secteur": "5.03",
+   "secteur_nom": "Économie numérique et poste",
+   "pilier": "5",
+   "titre": "Cybersécurité",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-038_FR.pdf"
+  },
+  {
+   "code": "OP_5.03-039",
+   "secteur": "5.03",
+   "secteur_nom": "Économie numérique et poste",
+   "pilier": "5",
+   "titre": "Connectivité, réseaux et infrastructures de communication",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-039_FR.pdf"
+  },
+  {
+   "code": "OP_5.03-040",
+   "secteur": "5.03",
+   "secteur_nom": "Économie numérique et poste",
+   "pilier": "5",
+   "titre": "E-commerce",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.03-040_FR.pdf"
+  },
+  {
+   "code": "OP_5.05-001",
+   "secteur": "5.05",
+   "secteur_nom": "Environnement et développement durable",
+   "pilier": "5",
+   "titre": "Biodiversité, aires protégées et écotourisme",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.05-001_FR.pdf"
+  },
+  {
+   "code": "OP_5.05-002",
+   "secteur": "5.05",
+   "secteur_nom": "Environnement et développement durable",
+   "pilier": "5",
+   "titre": "Marché carbone et finance climatique",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.05-002_FR.pdf"
+  },
+  {
+   "code": "OP_5.05-003",
+   "secteur": "5.05",
+   "secteur_nom": "Environnement et développement durable",
+   "pilier": "5",
+   "titre": "Transition écologique et économie circulaire",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.05-003_FR.pdf"
+  },
+  {
+   "code": "OP_5.07-001",
+   "secteur": "5.07",
+   "secteur_nom": "Urbanisme et habitat",
+   "pilier": "5",
+   "titre": "Bâtiment et matériaux de construction",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.07-001_FR.pdf"
+  },
+  {
+   "code": "OP_5.07-002",
+   "secteur": "5.07",
+   "secteur_nom": "Urbanisme et habitat",
+   "pilier": "5",
+   "titre": "Immobilier commercial et de bureaux",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_5.07-002_FR.pdf"
+  },
+  {
+   "code": "OP_6.05-085",
+   "secteur": "6.05",
+   "secteur_nom": "Communication",
+   "pilier": "6",
+   "titre": "Nouveaux médias",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_6.05-085_FR.pdf"
+  },
+  {
+   "code": "OP_6.06-086",
+   "secteur": "6.05",
+   "secteur_nom": "Communication",
+   "pilier": "6",
+   "titre": "Audiovisuel",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_6.06-086_FR.pdf"
+  },
+  {
+   "code": "OP_6.07-087",
+   "secteur": "6.05",
+   "secteur_nom": "Communication",
+   "pilier": "6",
+   "titre": "Communication publicitaire",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_6.07-087_FR.pdf"
+  },
+  {
+   "code": "OP_6.08-088",
+   "secteur": "6.05",
+   "secteur_nom": "Communication",
+   "pilier": "6",
+   "titre": "Presse",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_6.08-088_FR.pdf"
+  },
+  {
+   "code": "OP_x.xx-070",
+   "secteur": "x.xx",
+   "secteur_nom": "Économie circulaire",
+   "pilier": "6",
+   "titre": "Écoconception",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_x.xx-070_FR.pdf"
+  },
+  {
+   "code": "OP_x.xx-071",
+   "secteur": "x.xx",
+   "secteur_nom": "Économie circulaire",
+   "pilier": "6",
+   "titre": "Écologie industrielle et territoriale",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_x.xx-071_FR.pdf"
+  },
+  {
+   "code": "OP_x.xx-072",
+   "secteur": "x.xx",
+   "secteur_nom": "Économie circulaire",
+   "pilier": "6",
+   "titre": "Économie de la fonctionnalité",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_x.xx-072_FR.pdf"
+  },
+  {
+   "code": "OP_x.xx-074",
+   "secteur": "x.xx",
+   "secteur_nom": "Économie circulaire",
+   "pilier": "6",
+   "titre": "Allongement de la durée de vie et recyclage",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_x.xx-074_FR.pdf"
+  },
+  {
+   "code": "OP_x.xx-075",
+   "secteur": "x.xx",
+   "secteur_nom": "Économie circulaire",
+   "pilier": "6",
+   "titre": "Mise en marché de produits circulaires",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_x.xx-075_FR.pdf"
+  },
+  {
+   "code": "OP_x.xx-076",
+   "secteur": "x.xx",
+   "secteur_nom": "Économie circulaire",
+   "pilier": "6",
+   "titre": "Chaînes de valeur agricoles durables",
+   "pdf": "https://www.gcpnd.gouv.ci/uploads/fiches/opportunites/fr/OP_x.xx-076_FR.pdf"
+  }
+ ]
+}
