@@ -2,14 +2,14 @@
 {% block title %}Mon compte{% endblock %}
 {% block content %}
 <div class="wrap" style="max-width:860px">
-  <div class="page-head"><div class="kicker">Mon compte</div><h1>Bonjour {{ user.first_name|default:user.email }}</h1></div>
+  <div class="phead"><div class="kicker">Mon compte</div><h1>Bonjour {{ user.first_name|default:user.email }}</h1></div>
   <div class="grid-2">
     <section class="panel">
       <h2>Mon accès</h2>
       {% if user.is_staff %}<p><span class="tag">Administrateur</span><br>Accès complet sans code.</p>{% endif %}
       {% if acces %}<p><span class="tag">Actif</span><br>Formule <strong>{{ acces.get_formule_display }}</strong>, valable jusqu'au <strong>{{ acces.expires|date:"d/m/Y" }}</strong>.</p>
       {% elif not user.is_staff %}<p><span class="tag o">Inactif</span><br>Aucun accès en cours.</p>{% endif %}
-      <a class="btn btn-cta btn-sm" href="{% url 'comptes:activer' %}">Activer un nouveau code</a>
+      <a class="btn btn-primary btn-sm" href="{% url 'comptes:activer' %}">Activer un nouveau code</a>
       {% if codes %}<h3 style="margin-top:20px">Historique</h3>
       <div class="tblwrap" style="box-shadow:none"><table><thead><tr><th>Code</th><th>Formule</th><th>Jusqu'au</th></tr></thead><tbody>
         {% for c in codes %}<tr><td class="code">{{ c.code }}</td><td>{{ c.get_formule_display }}</td><td class="mono small">{{ c.expires|date:"d/m/Y" }}</td></tr>{% endfor %}

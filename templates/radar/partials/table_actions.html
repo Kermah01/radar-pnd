@@ -1,15 +1,31 @@
 {% load radar_tags %}
-<div class="tblwrap"><table class="t-actions">
-  <thead><tr><th>Code</th><th>Action</th><th class="hide-m">Structure responsable</th><th class="num">Total</th><th class="hide-m">2026 à 2030</th><th>Tendance</th></tr></thead>
+<ul class="alist only-mob"{% if paged %} id="liste-cartes"{% endif %}>
+  {% for a in lignes %}
+  <li class="acard" style="--pc:{{ a.couleur }}">
+    <div class="meta"><span class="code">{{ a.code }}</span><span aria-hidden="true">·</span><span class="sec">{{ a.secteur.nom }}</span></div>
+    <a class="ttl" href="{{ a.get_absolute_url }}">{{ a.label }}</a>
+    {% if a.structure %}<div class="struct">{{ a.structure }}</div>{% endif %}
+    <div class="foot">
+      <span class="amt">{{ a.total|md }}<small> FCFA</small></span>
+      <span class="tags"><span class="pill t-{{ a.trend|tendance_cls }}">{{ a.trend }}</span>{% if a.peak %}<span>pic {{ a.peak }}</span>{% endif %}</span>
+      {% spark a.couts 84 22 a.couleur %}
+    </div>
+  </li>
+  {% empty %}
+  <li class="alist-empty">Aucune action ne correspond. Élargissez les filtres ou modifiez la recherche.</li>
+  {% endfor %}
+</ul>
+<div class="tblwrap only-desk"><table class="t-actions"{% if paged %} id="liste-table"{% endif %}>
+  <thead><tr><th>Code</th><th>Action</th><th>Structure responsable</th><th class="num">Total</th><th>2026 à 2030</th><th>Tendance</th></tr></thead>
   <tbody>
   {% for a in lignes %}
     <tr class="rowlink" data-href="{{ a.get_absolute_url }}">
       <td class="code nowrap"><span class="dot" style="--pc:{{ a.couleur }}"></span>{{ a.code }}</td>
       <td><a class="al" href="{{ a.get_absolute_url }}">{{ a.label }}</a><div class="note">{{ a.secteur.nom }}</div></td>
-      <td class="hide-m small">{{ a.structure|default:"" }}</td>
+      <td class="small">{{ a.structure|default:"" }}</td>
       <td class="num">{{ a.total|md }}</td>
-      <td class="hide-m">{% spark a.couts 96 22 a.couleur %}</td>
-      <td><span class="pill t-{{ a.trend|tendance_cls }}">{{ a.trend }}</span>{% if a.peak %}<div class="note mono" style="margin-top:3px">pic {{ a.peak }}</div>{% endif %}</td>
+      <td>{% spark a.couts 96 22 a.couleur %}</td>
+      <td><span class="pill t-{{ a.trend|tendance_cls }}">{{ a.trend }}</span>{% if a.peak %}<div class="note" style="margin-top:4px">pic {{ a.peak }}</div>{% endif %}</td>
     </tr>
   {% empty %}
     <tr><td colspan="6">Aucune action ne correspond. Élargissez les filtres ou modifiez la recherche.</td></tr>

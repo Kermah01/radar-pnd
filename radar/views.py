@@ -81,14 +81,19 @@ def tendances(request):
     tendances_n = dict(Action.objects.values_list("trend").annotate(n=Count("id")).values_list("trend", "n"))
     tendances_m = dict(Action.objects.values_list("trend").annotate(t=Sum("total")).values_list("trend", "t"))
     croissance = sorted([s for s in secteurs if s.total >= 50000 and s.cost_2026], key=lambda s: -s.growth)
+    vmax = max([s.total for s in secteurs[:20]] + [1])
+    gmax = math.log(max([s.growth for s in croissance[:20]] + [2]))
     graph = {
         "secteurs_total": [{"code": s.code, "nom": s.nom, "v": round(s.total / 1000, 1), "c": COULEURS_PILIERS[s.pilier.numero],
-                            "url": s.get_absolute_url()} for s in secteurs[:20]],
+                            "url": s.get_absolute_url(), "w": round(s.total / vmax * 100, 1)} for s in secteurs[:20]],
+        # Largeur des barres de montée en charge sur une échelle logarithmique (x 1 = 0 %)
         "secteurs_croissance": [{"code": s.code, "nom": s.nom, "v": round(s.growth, 2), "c": COULEURS_PILIERS[s.pilier.numero],
-                                 "url": s.get_absolute_url()} for s in croissance[:20]],
+                                 "url": s.get_absolute_url(), "w": round(max(math.log(max(s.growth, 1)) / gmax * 100, 2), 1)}
+                                for s in croissance[:20]],
         "annees": list(ANNEES),
         "piliers": par_pilier,
-        "familles": [{"nom": f.nom, "v": round((f.t or 0) / 1000, 1), "slug": f.slug} for f in familles],
+        "familles": [{"nom": f.nom, "v": round((f.t or 0) / 1000, 1), "slug": f.slug,
+                      "w": round((f.t or 0) / (max([x.t or 0 for x in familles] + [1])) * 100, 1)} for f in familles],
         "tendances": [{"nom": t, "n": tendances_n.get(t, 0), "v": round((tendances_m.get(t) or 0) / 1000, 1)}
                       for t in Action.TENDANCES],
     }
@@ -180,6 +185,7 @@ def explorer(request):
         "familles": Famille.objects.all(), "tendances": Action.TENDANCES, "tris": TRIS,
         "f": {"q": q, "pilier": pil, "secteur": sec, "famille": fam, "tendance": tr, "tri": tri},
         "ids_sel": _ids_selection(request.user), "apercu_lignes": settings.RADAR["APERCU_LIGNES"],
+        "nb_filtres": sum(1 for v in (pil, sec, fam, tr) if v),
     })
 
 
@@ -234,6 +240,7 @@ def mon_radar(request):
         "resultats": resultats, "nb": nb, "montant_total": montant_total,
         "montant_top": sum(a.total for a, _ in resultats), "ids_sel": _ids_selection(request.user),
         "horizons": Profil.HORIZONS, "tailles": Profil.TAILLES,
+        "presets": {p["id"]: profil_preset(p["id"]) for p in PROFILS},
         "gc_resultats": gc_resultats, "gc_nb": gc_nb, "gc_total": gc_total, "gc_opps": gc_opps, "gc_invest": gc_invest,
     })
 

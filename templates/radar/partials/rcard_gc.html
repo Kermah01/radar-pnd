@@ -1,14 +1,15 @@
 {% load radar_tags %}
 <article class="rcard rcard-gc" style="--pc:{{ p.couleur }}">
-  <div class="score{% if sc >= 75 %} hi{% endif %}" style="--s:{{ sc }}" title="Score de pertinence sur 100"><b>{{ sc }}</b></div>
-  <div style="min-width:0">
-    <div class="code"><span class="dot" style="--pc:{{ p.couleur }}"></span>{{ p.code }} · <span class="sec">{{ p.secteur_nom }}</span></div>
-    <a class="ttl" href="{{ p.get_absolute_url }}">{{ p.titre }}</a>
-    <div class="meta">{% badge_type p.type True %}</div>
-    {% if raisons %}<div class="why"><b>Pourquoi :</b> {{ raisons|join:", " }}.</div>{% endif %}
+  <div class="rcard-top" style="grid-template-columns:52px minmax(0,1fr)">
+    <div class="score{% if sc >= 75 %} hi{% endif %}" style="--s:{{ sc }}" role="img" aria-label="Score de pertinence : {{ sc }} sur 100"><b>{{ sc }}</b></div>
+    <div style="min-width:0">
+      <div class="meta">{% badge_type p.type %}<span class="code">{{ p.code }}</span><span aria-hidden="true">·</span><span class="sec">{{ p.secteur_nom }}</span></div>
+      <a class="ttl" href="{{ p.get_absolute_url }}">{{ p.titre }}</a>
+    </div>
   </div>
-  <div class="side">
+  {% if raisons %}<ul class="reasons" aria-label="Pourquoi ce score">{% for r in raisons %}<li>{{ r }}</li>{% endfor %}</ul>{% endif %}
+  <div class="rcard-foot">
     <span class="amt">{% if p.cout_millions is None %}Non défini{% else %}{{ p.cout_millions|md_gc }} FCFA{% endif %}</span>
-    {% if p.pdf_url %}<a class="pdf small" href="{{ p.pdf_url }}" target="_blank" rel="noopener">Fiche officielle (PDF)</a>{% endif %}
+    {% if p.pdf_url %}<a class="pdf" href="{{ p.pdf_url }}" target="_blank" rel="noopener">Fiche officielle (PDF)<svg class="ico"><use href="#i-external"/></svg></a>{% endif %}
   </div>
 </article>

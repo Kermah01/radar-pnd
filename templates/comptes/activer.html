@@ -10,7 +10,7 @@
     <form method="post">{% csrf_token %}
       {% include "comptes/_field.html" with field=form.code extra="code-input" %}
       <input type="hidden" name="next" value="{{ next }}">
-      <button class="btn btn-cta" type="submit" style="width:100%">Activer</button>
+      <button class="btn btn-primary" type="submit" style="width:100%">Activer</button>
     </form>
   </div>
 </div></div>

@@ -4,8 +4,8 @@
   <div class="ind">
     <div class="lbl-cell"><div class="lbl"><span class="code">{{ i.ident }}</span> {{ i.label }}</div>
       <div class="sub">{% if i.niveau_label %}{{ i.niveau_label }}{% else %}{{ i.niveau }}{% endif %}{% if i.source %} · Source : {{ i.source }}{% endif %}{% if i.odd %} · ODD {{ i.odd }}{% endif %}</div></div>
-    <div class="v">{{ i.base|default:"n.d." }}{% if i.annee %}<small>{{ i.annee }}</small>{% endif %}</div>
-    <div class="v">{{ i.cible_finale|default:"n.d." }}</div>
+    <div class="v" data-l="Référence">{{ i.base|default:"n.d." }}{% if i.annee %}<small>{{ i.annee }}</small>{% endif %}</div>
+    <div class="v" data-l="Cible 2030">{{ i.cible_finale|default:"n.d." }}</div>
   </div>
   {% endfor %}
 </div>

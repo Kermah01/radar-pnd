@@ -58,6 +58,18 @@ def couleur(code):
     return COULEURS_PILIERS.get(str(code).split(".")[0], "#5B6B82")
 
 
+PILIERS_COURTS = {
+    "1": "Paix et sécurité", "2": "Agriculture", "3": "Investissement privé",
+    "4": "Capital humain", "5": "Infrastructures", "6": "Gouvernance",
+}
+
+
+@register.filter
+def pilier_court(numero):
+    """Intitulé court d'un pilier, pour les tuiles et les puces."""
+    return PILIERS_COURTS.get(str(numero), f"Pilier {numero}")
+
+
 @register.filter
 def tendance_cls(t):
     return {"Hausse forte": "up", "Hausse": "up", "Nouvelle": "new", "Baisse": "down", "Stable": "flat"}.get(t, "flat")
@@ -69,6 +81,11 @@ def get(d, k):
         return d.get(k)
     except AttributeError:
         return None
+
+
+@register.filter
+def split_virgule(v):
+    return [x.strip() for x in str(v).split(",") if x.strip()]
 
 
 @register.filter

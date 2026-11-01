@@ -1,19 +1,18 @@
 {% load radar_tags %}
 <article class="rcard" style="--pc:{{ a.couleur }}">
-  {% if sc %}<div class="score{% if sc.score >= 75 %} hi{% endif %}" style="--s:{{ sc.score }}" title="Score de pertinence sur 100"><b>{{ sc.score }}</b></div>{% else %}<div></div>{% endif %}
-  <div style="min-width:0">
-    <div class="code"><span class="dot" style="--pc:{{ a.couleur }}"></span>{{ a.code }} · <span class="sec">{{ a.secteur.nom }}</span></div>
-    <a class="ttl" href="{{ a.get_absolute_url }}">{{ a.label }}</a>
-    <div class="meta">
-      <span class="pill t-{{ a.trend|tendance_cls }}">{{ a.trend }}</span>
-      {% if a.peak %}<span>Pic en {{ a.peak }}</span>{% endif %}
-      {% if a.structure %}<span>· {{ a.structure }}</span>{% endif %}
+  <div class="rcard-top">
+    {% if sc %}<div class="score{% if sc.score >= 75 %} hi{% endif %}" style="--s:{{ sc.score }}" role="img" aria-label="Score de pertinence : {{ sc.score }} sur 100"><b>{{ sc.score }}</b></div>{% else %}<div></div>{% endif %}
+    <div style="min-width:0">
+      <div class="meta"><span class="code">{{ a.code }}</span><span aria-hidden="true">·</span><span class="sec">{{ a.secteur.nom }}</span></div>
+      <a class="ttl" href="{{ a.get_absolute_url }}">{{ a.label }}</a>
+      {% if a.structure %}<div class="struct">{{ a.structure }}</div>{% endif %}
     </div>
-    {% if sc and sc.raisons %}<div class="why"><b>Pourquoi :</b> {{ sc.raisons|join:", " }}.</div>{% endif %}
-  </div>
-  <div class="side">
-    <span class="amt">{{ a.total|fcfa }}</span>
-    {% spark a.couts 120 28 a.couleur %}
     {% include "radar/partials/toggle.html" %}
+  </div>
+  {% if sc and sc.raisons %}<ul class="reasons" aria-label="Pourquoi ce score">{% for r in sc.raisons %}<li>{{ r }}</li>{% endfor %}</ul>{% endif %}
+  <div class="rcard-foot">
+    <span class="amt">{{ a.total|fcfa }}</span>
+    <span class="tags"><span class="pill t-{{ a.trend|tendance_cls }}">{{ a.trend }}</span>{% if a.peak %}<span>pic {{ a.peak }}</span>{% endif %}</span>
+    {% spark a.couts 96 24 a.couleur %}
   </div>
 </article>

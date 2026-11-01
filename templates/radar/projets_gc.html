@@ -1,64 +1,91 @@
 {% extends "base.html" %}
 {% load radar_tags %}
 {% block title %}Projets du Groupe consultatif{% endblock %}
-{% block description %}Les {{ chiffres_gc.nb_projets }} projets publics, en partenariat public-privé et privés présentés au Groupe consultatif pour le financement du PND 2026-2030, reliés à la matrice d'actions prioritaires.{% endblock %}
+{% block description %}Les {{ chiffres_gc.nb_projets }} projets du PND 2026-2030 (publics, en partenariat public-privé et privés) présentés aux financeurs lors du Groupe consultatif de juillet 2026, reliés à la matrice d'actions prioritaires.{% endblock %}
 {% block content %}
 <div class="wrap">
-  <div class="page-head">
-    <div class="kicker">Financer · Groupe consultatif pour le financement du PND 2026-2030</div>
+  <div class="phead">
+    <div class="kicker">Projets GCPND · Financer</div>
     <h1>Projets du Groupe consultatif</h1>
-    <p class="lede">Le Groupe consultatif présente aux partenaires techniques et financiers et aux investisseurs {{ chiffres_gc.nb_projets }} projets, pour un coût estimatif total de {{ chiffres_gc.total|md_nombre }} milliards de FCFA. Radar PND les relie ici aux secteurs de la matrice d'actions prioritaires.</p>
-    <div class="gc-types">
-      <div><span class="tbadge tb-pub">Public</span><p><b>Projets majeurs publics</b> portés par l'État, à financer avec ses partenaires techniques et financiers.</p></div>
-      <div><span class="tbadge tb-ppp">PPP</span><p><b>Projets en partenariat public-privé</b> ouverts au financement, à la construction ou à l'exploitation par un opérateur privé.</p></div>
-      <div><span class="tbadge tb-pri">Privé</span><p><b>Projets privés</b> portés par des promoteurs privés, qui recherchent des investisseurs ou des financements.</p></div>
-    </div>
-    <p class="small muted" style="margin:12px 0 0">Chaque projet dispose d'une fiche officielle (PDF) sur gcpnd.gouv.ci. Pour se positionner, partenaires et investisseurs y soumissionnent : <a href="{{ inscription_url }}" target="_blank" rel="noopener">inscription, expression d'intérêt et prise de rendez-vous</a>.</p>
+    <p class="lede">{{ chiffres_gc.nb_projets }} projets du PND 2026-2030, déjà identifiés et mûris, présentés aux partenaires techniques et financiers et aux investisseurs lors du Groupe consultatif des 8 et 9 juillet 2026 à Abidjan. Coût estimatif total : {{ chiffres_gc.total|md_nombre }} milliards de FCFA.</p>
+    {% include "radar/partials/gc_explication.html" with mobile_ferme=True ouvert=True %}
   </div>
 
-  <div class="kpis gc-kpis" style="margin-bottom:18px">
+  <div class="kpis" style="--cols:4;margin-bottom:6px">
     {% for k in kpis %}
     <a class="kpi kpi-link{% if f.type == k.type %} on{% endif %}" href="{% if f.type == k.type %}{% url_param type=None page=None %}{% else %}{% url_param type=k.type page=None %}{% endif %}" {% if f.type == k.type %}aria-current="true"{% endif %}>
       <span class="kh">{% badge_type k.type %}</span>
-      <b>{{ k.t|md_nombre }}<small> Md</small></b>
+      <b>{{ k.t|md_nombre }}<small>Md</small></b>
       <span>{{ k.n }} projet{{ k.n|pluralize }} · {{ k.nom|lower }}</span>
     </a>
     {% endfor %}
-    <a class="kpi kpi-link{% if not f.type %} on{% endif %}" href="{% url_param type=None page=None %}">
+    <a class="kpi kpi-link{% if not f.type %} on{% endif %}" href="{% url_param type=None page=None %}" {% if not f.type %}aria-current="true"{% endif %}>
       <span class="kh"><span class="tbadge">Ensemble</span></span>
-      <b>{{ total|md_nombre }}<small> Md</small></b>
+      <b>{{ total|md_nombre }}<small>Md</small></b>
       <span>{{ nb }} projet{{ nb|pluralize }} affiché{{ nb|pluralize }}</span>
     </a>
   </div>
+  <div class="gc-types">
+    <div><span class="tbadge tb-pub">Public</span><span><b>Projets majeurs publics</b> portés par l'État, à financer avec ses partenaires.</span></div>
+    <div><span class="tbadge tb-ppp">PPP</span><span><b>Partenariats public-privé</b> ouverts au financement, à la construction ou à l'exploitation.</span></div>
+    <div><span class="tbadge tb-pri">Privé</span><span><b>Projets privés</b> dont les promoteurs recherchent investisseurs ou financements.</span></div>
+  </div>
 
-  <form method="get" class="filters" role="search">
-    <div class="q field" style="margin:0"><label for="q">Recherche</label><input type="search" id="q" name="q" value="{{ f.q }}" placeholder="Mot, code (ex. 5.01-043), localité…"></div>
-    <div class="field" style="margin:0"><label for="type">Type</label><select id="type" name="type" onchange="this.form.submit()"><option value="">Tous</option>{% for k, l in types.items %}<option value="{{ k }}" {% if k == f.type %}selected{% endif %}>{{ l }}</option>{% endfor %}</select></div>
-    <div class="field" style="margin:0"><label for="pilier">Pilier</label><select id="pilier" name="pilier" onchange="this.form.secteur.value='';this.form.submit()"><option value="">Tous</option>{% for p in piliers %}<option value="{{ p.numero }}" {% if p.numero == f.pilier %}selected{% endif %}>{{ p.numero }}. {{ p.nom|truncatechars:40 }}</option>{% endfor %}</select></div>
-    <div class="field" style="margin:0"><label for="secteur">Secteur</label><select id="secteur" name="secteur" onchange="this.form.submit()"><option value="">Tous</option>{% for c, n in secteurs %}<option value="{{ c }}" {% if c == f.secteur %}selected{% endif %}>{{ c }} {{ n|truncatechars:38 }}</option>{% endfor %}</select></div>
-    <div class="field" style="margin:0"><label for="cout">Coût estimatif</label><select id="cout" name="cout" onchange="this.form.submit()"><option value="">Tous</option>{% for k, t in tranches.items %}<option value="{{ k }}" {% if k == f.cout %}selected{% endif %}>{{ t.0 }}</option>{% endfor %}</select></div>
-    <input type="hidden" name="tri" value="{{ f.tri }}">
-    <button class="btn" type="submit">Filtrer</button>
+  <form method="get" role="search" data-filters style="margin-top:18px">
+    <div class="searchrow">
+      <div class="searchfield"><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg><label class="sr-only" for="q">Recherche</label><input type="search" id="q" name="q" value="{{ f.q }}" placeholder="Mot, code (ex. 5.01-043), localité…" enterkeyhint="search"></div>
+      <button class="btn btn-ghost filter-btn only-mob" type="button" data-sheet-open="filtres" aria-controls="filtres" aria-expanded="false"><svg class="ico"><use href="#i-filter"/></svg><span class="lbl">Filtres</span><span class="count js-fcount" {% if not nb_filtres %}hidden{% endif %}>{{ nb_filtres }}</span></button>
+    </div>
+    {% if f.type %}<input type="hidden" name="type" value="{{ f.type }}">{% endif %}
+    <div class="filters sheet" id="filtres" aria-label="Filtres" style="--fcols:3">
+      <div class="sheet-head"><h2>Filtres</h2><button class="icon-btn" type="button" data-sheet-close aria-label="Fermer les filtres"><svg class="ico"><use href="#i-close"/></svg></button></div>
+      <div class="field"><label for="pilier">Pilier</label><select id="pilier" name="pilier"><option value="">Tous les piliers</option>{% for p in piliers %}<option value="{{ p.numero }}" {% if p.numero == f.pilier %}selected{% endif %}>{{ p.numero }}. {{ p.nom|truncatechars:44 }}</option>{% endfor %}</select></div>
+      <div class="field"><label for="secteur">Secteur</label><select id="secteur" name="secteur"><option value="">Tous les secteurs</option>{% for c, n in secteurs %}<option value="{{ c }}" {% if c == f.secteur %}selected{% endif %}>{{ c }} {{ n|truncatechars:40 }}</option>{% endfor %}</select></div>
+      <div class="field"><label for="cout">Coût estimatif</label><select id="cout" name="cout"><option value="">Tous les coûts</option>{% for k, t in tranches.items %}<option value="{{ k }}" {% if k == f.cout %}selected{% endif %}>{{ t.0 }}</option>{% endfor %}</select></div>
+      <input type="hidden" name="tri" value="{{ f.tri }}">
+      <button class="btn no-js-submit" type="submit">Filtrer</button>
+      <div class="sheet-foot"><button class="btn btn-ghost" type="button" data-reset>Effacer</button><button class="btn btn-primary" type="submit">Voir les résultats</button></div>
+    </div>
   </form>
+
+  <nav class="hscroll quick" aria-label="Filtrer par type de projet">
+    <a class="qchip" href="{% url_param type=None page=None %}" {% if not f.type %}aria-current="true"{% endif %}>Tous les types</a>
+    {% for k, l in types.items %}<a class="qchip" href="{% url_param type=k page=None %}" {% if k == f.type %}aria-current="true"{% endif %}>{{ l }}</a>{% endfor %}
+    {% for p in piliers %}<a class="qchip" style="--pc:{{ p.couleur }}" href="{% if p.numero == f.pilier %}{% url_param pilier=None secteur=None page=None %}{% else %}{% url_param pilier=p.numero secteur=None page=None %}{% endif %}" {% if p.numero == f.pilier %}aria-current="true"{% endif %}><span class="dot"></span>{{ p.numero }}. {{ p.numero|pilier_court }}</a>{% endfor %}
+  </nav>
+
   <div class="toolbar">
-    <span><strong class="mono" style="color:var(--ink)">{{ nb|nombre }}</strong> projet{{ nb|pluralize }} · <strong class="mono" style="color:var(--ink)">{{ total|md_gc }} FCFA</strong> estimés{% if f.q or f.type or f.pilier or f.secteur or f.cout %} · <a href="{% url 'radar:projets_gc' %}">Réinitialiser</a>{% endif %}</span>
-    <span class="row">
-      <label class="note" for="tri">Trier par</label>
-      <select id="tri" onchange="location.href=this.value">{% for k, l in tris.items %}<option value="{% url_param tri=k page=None %}" {% if k == f.tri %}selected{% endif %}>{{ l }}</option>{% endfor %}</select>
-      {% if a_acces %}<a class="btn btn-ghost btn-sm" href="{% url_param format='csv' page=None %}">Exporter en CSV</a>{% endif %}
+    <span class="tot"><strong>{{ nb|nombre }}</strong> projet{{ nb|pluralize }} · <strong>{{ total|md_gc }} FCFA</strong> estimés</span>
+    <span class="tools">
+      <span class="sortsel"><svg class="ico" aria-hidden="true"><use href="#i-sort"/></svg><label class="sr-only" for="tri">Trier par</label>
+        <select id="tri" onchange="location.href=this.value">{% for k, l in tris.items %}<option value="{% url_param tri=k page=None %}" {% if k == f.tri %}selected{% endif %}>{{ l }}</option>{% endfor %}</select></span>
+      {% if a_acces %}<a class="btn btn-ghost btn-sm" href="{% url_param format='csv' page=None %}" aria-label="Exporter en CSV"><svg class="ico"><use href="#i-download"/></svg><span class="only-desk" style="display:inline">Exporter en CSV</span></a>{% endif %}
     </span>
   </div>
-  {% include "radar/partials/table_projets_gc.html" %}
+  {% if f.q or f.secteur or f.cout %}
+  <div class="active-filters">
+    {% if f.q %}<a class="af" href="{% url_param q=None page=None %}" aria-label="Retirer la recherche {{ f.q }}">« {{ f.q }} »<svg class="ico"><use href="#i-close"/></svg></a>{% endif %}
+    {% if f.secteur %}<a class="af" href="{% url_param secteur=None page=None %}" aria-label="Retirer le filtre secteur">Secteur {{ f.secteur }}<svg class="ico"><use href="#i-close"/></svg></a>{% endif %}
+    {% if f.cout %}{% for k, t in tranches.items %}{% if k == f.cout %}<a class="af" href="{% url_param cout=None page=None %}" aria-label="Retirer le filtre de coût">{{ t.0 }}<svg class="ico"><use href="#i-close"/></svg></a>{% endif %}{% endfor %}{% endif %}
+    <a class="af" style="background:transparent;border-color:var(--line);color:var(--muted)" href="{% url 'radar:projets_gc' %}">Tout effacer</a>
+  </div>
+  {% endif %}
+
+  {% include "radar/partials/table_projets_gc.html" with paged=True %}
   {% if page %}
-    <nav class="pager" aria-label="Pagination">
-      {% if page.has_previous %}<a class="btn btn-ghost btn-sm" href="{% url_param page=page.previous_page_number %}">Précédent</a>{% endif %}
-      <span>Page {{ page.number }} sur {{ page.paginator.num_pages }}</span>
-      {% if page.has_next %}<a class="btn btn-ghost btn-sm" href="{% url_param page=page.next_page_number %}">Suivant</a>{% endif %}
+    <nav class="pager" id="pager" aria-label="Pagination">
+      {% if page.has_next %}<a class="btn btn-ghost more" data-more href="{% url_param page=page.next_page_number %}"><span class="lbl">Charger plus</span><svg class="ico"><use href="#i-chevron"/></svg></a>{% endif %}
+      <span>{{ page.end_index }} sur {{ page.paginator.count|nombre }} affichés</span>
+      {% if page.has_previous %}<a class="btn btn-ghost btn-sm" data-prev-page href="{% url_param page=page.previous_page_number %}">Page précédente</a>{% endif %}
     </nav>
   {% elif nb > apercu_lignes %}
     <div class="gate dark"><p><b>Aperçu limité aux {{ apercu_lignes }} premiers projets.</b> Activez votre accès pour parcourir les {{ nb|nombre }} projets, ouvrir les fiches avec leur paragraphe d'alignement au PND et exporter la liste en CSV.</p>
-      <a class="btn btn-cta" href="{% url 'comptes:inscription' %}">Activer mon accès</a></div>
+      <a class="btn btn-primary" href="{% url 'comptes:inscription' %}">Activer mon accès</a></div>
   {% endif %}
+  <div class="panel" style="margin-top:18px">
+    <h3>Se positionner sur un projet</h3>
+    <p class="small" style="margin-bottom:0">Chaque projet dispose d'une fiche officielle (PDF) sur gcpnd.gouv.ci. Partenaires, investisseurs et opérateurs y expriment leur intérêt : <a href="{{ inscription_url }}" target="_blank" rel="noopener">inscription, expression d'intérêt et prise de rendez-vous</a>.</p>
+  </div>
   {% include "radar/partials/source_gc.html" with extra="Ces coûts, issus des fiches projets, ne se comparent pas directement aux coûts programmés de la matrice d'actions prioritaires." %}
 </div>
 {% endblock %}

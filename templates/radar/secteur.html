@@ -3,17 +3,18 @@
 {% block title %}Secteur {{ secteur.code }} : {{ secteur.nom }}{% endblock %}
 {% block chartjs %}<script src="{% static 'vendor/chart.umd.min.js' %}" defer></script>{% endblock %}
 {% block content %}
-<div class="band-head" style="--pc:{{ secteur.pilier.couleur }}">
-  <div class="wrap page-head">
-    <div class="kicker"><a href="{{ secteur.pilier.get_absolute_url }}">Pilier {{ secteur.pilier.numero }} : {{ secteur.pilier.nom }}</a></div>
-    <h1><span class="bignum mono" style="font-family:var(--f-data);font-size:.75em">{{ secteur.code }}</span> {{ secteur.nom }}</h1>
+<div class="band" style="--pc:{{ secteur.pilier.couleur }}">
+  <div class="wrap phead">
+    <nav class="crumbs" aria-label="Fil d'Ariane"><a href="{% url 'radar:tendances' %}">Tendances</a><span class="sep">/</span><a href="{{ secteur.pilier.get_absolute_url }}">Pilier {{ secteur.pilier.numero }} : {{ secteur.pilier.numero|pilier_court }}</a></nav>
+    <span class="code fiche-code">Secteur {{ secteur.code }}</span>
+    <h1>{{ secteur.nom }}</h1>
     {% if secteur.resultat %}<p class="lede"><strong style="color:var(--ink)">Résultat sectoriel attendu :</strong> {{ secteur.resultat }}</p>{% endif %}
   </div>
 </div>
-<div class="wrap" style="padding-top:24px">
-  <div class="kpis" style="margin-bottom:20px">
-    <div class="kpi"><b>{{ secteur.total|md }}</b><span>FCFA programmés 2026-2030</span></div>
-    <div class="kpi"><b>{{ part_pilier|nombre:1 }}<small> %</small></b><span>du pilier {{ secteur.pilier.numero }}</span></div>
+<div class="wrap" style="padding-top:18px">
+  <div class="kpis" style="margin-bottom:18px">
+    <div class="kpi accent"><b>{{ secteur.total|md }}</b><span>FCFA programmés 2026-2030</span></div>
+    <div class="kpi"><b>{{ part_pilier|nombre:1 }}<small>%</small></b><span>du pilier {{ secteur.pilier.numero }}</span></div>
     <div class="kpi"><b>{{ nb_actions|nombre }}</b><span>actions · {{ effets|length }} effets</span></div>
     <div class="kpi"><b>{% if secteur.cost_2026 %}{{ secteur.growth|multip }}{% else %}n.d.{% endif %}</b><span>rapport 2030 / 2026</span></div>
   </div>
@@ -25,12 +26,12 @@
     </section>
     <section class="panel">
       <div class="section-head"><h2>Familles d'opportunités</h2><span class="note">Une action peut relever de plusieurs familles</span></div>
-      <div class="hbars">{% with m=familles.0.t %}{% for f in familles %}<a class="hbar" href="{% url 'radar:explorer' %}?secteur={{ secteur.code }}&famille={{ f.slug }}" style="--pc:{{ secteur.pilier.couleur }}"><span class="nm">{{ f.nom }} <span class="note">({{ f.n }})</span></span><span class="tr"><i style="width:{% widthratio f.t m 100 %}%"></i></span><span class="v">{{ f.t|md }}</span></a>{% endfor %}{% endwith %}</div>
+      <div class="hbars">{% with m=familles.0.t %}{% for f in familles %}<a class="hbar" href="{% url 'radar:explorer' %}?secteur={{ secteur.code }}&famille={{ f.slug }}" style="--pc:{{ secteur.pilier.couleur }}"><span class="nm">{{ f.nom }} <span class="note">({{ f.n }})</span></span><span class="v">{{ f.t|md }}</span><span class="tr"><i style="width:{% widthratio f.t m 100 %}%"></i></span></a>{% endfor %}{% endwith %}</div>
     </section>
   </div>
 
   <section class="section">
-    <div class="section-head"><h2>Actions les plus dotées</h2><a class="btn btn-ghost btn-sm" href="{% url 'radar:explorer' %}?secteur={{ secteur.code }}">Les {{ nb_actions }} actions du secteur</a></div>
+    <div class="section-head"><h2>Actions les plus dotées</h2><a class="link-more" href="{% url 'radar:explorer' %}?secteur={{ secteur.code }}">Les {{ nb_actions }} actions du secteur<svg class="ico"><use href="#i-right"/></svg></a></div>
     {% include "radar/partials/table_actions.html" with lignes=top %}
     {% if not a_acces %}<div class="gate"><p>Aperçu limité aux cinq premières actions. Activez votre accès pour les fiches détaillées, la sélection et les exports Word.</p><a class="btn btn-sm" href="{% url 'comptes:inscription' %}">Activer mon accès</a></div>{% endif %}
   </section>
@@ -38,21 +39,25 @@
   {% with filtre="secteur="|add:secteur.code %}{% include "radar/partials/bloc_gc.html" with portee="du secteur" cible="à ce secteur" %}{% endwith %}
 
   <div class="grid-2">
-    <section class="panel">
-      <div class="section-head"><h2>Indicateurs du résultat sectoriel</h2><span class="note">{{ ind_resultat|length }}</span></div>
-      {% if ind_resultat %}{% include "radar/partials/indicateurs.html" with inds=ind_resultat %}{% else %}<p class="muted">Aucun indicateur de résultat sectoriel extrait pour ce secteur.</p>{% endif %}
-      {% if ind_effets %}<details style="margin-top:12px"><summary class="small" style="cursor:pointer;font-weight:600">Indicateurs des effets ({{ ind_effets|length }})</summary>{% include "radar/partials/indicateurs.html" with inds=ind_effets %}</details>{% endif %}
-    </section>
-    <section class="panel effets">
-      <div class="section-head"><h2>Effets et produits</h2></div>
+    <details class="fold" open data-mobile-closed>
+      <summary><h2>Indicateurs du résultat sectoriel</h2><span class="meta">{{ ind_resultat|length }}</span><span class="chev"><svg class="ico"><use href="#i-chevron"/></svg></span></summary>
+      <div class="fold-body">
+        {% if ind_resultat %}{% include "radar/partials/indicateurs.html" with inds=ind_resultat %}{% else %}<p class="muted">Aucun indicateur de résultat sectoriel extrait pour ce secteur.</p>{% endif %}
+        {% if ind_effets %}<details style="margin-top:12px"><summary class="small" style="cursor:pointer;font-weight:700;min-height:44px;display:flex;align-items:center">Indicateurs des effets ({{ ind_effets|length }})</summary>{% include "radar/partials/indicateurs.html" with inds=ind_effets %}</details>{% endif %}
+      </div>
+    </details>
+    <details class="fold effets" open data-mobile-closed>
+      <summary><h2>Effets et produits</h2><span class="meta">{{ effets|length }}</span><span class="chev"><svg class="ico"><use href="#i-chevron"/></svg></span></summary>
+      <div class="fold-body">
       {% for e in effets %}
-      <details><summary><span class="code">{{ e.code }}</span><span>{{ e.label }}</span><span class="mono small nowrap">{{ e.t|md }}</span></summary>
+      <details><summary><span class="code">{{ e.code }}</span><span>{{ e.label }}</span><span class="small nowrap" style="font-weight:800">{{ e.t|md }}</span></summary>
         <ul>{% for p in e.produits.all %}<li><span class="code">{{ p.code }}</span> {{ p.label }}</li>{% endfor %}</ul></details>
       {% endfor %}
-    </section>
+      </div>
+    </details>
   </div>
   {% if voisins %}<section class="section"><h2 style="font-size:19px">Autres secteurs du pilier {{ secteur.pilier.numero }}</h2>
-    <div class="chipnav">{% for v in voisins %}<a class="pil-badge" style="--pc:{{ secteur.pilier.couleur }};font-size:13px;padding:5px 12px" href="{{ v.get_absolute_url }}">{{ v.code }} {{ v.nom }}</a>{% endfor %}</div></section>{% endif %}
+    <div class="hscroll">{% for v in voisins %}<a class="qchip" style="--pc:{{ secteur.pilier.couleur }}" href="{{ v.get_absolute_url }}"><span class="dot"></span>{{ v.code }} {{ v.nom }}</a>{% endfor %}</div></section>{% endif %}
   <p class="disclaimer">Coûts programmés dans la matrice d'actions prioritaires du PND 2026-2030 (Tome 3) : ni budgets votés ni marchés. Indicateurs extraits automatiquement, libellés parfois tronqués.</p>
 </div>
 {% endblock %}

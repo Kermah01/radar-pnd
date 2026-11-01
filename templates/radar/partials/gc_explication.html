@@ -1,0 +1,41 @@
+<details class="fold gc-explain"{% if ouvert %} open{% endif %}{% if mobile_ferme %} data-mobile-closed{% endif %}>
+  <summary><svg class="ico i" aria-hidden="true"><use href="#i-info"/></svg><h2>Comprendre le Groupe consultatif et ses projets</h2><span class="chev"><svg class="ico"><use href="#i-chevron"/></svg></span></summary>
+  <div class="fold-body">
+    <p>Le Groupe consultatif pour le financement du PND 2026-2030 s'est tenu à Abidjan les 8 et 9 juillet 2026. Organisé par le Gouvernement avec l'appui de la Banque mondiale, de l'Union européenne, de la Banque africaine de développement et du système des Nations unies, il avait pour objet de présenter le PND et de mobiliser son financement.</p>
+    <div class="gc-days">
+      <div class="gc-day">
+        <span class="d">Jour 1 · 8 juillet</span>
+        <h3>La partie publique du plan, avec les partenaires techniques et financiers</h3>
+        <div class="gc-figs">
+          <div><b>37 933,1 Md</b>FCFA de besoin de financement public</div>
+          <div><b>11 138,2 Md</b>FCFA de gap soumis au Groupe consultatif</div>
+          <div style="grid-column:1/-1"><b>Environ 47 820 Md FCFA</b>soit 80 milliards de dollars d'intentions et d'engagements annoncés par les partenaires</div>
+        </div>
+      </div>
+      <div class="gc-day">
+        <span class="d">Jour 2 · 9 juillet</span>
+        <h3>Une journée dédiée au secteur privé</h3>
+        <div class="gc-figs">
+          <div><b>Plus de 3 600</b>participants</div>
+          <div><b>Plus de 2 000</b>investisseurs venus de 49 pays</div>
+          <div style="grid-column:1/-1"><b>70 % de 114 838,5 Md FCFA</b>la part du coût du plan attendue du secteur privé</div>
+        </div>
+      </div>
+    </div>
+    <h3 style="margin-top:6px">Ce que sont les projets publiés sur gcpnd.gouv.ci</h3>
+    <p>Ce sont des projets du PND 2026-2030 : ceux qui étaient déjà identifiés et mûris, prêts à être présentés aux financeurs lors du Groupe consultatif. Ils ne forment pas la liste exhaustive des projets du PND, et aucune liste exhaustive n'est publiée à ce jour. Le document officiel qui détaille tout ce que le PND prévoit de faire est la matrice d'actions prioritaires (Tome 3), que Radar PND couvre aussi.</p>
+    <div class="duo">
+      <div>
+        <h3>Projets du Groupe consultatif</h3>
+        <p>Des projets concrets et chiffrés, présentés aux financeurs : coût estimatif, fiche officielle, prise de rendez-vous avec les porteurs.</p>
+        <a class="link-more" href="{% url 'radar:projets_gc' %}">Parcourir les projets<svg class="ico"><use href="#i-right"/></svg></a>
+      </div>
+      <div>
+        <h3>Matrice d'actions prioritaires</h3>
+        <p>L'ensemble des actions prévues par le PND, avec leurs coûts programmés année par année de 2026 à 2030.</p>
+        <a class="link-more" href="{% url 'radar:explorer' %}">Explorer la matrice<svg class="ico"><use href="#i-right"/></svg></a>
+      </div>
+    </div>
+    <p class="note" style="margin:12px 0 0">Les coûts estimatifs des projets et les coûts programmés de la matrice ne s'additionnent pas : un même effort peut apparaître dans les deux.</p>
+  </div>
+</details>

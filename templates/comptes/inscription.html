@@ -14,7 +14,7 @@
       {% include "comptes/_field.html" with field=form.organisation %}
       {% include "comptes/_field.html" with field=form.password1 %}
       {% include "comptes/_field.html" with field=form.password2 %}
-      <button class="btn btn-cta" type="submit" style="width:100%">Créer mon compte et activer l'accès</button>
+      <button class="btn btn-primary" type="submit" style="width:100%">Créer mon compte et activer l'accès</button>
     </form>
   </div>
   <p class="muted small" style="margin-top:16px">Vous avez déjà un compte ? <a href="{% url 'comptes:connexion' %}">Connectez-vous</a>, puis activez votre nouveau code depuis « Mon compte ».{% if chariow_url %} Pas encore de code ? <a href="{{ chariow_url }}">Acheter l'ebook</a>.{% endif %}</p>

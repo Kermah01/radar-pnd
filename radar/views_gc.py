@@ -88,6 +88,7 @@ def projets_gc(request):
         "secteurs": _secteurs_gc(pil), "types": ProjetGC.TYPES_COURTS, "tranches": gcpnd.TRANCHES, "tris": TRIS_GC,
         "f": {"q": q, "type": typ, "pilier": pil, "secteur": sec, "cout": tr, "tri": tri},
         "apercu_lignes": _apercu(), "inscription_url": GCPND_INSCRIPTION,
+        "nb_filtres": sum(1 for v in (pil, sec, tr) if v),
     })
 
 

@@ -3,31 +3,65 @@
 {% block title %}Mon radar{% endblock %}
 {% block content %}
 <div class="wrap">
-  <div class="page-head">
-    <div class="kicker">Repérer · étape 1 de la méthode RADAR</div>
+  <div class="phead">
+    <div class="kicker">Mon radar · Repérer</div>
     <h1>Les actions du PND qui vous concernent</h1>
-    <p class="lede">Choisissez votre profil et ajustez vos familles de prestations et vos secteurs. Le radar classe les {{ nb|default:0|nombre }} actions correspondantes selon leur pertinence pour vous : offre, secteur, calendrier, dynamique et taille.</p>
+    <p class="lede">Le radar classe les actions de la matrice et les projets du Groupe consultatif selon votre profil : offre, secteurs, calendrier, dynamique et taille.</p>
   </div>
-  <div class="radar-grid">
-    <aside class="panel profile" aria-label="Mon profil">
+
+  {% for p in profils %}{% if p.id == profil.type %}{% with nf=profil.familles|length ns=profil.secteurs|length %}
+  <div class="psum">
+    <div class="who"><b>{{ p.nom }}</b><span>{{ nf }} famille{{ nf|pluralize }} · {{ ns }} secteur{{ ns|pluralize }} · {% for v, l in horizons %}{% if v == profil.horizon %}{% if v == "any" %}tout horizon{% else %}{{ l|lower }}{% endif %}{% endif %}{% endfor %}</span></div>
+    <button class="btn btn-primary btn-sm" type="button" data-profile-open aria-controls="profil"><svg class="ico"><use href="#i-filter"/></svg>Modifier</button>
+  </div>
+  {% endwith %}{% endif %}{% endfor %}
+
+  <div class="radar-grid" style="margin-top:16px">
+    <aside class="panel profile" id="profil" aria-label="Mon profil">
       <form method="post" id="profil-form">{% csrf_token %}
         <input type="hidden" name="appliquer_preset" id="appliquer_preset" value="0">
-        <div class="field"><label for="type">Je suis</label>
-          <select name="type" id="type">{% for p in profils %}<option value="{{ p.id }}" {% if p.id == profil.type %}selected{% endif %}>{{ p.nom }}</option>{% endfor %}</select></div>
-        <div class="field"><span class="lab">Ce que je propose</span>
-          <div class="chips">{% for f in familles %}<label class="chip"><input type="checkbox" name="familles" value="{{ f.nom }}" {% if f.nom in profil.familles %}checked{% endif %}><span>{{ f.nom }}</span></label>{% endfor %}</div></div>
-        <div class="field"><label for="horizon">Horizon visé</label>
-          <select name="horizon" id="horizon">{% for v, l in horizons %}<option value="{{ v }}" {% if v == profil.horizon %}selected{% endif %}>{{ l }}</option>{% endfor %}</select></div>
-        <div class="field"><label for="taille">Taille des actions</label>
-          <select name="taille" id="taille">{% for v, l in tailles %}<option value="{{ v }}" {% if v == profil.taille %}selected{% endif %}>{{ l }}</option>{% endfor %}</select></div>
-        <details class="secs" {% if profil.secteurs|length < 8 %}open{% endif %}><summary>Secteurs suivis ({{ profil.secteurs|length }})</summary>
-          {% for p in piliers %}<div class="pgroup"><span class="lab"><span class="dot" style="--pc:{{ p.couleur }}"></span>Pilier {{ p.numero }}</span>
-            <div class="chips">{% for s in p.secteurs.all %}<label class="chip"><input type="checkbox" name="secteurs" value="{{ s.code }}" {% if s.code in profil.secteurs %}checked{% endif %}><span>{{ s.nom }}</span></label>{% endfor %}</div></div>{% endfor %}
-        </details>
-        <div class="profile-actions"><button class="btn btn-sm no-js-only" type="submit">Mettre à jour</button><span class="note">Votre profil est enregistré automatiquement.</span></div>
+        <div class="stepper-bar">
+          <div class="stepper-top"><b>Étape 1 sur 3</b><button class="icon-btn" type="button" data-sheet-close aria-label="Fermer"><svg class="ico"><use href="#i-close"/></svg></button></div>
+          <div class="stepper-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="stepper-labels" aria-hidden="true"><span>Je suis…</span><span>Mes secteurs</span><span>Mon horizon</span></div>
+        </div>
+        <div class="steps-scroll">
+          <fieldset class="pstep">
+            <legend><span class="n">1</span>Je suis…</legend>
+            <div class="ptypes">
+              {% for p in profils %}<label class="ptype"><input type="radio" name="type" value="{{ p.id }}" {% if p.id == profil.type %}checked{% endif %}><span>{{ p.nom }}</span></label>{% endfor %}
+            </div>
+          </fieldset>
+          <fieldset class="pstep">
+            <legend><span class="n">2</span>Mes secteurs</legend>
+            <span class="lab" style="display:block;margin-bottom:8px">Ce que je propose</span>
+            <div class="chips">{% for f in familles %}<label class="chip"><input type="checkbox" name="familles" value="{{ f.nom }}" {% if f.nom in profil.familles %}checked{% endif %}><span>{{ f.nom }}</span></label>{% endfor %}</div>
+            <span class="lab" style="display:block;margin:18px 0 4px">Secteurs suivis</span>
+            {% for p in piliers %}
+            <details class="pgroup" style="--pc:{{ p.couleur }}">
+              <summary><span class="dot"></span>{{ p.numero }}. {{ p.numero|pilier_court }}<span class="n">…</span><svg class="ico"><use href="#i-chevron"/></svg></summary>
+              <div class="chips">{% for s in p.secteurs.all %}<label class="chip"><input type="checkbox" name="secteurs" value="{{ s.code }}" {% if s.code in profil.secteurs %}checked{% endif %}><span>{{ s.nom }}</span></label>{% endfor %}</div>
+            </details>
+            {% endfor %}
+          </fieldset>
+          <fieldset class="pstep">
+            <legend><span class="n">3</span>Mon horizon</legend>
+            <span class="lab" style="display:block;margin-bottom:8px">Quand voulez-vous vous positionner ?</span>
+            <div class="ptypes">{% for v, l in horizons %}<label class="ptype"><input type="radio" name="horizon" value="{{ v }}" {% if v == profil.horizon %}checked{% endif %}><span>{{ l }}</span></label>{% endfor %}</div>
+            <span class="lab" style="display:block;margin:18px 0 8px">Taille des actions</span>
+            <div class="ptypes">{% for v, l in tailles %}<label class="ptype"><input type="radio" name="taille" value="{{ v }}" {% if v == profil.taille %}checked{% endif %}><span>{{ l }}</span></label>{% endfor %}</div>
+          </fieldset>
+          <div class="profile-actions"><button class="btn btn-sm no-js-only" type="submit">Mettre à jour</button><span class="note">Votre profil est enregistré automatiquement.</span></div>
+        </div>
+        <div class="stepper-nav">
+          <button class="btn btn-ghost" type="button" data-prev>Annuler</button>
+          <button class="btn" type="button" data-next>Suivant<svg class="ico"><use href="#i-right"/></svg></button>
+          <button class="btn btn-primary" type="submit" data-go hidden>Voir mes résultats</button>
+        </div>
       </form>
     </aside>
-    <section aria-live="polite">
+
+    <section aria-live="polite" style="min-width:0">
       <div class="rhead">
         <h2>{% if nb %}{{ nb|nombre }} action{{ nb|pluralize }} correspond{{ nb|pluralize:"ent" }} à votre offre{% else %}Aucune action pour ce profil{% endif %}</h2>
         {% if resultats %}<span class="note">Les {{ resultats|length }} plus pertinentes · {{ montant_top|fcfa }} programmés</span>{% endif %}
@@ -37,17 +71,19 @@
         {% empty %}<div class="panel">Sélectionnez au moins une famille de prestations pour voir les actions correspondantes.</div>{% endfor %}
       </div>
       {% if nb > resultats|length %}<div class="gate"><p>Le radar affiche les {{ resultats|length }} actions les mieux classées. Pour parcourir les {{ nb|nombre }} correspondances ({{ montant_total|fcfa }}), utilisez l'explorateur avec vos filtres.</p><a class="btn btn-sm" href="{% url 'radar:explorer' %}">Ouvrir l'explorateur</a></div>{% endif %}
+
       <div class="gc-radar" id="groupe-consultatif">
         <div class="rhead">
           <div><div class="kicker" style="margin-bottom:4px">Financer · Groupe consultatif</div><h2>Projets et opportunités du Groupe consultatif pour votre profil</h2></div>
           {% if gc_nb %}<span class="note">{{ gc_nb }} projet{{ gc_nb|pluralize }} dans vos secteurs · {{ gc_total|md_gc }} FCFA estimés</span>{% endif %}
         </div>
+        <p class="note" style="margin:-4px 0 12px">Des projets du PND déjà mûris, présentés aux financeurs en juillet 2026, qui complètent les actions de la matrice ci-dessus.</p>
         <div class="results">
           {% for p, sc, raisons in gc_resultats %}{% include "radar/partials/rcard_gc.html" %}
           {% empty %}<div class="panel">Aucun projet du Groupe consultatif dans vos secteurs suivis. Ajoutez des secteurs à votre profil.</div>{% endfor %}
         </div>
         {% if gc_opps %}
-        <div class="panel opp-strip" style="margin-top:12px">
+        <div class="panel opp-strip">
           <h3>Opportunités d'investissement {% if gc_invest %}à saisir{% else %}dans vos secteurs{% endif %}</h3>
           <ul class="opp-list">{% for o, raison in gc_opps %}<li style="--pc:{{ o.couleur }}"><a href="{{ o.get_absolute_url }}">{{ o.titre }}</a> <span class="note">· {{ o.secteur_nom }}, {{ raison }}</span></li>{% endfor %}</ul>
         </div>
@@ -59,4 +95,5 @@
     </section>
   </div>
 </div>
+{{ presets|json_script:"presets" }}
 {% endblock %}

@@ -49,9 +49,9 @@ def paragraphe_projet(projet, nb_actions=0, action_phare=None):
     cout = (f"d'un coût estimatif indicatif de {md_gc(projet.cout_millions)} FCFA" if projet.cout_millions is not None
             else "dont le coût estimatif n'est pas défini à ce stade")
     t = (
-        f"Le projet {projet.code} « {projet.titre} », {cout}, figure au portefeuille présenté au Groupe consultatif "
-        f"pour le financement du Plan National de Développement (PND) 2026-2030 en tant que "
-        f"{projet.get_type_display().lower()}."
+        f"Le projet {projet.code} « {projet.titre} », {cout}, est un projet du Plan National de Développement (PND) "
+        f"2026-2030 présenté aux financeurs lors du Groupe consultatif pour le financement du plan (Abidjan, 8 et "
+        f"9 juillet 2026), en tant que {projet.get_type_display().lower()}."
     )
     if sec and pil:
         t += f" Il s'inscrit dans le pilier {pil.numero} ({pil.nom}), secteur {sec.code} {sec.nom}."

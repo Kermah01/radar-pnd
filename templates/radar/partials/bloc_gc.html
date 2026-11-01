@@ -1,13 +1,14 @@
 {% load radar_tags %}
 <section class="section gc-bloc" id="groupe-consultatif">
   <div class="section-head">
-    <div><div class="kicker">Financer · Groupe consultatif</div><h2>Projets du Groupe consultatif</h2></div>
-    {% if gc.nb %}<a class="btn btn-ghost btn-sm" href="{% url 'radar:projets_gc' %}?{{ filtre }}">Les {{ gc.nb }} projet{{ gc.nb|pluralize }} {{ portee }}</a>{% endif %}
+    <div><div class="kicker">Financer · Groupe consultatif</div><h2>Projets du Groupe consultatif</h2>
+      <p class="sub">Projets du PND déjà identifiés et mûris, présentés aux financeurs lors du Groupe consultatif de juillet 2026.</p></div>
+    {% if gc.nb %}<a class="btn btn-ghost btn-sm" href="{% url 'radar:projets_gc' %}?{{ filtre }}">Les {{ gc.nb }} projet{{ gc.nb|pluralize }} {{ portee }}<svg class="ico"><use href="#i-right"/></svg></a>{% endif %}
   </div>
   {% if gc.nb %}
-  <div class="kpis gc-mini" style="margin-bottom:14px">
-    <div class="kpi"><b>{{ gc.nb }}</b><span>projet{{ gc.nb|pluralize }} · {{ gc.total|md_gc }} FCFA estimés</span></div>
-    {% for k in gc.par_type %}<a class="kpi kpi-link" href="{% url 'radar:projets_gc' %}?{{ filtre }}&type={{ k.type }}"><b>{{ k.n }}</b><span>{% badge_type k.type %} {% if k.n %}{{ k.t|md_gc }}{% else %}aucun{% endif %}</span></a>{% endfor %}
+  <div class="kpis" style="margin-bottom:14px">
+    <div class="kpi accent"><b>{{ gc.nb }}</b><span>projet{{ gc.nb|pluralize }} · {{ gc.total|md_gc }} FCFA estimés</span></div>
+    {% for k in gc.par_type %}<a class="kpi kpi-link" href="{% url 'radar:projets_gc' %}?{{ filtre }}&type={{ k.type }}"><span class="kh">{% badge_type k.type %}</span><b>{{ k.n }}</b><span>{% if k.n %}{{ k.t|md_gc }} FCFA{% else %}aucun{% endif %}</span></a>{% endfor %}
   </div>
   {% include "radar/partials/table_projets_gc.html" with lignes=gc.top %}
   {% if not a_acces %}<div class="gate"><p>Les fiches détaillées des projets, avec le paragraphe d'alignement au PND et les actions liées, sont réservées aux lecteurs de l'ebook.</p><a class="btn btn-sm" href="{% url 'comptes:inscription' %}">Activer mon accès</a></div>{% endif %}
@@ -15,10 +16,10 @@
   <p class="muted">Aucun projet présenté au Groupe consultatif n'est rattaché {{ cible }}.</p>
   {% endif %}
   {% if gc.opportunites %}
-  <div class="opp-strip">
+  <div class="panel opp-strip">
     <h3>Opportunités d'investissement liées <span class="note">({{ gc.opportunites|length }})</span></h3>
     <ul class="opp-list">{% for o in gc.opportunites|slice:":8" %}<li style="--pc:{{ o.couleur }}"><a href="{{ o.get_absolute_url }}">{{ o.titre }}</a>{% if o.detaillee %} <span class="pill t-up">fiche détaillée</span>{% endif %}</li>{% endfor %}</ul>
-    {% if gc.opportunites|length > 8 %}<a class="small" href="{% url 'radar:opportunites' %}">Toutes les opportunités</a>{% endif %}
+    {% if gc.opportunites|length > 8 %}<a class="link-more" href="{% url 'radar:opportunites' %}">Toutes les opportunités<svg class="ico"><use href="#i-right"/></svg></a>{% endif %}
   </div>
   {% endif %}
   {% include "radar/partials/source_gc.html" %}
