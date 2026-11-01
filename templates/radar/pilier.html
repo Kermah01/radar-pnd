@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static radar_tags %}
+{% block title %}Pilier {{ pilier.numero }} : {{ pilier.nom }}{% endblock %}
+{% block chartjs %}<script src="{% static 'vendor/chart.umd.min.js' %}" defer></script>{% endblock %}
+{% block content %}
+<div class="band-head" style="--pc:{{ pilier.couleur }}">
+  <div class="wrap page-head">
+    <div class="kicker"><a href="{% url 'radar:tendances' %}">Tendances</a> / Pilier {{ pilier.numero }} sur 6</div>
+    <h1><span class="bignum">{{ pilier.numero }}.</span>{{ pilier.nom }}</h1>
+    <p class="lede">{{ secteurs|length }} secteurs, {{ nb_actions|nombre }} actions prioritaires et {{ nb_indicateurs|nombre }} indicateurs de résultats. Ce pilier représente {{ part|nombre:1 }} % du coût programmé du PND 2026-2030.</p>
+  </div>
+</div>
+<div class="wrap" style="padding-top:24px">
+  <div class="kpis" style="margin-bottom:20px">
+    <div class="kpi"><b>{{ total|md }}</b><span>FCFA programmés 2026-2030</span></div>
+    <div class="kpi"><b>{{ part|nombre:1 }}<small> %</small></b><span>du total du PND</span></div>
+    <div class="kpi"><b>{{ nb_actions|nombre }}</b><span>actions prioritaires</span></div>
+    <div class="kpi"><b>{{ annuel.4|md }}</b><span>programmés en 2030{% if ratio %} ({{ ratio|multip }} par rapport à 2026){% endif %}</span></div>
+  </div>
+  <div class="grid-2">
+    <section class="panel">
+      <div class="section-head"><h2>Programmation annuelle</h2><span class="note">Md FCFA</span></div>
+      <div class="chart-box"><canvas data-chart="annuel" data-src="g-pilier" role="img" aria-label="Programmation annuelle du pilier"></canvas></div>
+      {{ graph|json_script:"g-pilier" }}
+    </section>
+    <section class="panel">
+      <div class="section-head"><h2>Secteurs du pilier</h2><span class="note">Coût 2026-2030</span></div>
+      <div class="hbars" style="--pc:{{ pilier.couleur }}">
+        {% for s in secteurs %}<a class="hbar" href="{{ s.get_absolute_url }}" title="{{ s.code }} {{ s.nom }}"><span class="nm"><span class="code">{{ s.code }}</span> {{ s.nom }}</span><span class="tr"><i style="width:{% widthratio s.total max_secteur 100 %}%"></i></span><span class="v">{{ s.total|md }}</span></a>{% endfor %}
+      </div>
+    </section>
+  </div>
+  <section class="section">
+    <div class="section-head"><h2>Les dix actions les plus dotées</h2><a class="btn btn-ghost btn-sm" href="{% url 'radar:explorer' %}?pilier={{ pilier.numero }}">Toutes les actions du pilier</a></div>
+    {% include "radar/partials/table_actions.html" with lignes=top %}
+    {% if not a_acces %}<div class="gate"><p>Les fiches détaillées, les paragraphes d'alignement et les exports sont réservés aux lecteurs de l'ebook.</p><a class="btn btn-sm" href="{% url 'comptes:inscription' %}">Activer mon accès</a></div>{% endif %}
+  </section>
+  <section>
+    <h2 style="font-size:19px">Autres piliers</h2>
+    <div class="chipnav">{% for p in autres %}<a class="pil-badge" style="--pc:{{ p.couleur }};font-size:13px;padding:5px 12px" href="{{ p.get_absolute_url }}">{{ p.numero }}. {{ p.nom }}</a>{% endfor %}</div>
+  </section>
+  <p class="disclaimer">Coûts programmés dans la matrice d'actions prioritaires du PND 2026-2030 (Tome 3) : ni budgets votés ni marchés.</p>
+</div>
+{% endblock %}

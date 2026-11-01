@@ -1,0 +1,11 @@
+{% extends "admin/base_site.html" %}
+{% block breadcrumbs %}<div class="breadcrumbs"><a href="{% url 'admin:index' %}">Accueil</a> › <a href="{% url 'admin:comptes_codeacces_changelist' %}">Codes d'accès</a> › Générer</div>{% endblock %}
+{% block content %}
+<p>Les codes générés ont la forme <code>RPND-XXXX-XXXX</code>. La durée d'accès court à partir de l'activation : 3 mois (Découverte) ou 12 mois (Pro).</p>
+<form method="post">{% csrf_token %}
+  <fieldset class="module aligned">{% for field in form %}
+    <div class="form-row"><div>{{ field.label_tag }} {{ field }}{% if field.help_text %}<div class="help">{{ field.help_text }}</div>{% endif %}{{ field.errors }}</div></div>
+  {% endfor %}</fieldset>
+  <div class="submit-row"><input type="submit" value="Générer" class="default"></div>
+</form>
+{% endblock %}

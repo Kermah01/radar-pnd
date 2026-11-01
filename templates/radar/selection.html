@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load radar_tags %}
+{% block title %}Ma sélection{% endblock %}
+{% block content %}
+<div class="wrap">
+  <div class="page-head">
+    <div class="kicker">Rédiger · étape 5 de la méthode RADAR</div>
+    <h1>Ma sélection</h1>
+    <p class="lede">Les actions que vous avez retenues, avec vos notes. Les paragraphes d'alignement se copient en un clic ou s'exportent en Word pour vos offres, notes conceptuelles et dossiers de financement.</p>
+  </div>
+  {% if sels %}
+  <div class="toolbar">
+    <span><strong class="mono" style="color:var(--ink)">{{ sels|length }}</strong> action{{ sels|length|pluralize }} · <strong class="mono" style="color:var(--ink)">{{ total|fcfa }}</strong> programmés</span>
+    <span class="row">
+      <button class="btn btn-ghost btn-sm" type="button" data-copy="tout">Copier tous les paragraphes</button>
+      <a class="btn btn-ghost btn-sm" href="{% url 'radar:selection_export' 'csv' %}">Exporter en CSV</a>
+      <a class="btn btn-sm" href="{% url 'radar:selection_export' 'docx' %}">Exporter en Word</a>
+    </span>
+  </div>
+  <div id="tout" data-text="{{ tout }}" hidden></div>
+  <div class="results" style="gap:14px">
+    {% for s in sels %}{% with a=s.action %}
+    <article class="sel-item" style="--pc:{{ a.couleur }}">
+      <div class="row" style="justify-content:space-between">
+        <div class="code"><span class="dot" style="--pc:{{ a.couleur }}"></span>{{ a.code }} · {{ a.secteur.nom }} · <span class="pill t-{{ a.trend|tendance_cls }}">{{ a.trend }}</span></div>
+        <span class="mono" style="color:var(--ink)">{{ a.total|fcfa }}</span>
+      </div>
+      <h3><a href="{{ a.get_absolute_url }}">{{ a.label }}</a></h3>
+      <div class="meta note">{% if a.peak %}Pic en {{ a.peak }}{% endif %}{% if a.structure %} · {{ a.structure }}{% endif %} · ajoutée le {{ s.created_at|date:"d/m/Y" }}</div>
+      <div class="sel-grid">
+        <div>
+          <div class="align-box" id="p-{{ s.id }}" data-text="{{ s.paragraphe }}">{{ s.paragraphe }}</div>
+          <div class="row" style="margin-top:8px">
+            <button class="btn btn-ghost btn-sm" type="button" data-copy="p-{{ s.id }}">Copier</button>
+            <a class="btn btn-ghost btn-sm" href="{% url 'radar:action_docx' a.code %}">Fiche Word</a>
+            <form method="post" action="{% url 'radar:selection_toggle' a.code %}">{% csrf_token %}<input type="hidden" name="next" value="{% url 'radar:selection' %}"><button class="btn btn-ghost btn-sm" type="submit">Retirer</button></form>
+          </div>
+        </div>
+        <form class="js-note" method="post" action="{% url 'radar:selection_note' a.code %}">{% csrf_token %}
+          <label class="lab" for="n-{{ s.id }}">Mes notes</label>
+          <textarea id="n-{{ s.id }}" name="note" placeholder="Interlocuteur, échéance, angle de l'offre…" style="margin-top:6px;min-height:120px">{{ s.note }}</textarea>
+          <div class="row" style="justify-content:space-between;margin-top:6px"><span class="saved">Note enregistrée</span><button class="btn btn-ghost btn-sm" type="submit">Enregistrer</button></div>
+        </form>
+      </div>
+    </article>
+    {% endwith %}{% endfor %}
+  </div>
+  {% else %}
+  <div class="panel empty">
+    <h2>Votre sélection est vide</h2>
+    <p class="muted">Ouvrez une action depuis « Mon radar » ou « Explorer » et cliquez sur « Retenir » ou « Ajouter à ma sélection ».</p>
+    <div class="row" style="justify-content:center"><a class="btn" href="{% url 'radar:radar' %}">Ouvrir mon radar</a><a class="btn btn-ghost" href="{% url 'radar:explorer' %}">Explorer la matrice</a></div>
+  </div>
+  {% endif %}
+  <p class="disclaimer">Remplacez le texte entre crochets par la contribution propre de votre projet. Vérifiez montants et indicateurs sur le Tome 3 avant tout dépôt officiel. Les coûts programmés ne sont ni des budgets votés ni des marchés.</p>
+</div>
+{% endblock %}

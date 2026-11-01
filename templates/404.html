@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Page introuvable{% endblock %}
+{% block content %}
+<div class="wrap"><div class="auth" style="text-align:center"><div class="kicker" style="justify-content:center">Erreur 404</div><h1>Cette page n'existe pas</h1>
+<p class="muted">Le lien est peut-être incomplet, ou le code d'action a changé.</p>
+<div class="row" style="justify-content:center"><a class="btn" href="{% url 'radar:accueil' %}">Accueil</a><a class="btn btn-ghost" href="{% url 'radar:explorer' %}">Explorer la matrice</a></div></div></div>
+{% endblock %}

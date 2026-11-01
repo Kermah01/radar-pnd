@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static radar_tags %}
+{% block title %}Tendances : où va l'argent, et quand{% endblock %}
+{% block chartjs %}<script src="{% static 'vendor/chart.umd.min.js' %}" defer></script>{% endblock %}
+{% block content %}
+<div class="wrap">
+  <div class="page-head">
+    <div class="kicker">Dater · lecture d'ensemble, accès libre</div>
+    <h1>Où va l'argent, et quand</h1>
+    <p class="lede">Lecture d'ensemble de la programmation du PND 2026-2030 : répartition par pilier et par secteur, montée en charge d'une année sur l'autre et types de prestations attendus. Cliquez sur un secteur ou une famille pour voir le détail.</p>
+  </div>
+  <div class="kpis" style="margin-bottom:22px">
+    <div class="kpi"><b>{{ chiffres.total|md_nombre }}<small> Md</small></b><span>FCFA programmés 2026-2030</span></div>
+    <div class="kpi"><b>{{ chiffres.nb_actions|nombre }}</b><span>actions prioritaires</span></div>
+    <div class="kpi"><b>{{ chiffres.nb_indicateurs|nombre }}</b><span>indicateurs avec cibles</span></div>
+    <div class="kpi"><b>{{ chiffres.ratio_2030_2026|multip }}</b><span>enveloppe 2030 par rapport à 2026</span></div>
+  </div>
+
+  <div class="grid-side">
+    <section class="panel">
+      <div class="section-head"><h2>Secteurs</h2>
+        <div class="seg" id="seg-secteurs" role="group" aria-label="Mesure"><button type="button" aria-pressed="true" data-m="total">Coût total</button><button type="button" aria-pressed="false" data-m="growth">Montée en charge</button></div></div>
+      <div class="chart-box tall"><canvas id="chart-secteurs" role="img" aria-label="Classement des secteurs"></canvas></div>
+      <p class="note" id="note-secteurs" style="margin-top:8px"></p>
+      <div class="legend">{% for p in piliers %}<span><span class="dot" style="--pc:{{ p.couleur }}"></span>{{ p.numero }}. {{ p.nom|truncatechars:34 }}</span>{% endfor %}</div>
+    </section>
+    <div class="stack">
+      <section class="panel">
+        <div class="section-head"><h2>Programmation annuelle</h2><span class="note">Md FCFA, par pilier</span></div>
+        <div class="chart-box"><canvas id="chart-annees" role="img" aria-label="Programmation annuelle par pilier"></canvas></div>
+        <div class="tblwrap" style="margin-top:12px;box-shadow:none"><table><thead><tr>{% for an in graph.annees %}<th class="num">{{ an }}</th>{% endfor %}</tr></thead><tbody><tr>{% for v in chiffres.annuel %}<td class="num">{{ v|md_nombre }}</td>{% endfor %}</tr></tbody></table></div>
+      </section>
+      <section class="panel">
+        <div class="section-head"><h2>Dynamique des actions</h2><span class="note">nombre d'actions</span></div>
+        <div class="chart-box short"><canvas id="chart-dynamique" role="img" aria-label="Répartition des actions par tendance"></canvas></div>
+        <p class="note" style="margin-top:8px">Nouvelle : rien en 2026-2027, des crédits ensuite. Hausse forte : programmation 2029-2030 au moins double de 2026-2027.</p>
+      </section>
+    </div>
+  </div>
+
+  <div class="grid-2" style="margin-top:20px">
+    <section class="panel">
+      <div class="section-head"><h2>Familles d'opportunités</h2><span class="note">Md FCFA</span></div>
+      <div class="chart-box"><canvas id="chart-familles" role="img" aria-label="Montants par famille d'opportunités"></canvas></div>
+      <p class="note" style="margin-top:8px">Une action peut relever de plusieurs familles : les montants ne s'additionnent pas.</p>
+    </section>
+    <section class="panel">
+      <div class="section-head"><h2>Les piliers</h2><span class="note">part du total</span></div>
+      <div class="hbars">{% for p in piliers %}<a class="hbar" href="{{ p.get_absolute_url }}" style="--pc:{{ p.couleur }}"><span class="nm"><span class="dot"></span>{{ p.numero }}. {{ p.nom }}</span><span class="tr"><i style="width:{{ p.part|floatformat:'1u' }}%"></i></span><span class="v">{{ p.total_md|md }}</span></a>{% endfor %}</div>
+      <h3 style="margin-top:22px">Secteurs en plus forte montée en charge</h3>
+      <div class="hbars">{% for s in plus_dynamiques %}<a class="hbar" href="{{ s.get_absolute_url }}" style="grid-template-columns:minmax(0,1fr) 90px"><span class="nm"><span class="dot" style="--pc:{{ s.code|couleur }}"></span>{{ s.nom }}</span><span class="v">{{ s.growth|multip }}</span></a>{% endfor %}</div>
+    </section>
+  </div>
+  {{ graph|json_script:"graph-tendances" }}
+  <p class="disclaimer">Source : PND 2026-2030, Tome 3. Coûts programmés en millions de FCFA convertis en milliards. Classement par familles : Analytics &amp; Impact Consulting. Les montants programmés ne sont ni des budgets votés ni des marchés.</p>
+</div>
+{% endblock %}

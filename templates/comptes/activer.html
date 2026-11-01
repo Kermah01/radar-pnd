@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Activer un code d'accès{% endblock %}
+{% block content %}
+<div class="wrap"><div class="auth">
+  <div class="kicker">Mon compte</div>
+  <h1>Activer un code d'accès</h1>
+  {% if acces %}<p class="muted">Votre accès {{ acces.get_formule_display }} est valable jusqu'au <strong>{{ acces.expires|date:"d/m/Y" }}</strong>. Un nouveau code prolonge cette date.</p>
+  {% else %}<p class="muted">Vous n'avez pas d'accès en cours. Saisissez le code reçu avec l'ebook pour ouvrir le radar, les fiches et la sélection.</p>{% endif %}
+  <div class="panel">
+    <form method="post">{% csrf_token %}
+      {% include "comptes/_field.html" with field=form.code extra="code-input" %}
+      <input type="hidden" name="next" value="{{ next }}">
+      <button class="btn btn-cta" type="submit" style="width:100%">Activer</button>
+    </form>
+  </div>
+</div></div>
+{% endblock %}

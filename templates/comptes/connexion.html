@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Connexion{% endblock %}
+{% block content %}
+<div class="wrap"><div class="auth">
+  <div class="kicker">Espace lecteur</div>
+  <h1>Connexion</h1>
+  <div class="panel">
+    <form method="post">{% csrf_token %}
+      {% for e in form.non_field_errors %}<p class="err" style="margin-bottom:12px">{{ e }}</p>{% endfor %}
+      {% include "comptes/_field.html" with field=form.username %}
+      {% include "comptes/_field.html" with field=form.password %}
+      <input type="hidden" name="next" value="{{ next }}">
+      <button class="btn" type="submit" style="width:100%">Se connecter</button>
+    </form>
+  </div>
+  <p class="muted small" style="margin-top:16px">Première visite ? <a href="{% url 'comptes:inscription' %}">Créez votre compte avec le code d'accès reçu avec l'ebook</a>.</p>
+</div></div>
+{% endblock %}

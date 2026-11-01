@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}La méthode RADAR{% endblock %}
+{% block content %}
+<div class="wrap">
+  <div class="page-head">
+    <div class="kicker">Méthode</div>
+    <h1>La méthode RADAR, en cinq étapes</h1>
+    <p class="lede">Le PND est un document public. Sa valeur pour une entreprise, une ONG ou un investisseur tient à trois traitements : structurer la matrice, qualifier chaque action pour le secteur privé et suivre sa mise en œuvre. La plateforme les organise en cinq étapes.</p>
+  </div>
+  <div class="method">
+    <section class="mstep" id="reperer"><div class="letter">R</div><div><h2>Repérer</h2>
+      <p>Choisissez un profil type (bureau d'études, BTP, numérique, ONG, investisseur…) puis ajustez vos familles de prestations, vos secteurs, votre horizon et la taille des actions visées. Chaque action reçoit un score sur 100 :</p>
+      <p class="small muted">Famille de prestations 40 points · secteur suivi 25 · calendrier (pic en 2026-2027 ou 2028-2030) 15 · dynamique (nouvelle ou hausse forte 10, hausse 7, stable 4, baisse 1) 10 · taille 10.</p>
+      <p class="small">Les raisons du score sont toujours affichées (« Pourquoi : correspond à votre offre, secteur suivi, pic en 2027 »). Le score aide à prioriser ; il ne mesure pas une probabilité d'obtenir un marché.</p></div>
+      <a class="btn btn-ghost btn-sm go" href="{% url 'radar:radar' %}">Mon radar</a></section>
+    <section class="mstep" id="analyser"><div class="letter">A</div><div><h2>Analyser</h2>
+      <p>La fiche action restitue la généalogie complète (pilier, secteur, résultat sectoriel, effet, produit), les coûts programmés de 2026 à 2030, les familles d'opportunités et les indicateurs rattachés avec leurs valeurs de référence et leurs cibles.</p></div>
+      <a class="btn btn-ghost btn-sm go" href="{% url 'radar:explorer' %}">Explorer</a></section>
+    <section class="mstep" id="dater"><div class="letter">D</div><div><h2>Dater</h2>
+      <p>L'année de pic et la tendance (nouvelle, hausse forte, hausse, stable, baisse) indiquent le moment où l'effort budgétaire se concentre. Se positionner un à deux ans avant le pic laisse le temps de préparer une offre.</p></div>
+      <a class="btn btn-ghost btn-sm go" href="{% url 'radar:tendances' %}">Tendances</a></section>
+    <section class="mstep" id="adresser"><div class="letter">A</div><div><h2>Adresser</h2>
+      <p>La matrice désigne pour de nombreuses actions une structure responsable : c'est l'interlocuteur à approcher. Le code de l'action (par exemple 5.01.2.1.6) est la référence commune à toute la chaîne de planification et de suivi : citez-le dans vos échanges.</p></div>
+      <a class="btn btn-ghost btn-sm go" href="{% url 'radar:explorer' %}?tri=total">Voir les structures</a></section>
+    <section class="mstep" id="rediger"><div class="letter">R</div><div><h2>Rédiger</h2>
+      <p>Chaque fiche génère un paragraphe d'alignement au PND, prêt à reprendre dans une offre technique, une note conceptuelle ou un dossier de financement. Ajoutez vos notes dans « Ma sélection » et exportez l'ensemble en Word ou en CSV.</p></div>
+      <a class="btn btn-ghost btn-sm go" href="{% url 'radar:selection' %}">Ma sélection</a></section>
+  </div>
+  <p class="disclaimer">Les familles d'opportunités sont attribuées automatiquement à partir des verbes et des objets de chaque intitulé (construire, acquérir, élaborer, former, sensibiliser, digitaliser…), puis révisées progressivement par l'équipe AIC.</p>
+</div>
+{% endblock %}

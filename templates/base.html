@@ -1,0 +1,82 @@
+{% load static %}<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Radar PND 2026-2030{% endblock %} · Radar PND</title>
+  <meta name="description" content="{% block description %}Radar PND repère, parmi les 1 480 actions prioritaires du Plan National de Développement 2026-2030 de Côte d'Ivoire, celles qui concernent votre organisation.{% endblock %}">
+  <meta name="theme-color" content="#152233">
+  <link rel="icon" href="{% static 'img/favicon.svg' %}" type="image/svg+xml">
+  <link rel="preload" href="{% static 'fonts/instrument-sans-latin-wght-normal.woff2' %}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{% static 'fonts/fraunces-latin-wght-normal.woff2' %}" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{% static 'css/radar.css' %}">
+  {% block head %}{% endblock %}
+</head>
+<body class="{% block body_class %}{% endblock %}">
+{% with u=request.resolver_match.url_name %}
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="{% url 'radar:accueil' %}" aria-label="Radar PND, accueil">
+      <img class="brand-mark" src="{% static 'img/radar-mark.svg' %}" alt="" width="30" height="30">
+      <span class="brand-txt"><b>Radar PND</b><span>2026-2030 · AIC</span></span>
+    </a>
+    <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false">Menu</button>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="{% url 'radar:radar' %}" {% if u == 'radar' %}aria-current="page"{% endif %}>Mon radar</a>
+      <a href="{% url 'radar:explorer' %}" {% if u == 'explorer' or u == 'action' %}aria-current="page"{% endif %}>Explorer</a>
+      <a href="{% url 'radar:tendances' %}" {% if u == 'tendances' or u == 'pilier' or u == 'secteur' %}aria-current="page"{% endif %}>Tendances</a>
+      <a href="{% url 'radar:selection' %}" {% if u == 'selection' %}aria-current="page"{% endif %}>Ma sélection<span class="count" id="sel-count" {% if not nb_selection %}hidden{% endif %}>{{ nb_selection }}</span></a>
+      <a href="{% url 'radar:methode' %}" {% if u == 'methode' %}aria-current="page"{% endif %}>Méthode</a>
+      <div class="nav-user">
+        {% if user.is_authenticated %}
+          <a href="{% url 'comptes:compte' %}" {% if u == 'compte' %}aria-current="page"{% endif %}>Mon compte</a>
+          {% if user.is_staff %}<a href="{% url 'admin:index' %}">Admin</a>{% endif %}
+          <form method="post" action="{% url 'comptes:deconnexion' %}">{% csrf_token %}<button class="linkbtn" type="submit">Déconnexion</button></form>
+        {% else %}
+          <a href="{% url 'comptes:connexion' %}" {% if u == 'connexion' %}aria-current="page"{% endif %}>Connexion</a>
+          <a class="btn btn-cta btn-sm" href="{% url 'comptes:inscription' %}" style="color:var(--ink);box-shadow:none">Activer mon accès</a>
+        {% endif %}
+      </div>
+    </nav>
+  </div>
+  <div class="tricolore" aria-hidden="true"><i></i><i></i><i></i></div>
+</header>
+{% endwith %}
+
+{% if messages %}<ul class="messages">{% for m in messages %}<li class="{{ m.tags }}">{{ m }}</li>{% endfor %}</ul>{% endif %}
+
+<main id="contenu">{% block content %}{% endblock %}</main>
+
+<footer class="site-footer">
+  <div class="wrap cols">
+    <div>
+      <div class="brand-txt"><b>Radar PND</b></div>
+      <p class="tagline">From data to impact</p>
+      <p>Un service d'Analytics &amp; Impact Consulting (AIC), cabinet indépendant. Radar PND accompagne l'ebook consacré au Plan National de Développement 2026-2030 de Côte d'Ivoire.</p>
+    </div>
+    <div>
+      <h4>Plateforme</h4>
+      <ul>
+        <li><a href="{% url 'radar:radar' %}">Mon radar</a></li>
+        <li><a href="{% url 'radar:explorer' %}">Explorer la matrice</a></li>
+        <li><a href="{% url 'radar:tendances' %}">Tendances</a></li>
+        <li><a href="{% url 'radar:methode' %}">Méthode RADAR</a></li>
+        <li><a href="{% url 'radar:apropos' %}">À propos et mentions</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Source et précautions</h4>
+      <p>PND 2026-2030, Tome 3 : Matrice d'actions prioritaires et cadre de résultats (document public). Coûts programmés convertis de millions en milliards de FCFA.</p>
+      <p><strong style="color:#fff">Les coûts programmés ne sont ni des budgets votés ni des marchés.</strong> Le score de pertinence est une aide à la priorisation, pas une probabilité d'obtenir un marché.</p>
+    </div>
+  </div>
+  <div class="wrap legal">
+    <span>© {% now "Y" %} Analytics &amp; Impact Consulting. Données publiques uniquement.</span>
+    <span>Contact : <a href="mailto:{{ contact_email }}">{{ contact_email }}</a></span>
+  </div>
+</footer>
+{% block chartjs %}{% endblock %}
+<script src="{% static 'js/radar.js' %}" defer></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

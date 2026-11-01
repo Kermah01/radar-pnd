@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load radar_tags %}
+{% block title %}À propos et mentions{% endblock %}
+{% block content %}
+<div class="wrap">
+  <div class="page-head"><div class="kicker">À propos</div><h1>À propos et mentions</h1></div>
+  <div class="prose">
+    <h2>Radar PND</h2>
+    <p>Radar PND est une plateforme d'Analytics &amp; Impact Consulting (AIC). Elle accompagne l'ebook consacré au Plan National de Développement (PND) 2026-2030 de Côte d'Ivoire et aide les acteurs non étatiques (entreprises, bureaux d'études, ONG, investisseurs) à repérer les actions du plan qui les concernent.</p>
+    <h2>Sources</h2>
+    <ul>
+      <li>PND 2026-2030, Tome 3 : Matrice d'actions prioritaires et cadre de résultats, document public.</li>
+      <li>{{ chiffres.nb_actions|nombre }} actions, {{ chiffres.nb_secteurs }} secteurs et {{ chiffres.nb_indicateurs|nombre }} indicateurs extraits automatiquement du document. Coût programmé total : {{ chiffres.total|fcfa }} (chiffre officiel : 114 840 milliards de FCFA, dont environ 70 % attendus du secteur privé selon la préface du PND).</li>
+      <li>Coûts programmés exprimés dans la source en millions de FCFA, affichés ici en milliards (Md) ou millions (M) de FCFA.</li>
+      <li>Familles d'opportunités, tendances, années de pic et score de pertinence : traitements d'AIC.</li>
+    </ul>
+    <h2>Avertissements</h2>
+    <ul>
+      <li><strong>Les coûts programmés ne sont ni des budgets votés ni des marchés publics.</strong> L'inscription effective d'une action au budget relève des lois de finances.</li>
+      <li>Les données ont été extraites automatiquement : certains libellés, notamment d'indicateurs, peuvent être tronqués ou imparfaits. Vérifiez toute information sur le document source avant un usage officiel.</li>
+      <li>Le score de pertinence est une aide à la priorisation. Il ne constitue ni un avis ni une probabilité d'obtenir un marché ou un financement.</li>
+      <li>AIC est un cabinet indépendant. Radar PND n'est ni un service de l'administration ni un site officiel, et n'utilise que des données publiques.</li>
+    </ul>
+    <h2>Données personnelles</h2>
+    <p>La plateforme conserve votre adresse électronique, votre nom, votre profil de recherche, votre sélection et vos notes, uniquement pour vous rendre le service. Ces données ne sont ni vendues ni partagées. Pour les consulter ou les supprimer, écrivez à <a href="mailto:{{ contact_email }}">{{ contact_email }}</a>.</p>
+    <h2>Éditeur</h2>
+    <p>Analytics &amp; Impact Consulting (AIC), From data to impact. Contact : <a href="mailto:{{ contact_email }}">{{ contact_email }}</a>.</p>
+  </div>
+</div>
+{% endblock %}

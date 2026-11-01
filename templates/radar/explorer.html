@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load radar_tags %}
+{% block title %}Explorer la matrice d'actions{% endblock %}
+{% block content %}
+<div class="wrap">
+  <div class="page-head">
+    <div class="kicker">Analyser · Tome 3 du PND 2026-2030</div>
+    <h1>Explorer la matrice</h1>
+    <p class="lede">Toutes les actions prioritaires, avec leurs coûts programmés en milliards de FCFA. Recherchez un mot, un code ou une structure, puis filtrez par pilier, secteur, famille d'opportunités ou tendance.</p>
+  </div>
+  <form method="get" class="filters" role="search">
+    <div class="q field" style="margin:0"><label for="q">Recherche</label><input type="search" id="q" name="q" value="{{ f.q }}" placeholder="Mot, code (ex. 5.01.2), structure…"></div>
+    <div class="field" style="margin:0"><label for="pilier">Pilier</label><select id="pilier" name="pilier" onchange="this.form.secteur.value='';this.form.submit()"><option value="">Tous</option>{% for p in piliers %}<option value="{{ p.numero }}" {% if p.numero == f.pilier %}selected{% endif %}>{{ p.numero }}. {{ p.nom|truncatechars:40 }}</option>{% endfor %}</select></div>
+    <div class="field" style="margin:0"><label for="secteur">Secteur</label><select id="secteur" name="secteur" onchange="this.form.submit()"><option value="">Tous</option>{% for s in secteurs %}<option value="{{ s.code }}" {% if s.code == f.secteur %}selected{% endif %}>{{ s.code }} {{ s.nom|truncatechars:38 }}</option>{% endfor %}</select></div>
+    <div class="field" style="margin:0"><label for="famille">Famille</label><select id="famille" name="famille" onchange="this.form.submit()"><option value="">Toutes</option>{% for x in familles %}<option value="{{ x.slug }}" {% if x.slug == f.famille %}selected{% endif %}>{{ x.nom }}</option>{% endfor %}</select></div>
+    <div class="field" style="margin:0"><label for="tendance">Tendance</label><select id="tendance" name="tendance" onchange="this.form.submit()"><option value="">Toutes</option>{% for t in tendances %}<option value="{{ t }}" {% if t == f.tendance %}selected{% endif %}>{{ t }}</option>{% endfor %}</select></div>
+    <input type="hidden" name="tri" value="{{ f.tri }}">
+    <button class="btn" type="submit">Filtrer</button>
+  </form>
+  <div class="toolbar">
+    <span><strong class="mono" style="color:var(--ink)">{{ nb|nombre }}</strong> action{{ nb|pluralize }} · <strong class="mono" style="color:var(--ink)">{{ total|fcfa }}</strong> programmés{% if f.q or f.pilier or f.secteur or f.famille or f.tendance %} · <a href="{% url 'radar:explorer' %}">Réinitialiser</a>{% endif %}</span>
+    <span class="row">
+      <label class="note" for="tri">Trier par</label>
+      <select id="tri" onchange="location.href=this.value">{% for k, l in tris.items %}<option value="{% url_param tri=k page=None %}" {% if k == f.tri %}selected{% endif %}>{{ l }}</option>{% endfor %}</select>
+      {% if a_acces %}<a class="btn btn-ghost btn-sm" href="{% url_param format='csv' page=None %}">Exporter en CSV</a>{% endif %}
+    </span>
+  </div>
+  {% include "radar/partials/table_actions.html" %}
+  {% if page %}
+    <nav class="pager" aria-label="Pagination">
+      {% if page.has_previous %}<a class="btn btn-ghost btn-sm" href="{% url_param page=page.previous_page_number %}">Précédent</a>{% endif %}
+      <span>Page {{ page.number }} sur {{ page.paginator.num_pages }}</span>
+      {% if page.has_next %}<a class="btn btn-ghost btn-sm" href="{% url_param page=page.next_page_number %}">Suivant</a>{% endif %}
+    </nav>
+  {% elif nb > apercu_lignes %}
+    <div class="gate dark"><p><b>Aperçu limité aux {{ apercu_lignes }} premières lignes.</b> Activez votre accès pour parcourir les {{ nb|nombre }} actions, ouvrir les fiches détaillées, constituer votre sélection et exporter vos résultats.</p>
+      <a class="btn btn-cta" href="{% url 'comptes:inscription' %}">Activer mon accès</a></div>
+  {% endif %}
+  <p class="disclaimer">Montants : coûts programmés dans la matrice, en milliards (Md) ou millions (M) de FCFA. Ils ne constituent ni des budgets votés ni des marchés. Données extraites automatiquement du Tome 3 : vérifiez sur le document source avant tout usage officiel.</p>
+</div>
+{% endblock %}

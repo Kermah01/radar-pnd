@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% load static radar_tags %}
+{% block title %}{{ a.code }} {{ a.label|truncatechars:60 }}{% endblock %}
+{% block chartjs %}<script src="{% static 'vendor/chart.umd.min.js' %}" defer></script>{% endblock %}
+{% block content %}
+<div class="band-head" style="--pc:{{ a.couleur }}">
+  <div class="wrap page-head">
+    <div class="kicker"><a href="{% url 'radar:explorer' %}">Explorer</a> / <a href="{{ a.pilier.get_absolute_url }}">Pilier {{ a.pilier.numero }}</a> / <a href="{{ a.secteur.get_absolute_url }}">{{ a.secteur.code }} {{ a.secteur.nom }}</a></div>
+    <div class="code" style="font-size:13px;margin-bottom:6px">Action {{ a.code }}{% if a.page %} · PND 2026-2030, Tome 3, page {{ a.page }}{% endif %}</div>
+    <h1 style="font-size:clamp(24px,3.2vw,34px);max-width:30ch">{{ a.label }}</h1>
+    <div class="row" style="margin-top:12px">
+      {% badge_pilier a.pilier.numero %}
+      <span class="pill t-{{ a.trend|tendance_cls }}">{{ a.trend }}</span>
+      {% for f in a.familles.all %}<a class="pill fam" href="{% url 'radar:explorer' %}?famille={{ f.slug }}" style="text-decoration:none">{{ f.nom }}</a>{% endfor %}
+    </div>
+    <div class="row" style="margin-top:18px">
+      <form class="js-toggle" method="post" action="{% url 'radar:selection_toggle' a.code %}">{% csrf_token %}<input type="hidden" name="next" value="{{ request.get_full_path }}">
+        <button class="btn btn-ghost btn-star" type="submit" aria-pressed="{% if sel %}true{% else %}false{% endif %}" data-on="Dans ma sélection" data-off="Ajouter à ma sélection"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.6l1.9 4 4.4.5-3.3 3 .9 4.3L8 11.2l-3.9 2.2.9-4.3-3.3-3 4.4-.5z" fill="currentColor"/></svg><span class="lbl">{% if sel %}Dans ma sélection{% else %}Ajouter à ma sélection{% endif %}</span></button>
+      </form>
+      <a class="btn" href="{% url 'radar:action_docx' a.code %}">Télécharger la fiche Word</a>
+    </div>
+  </div>
+</div>
+
+<div class="wrap" style="padding-top:24px">
+  <div class="kpis fiche-kpis" style="margin-bottom:20px">
+    <div class="kpi"><b>{{ a.total|md }}</b><span>FCFA programmés 2026-2030</span></div>
+    <div class="kpi"><b>{{ a.peak|default:"n.d." }}</b><span>année de pic</span></div>
+    <div class="kpi"><b>{{ part_secteur|nombre:1 }}<small> %</small></b><span>du secteur {{ a.secteur.code }}</span></div>
+    <div class="kpi"><b class="txt">{{ a.structure|default:"Non précisée" }}</b><span>structure responsable</span></div>
+  </div>
+
+  <div class="grid-side">
+    <div class="stack">
+      <section class="panel">
+        <div class="section-head"><h2>Programmation annuelle</h2><span class="note">Md FCFA · pic mis en évidence</span></div>
+        <div class="chart-box short"><canvas data-chart="annuel" data-src="g-action" role="img" aria-label="Coûts programmés par année"></canvas></div>
+        {{ graph|json_script:"g-action" }}
+        <div class="tblwrap" style="margin-top:14px;box-shadow:none"><table><thead><tr>{% for an, c in annees_couts %}<th class="num">{{ an }}</th>{% endfor %}</tr></thead><tbody><tr>{% for an, c in annees_couts %}<td class="num">{{ c|md }}</td>{% endfor %}</tr></tbody></table></div>
+      </section>
+
+      <section class="panel" id="alignement">
+        <div class="section-head"><div><div class="kicker" style="margin-bottom:4px">Rédiger</div><h2>Paragraphe d'alignement</h2></div>
+          <button class="btn btn-sm" type="button" data-copy="para">Copier le paragraphe</button></div>
+        <div class="align-box" id="para" data-text="{{ paragraphe }}">{{ paragraphe }}</div>
+        <p class="note" style="margin-top:10px">Remplacez le texte entre crochets par la contribution propre de votre projet. Vérifiez montants et indicateurs sur le Tome 3 avant tout dépôt officiel.</p>
+      </section>
+
+      <section class="panel">
+        <div class="section-head"><h2>Indicateurs rattachés</h2><span class="note">{{ indicateurs|length }} indicateur{{ indicateurs|length|pluralize }}</span></div>
+        {% if indicateurs %}{% include "radar/partials/indicateurs.html" with inds=indicateurs %}
+        {% else %}<p class="muted">Aucun indicateur n'est rattaché à ce produit, à cet effet ou à ce résultat sectoriel dans la matrice.</p>{% endif %}
+        <p class="note" style="margin-top:10px">Libellés issus d'une extraction automatique : certains peuvent être tronqués.</p>
+      </section>
+    </div>
+
+    <aside class="stack">
+      <section class="panel" style="--pc:{{ a.couleur }}">
+        <h3>Généalogie de l'action</h3>
+        <ul class="genea">
+          <li><b>Pilier {{ a.pilier.numero }}</b><a href="{{ a.pilier.get_absolute_url }}">{{ a.pilier.nom }}</a></li>
+          <li><b>Secteur {{ a.secteur.code }}</b><a href="{{ a.secteur.get_absolute_url }}">{{ a.secteur.nom }}</a></li>
+          <li><b>Résultat sectoriel</b>{{ a.secteur.resultat|truncatewords:45 }}</li>
+          <li><b>Effet {{ a.effet.code }}</b>{{ a.effet.label }}</li>
+          <li><b>Produit {{ a.produit.code }}</b>{{ a.produit.label }}</li>
+          <li><b>Action {{ a.code }}</b><strong style="color:var(--ink)">{{ a.label }}</strong></li>
+        </ul>
+      </section>
+      <section class="panel" id="adresser">
+        <div class="kicker" style="margin-bottom:4px">Adresser</div>
+        <h3>À qui s'adresser</h3>
+        {% if a.structure %}<p>La matrice désigne <strong style="color:var(--ink)">{{ a.structure }}</strong> comme structure responsable de cette action.</p>
+        {% else %}<p>La matrice ne précise pas de structure responsable pour cette action. Rapprochez-vous du ministère en charge du secteur {{ a.secteur.nom }}.</p>{% endif %}
+        <p class="note">Citez le code {{ a.code }} dans vos échanges : c'est la référence commune à toute la chaîne de planification.</p>
+      </section>
+      {% if voisines %}
+      <section class="panel">
+        <h3>Même produit</h3>
+        <div class="hbars">{% for v in voisines %}<a class="hbar" style="grid-template-columns:minmax(0,1fr) 80px" href="{{ v.get_absolute_url }}"><span class="nm" title="{{ v.label }}"><span class="code">{{ v.code }}</span> {{ v.label }}</span><span class="v">{{ v.total|md }}</span></a>{% endfor %}</div>
+      </section>
+      {% endif %}
+    </aside>
+  </div>
+  <p class="disclaimer">Coût programmé dans la matrice d'actions prioritaires : ce n'est ni un budget voté ni un marché. Source : PND 2026-2030, Tome 3{% if a.page %}, page {{ a.page }}{% endif %}.</p>
+</div>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load radar_tags %}
+{% block title %}Mon radar{% endblock %}
+{% block content %}
+<div class="wrap">
+  <div class="page-head">
+    <div class="kicker">Repérer · étape 1 de la méthode RADAR</div>
+    <h1>Les actions du PND qui vous concernent</h1>
+    <p class="lede">Choisissez votre profil et ajustez vos familles de prestations et vos secteurs. Le radar classe les {{ nb|default:0|nombre }} actions correspondantes selon leur pertinence pour vous : offre, secteur, calendrier, dynamique et taille.</p>
+  </div>
+  <div class="radar-grid">
+    <aside class="panel profile" aria-label="Mon profil">
+      <form method="post" id="profil-form">{% csrf_token %}
+        <input type="hidden" name="appliquer_preset" id="appliquer_preset" value="0">
+        <div class="field"><label for="type">Je suis</label>
+          <select name="type" id="type">{% for p in profils %}<option value="{{ p.id }}" {% if p.id == profil.type %}selected{% endif %}>{{ p.nom }}</option>{% endfor %}</select></div>
+        <div class="field"><span class="lab">Ce que je propose</span>
+          <div class="chips">{% for f in familles %}<label class="chip"><input type="checkbox" name="familles" value="{{ f.nom }}" {% if f.nom in profil.familles %}checked{% endif %}><span>{{ f.nom }}</span></label>{% endfor %}</div></div>
+        <div class="field"><label for="horizon">Horizon visé</label>
+          <select name="horizon" id="horizon">{% for v, l in horizons %}<option value="{{ v }}" {% if v == profil.horizon %}selected{% endif %}>{{ l }}</option>{% endfor %}</select></div>
+        <div class="field"><label for="taille">Taille des actions</label>
+          <select name="taille" id="taille">{% for v, l in tailles %}<option value="{{ v }}" {% if v == profil.taille %}selected{% endif %}>{{ l }}</option>{% endfor %}</select></div>
+        <details class="secs" {% if profil.secteurs|length < 8 %}open{% endif %}><summary>Secteurs suivis ({{ profil.secteurs|length }})</summary>
+          {% for p in piliers %}<div class="pgroup"><span class="lab"><span class="dot" style="--pc:{{ p.couleur }}"></span>Pilier {{ p.numero }}</span>
+            <div class="chips">{% for s in p.secteurs.all %}<label class="chip"><input type="checkbox" name="secteurs" value="{{ s.code }}" {% if s.code in profil.secteurs %}checked{% endif %}><span>{{ s.nom }}</span></label>{% endfor %}</div></div>{% endfor %}
+        </details>
+        <div class="profile-actions"><button class="btn btn-sm no-js-only" type="submit">Mettre à jour</button><span class="note">Votre profil est enregistré automatiquement.</span></div>
+      </form>
+    </aside>
+    <section aria-live="polite">
+      <div class="rhead">
+        <h2>{% if nb %}{{ nb|nombre }} action{{ nb|pluralize }} correspond{{ nb|pluralize:"ent" }} à votre offre{% else %}Aucune action pour ce profil{% endif %}</h2>
+        {% if resultats %}<span class="note">Les {{ resultats|length }} plus pertinentes · {{ montant_top|fcfa }} programmés</span>{% endif %}
+      </div>
+      <div class="results">
+        {% for a, sc in resultats %}{% include "radar/partials/rcard.html" %}
+        {% empty %}<div class="panel">Sélectionnez au moins une famille de prestations pour voir les actions correspondantes.</div>{% endfor %}
+      </div>
+      {% if nb > resultats|length %}<div class="gate"><p>Le radar affiche les {{ resultats|length }} actions les mieux classées. Pour parcourir les {{ nb|nombre }} correspondances ({{ montant_total|fcfa }}), utilisez l'explorateur avec vos filtres.</p><a class="btn btn-sm" href="{% url 'radar:explorer' %}">Ouvrir l'explorateur</a></div>{% endif %}
+      <p class="disclaimer">Le score (sur 100) combine famille de prestations (40 points), secteur suivi (25), calendrier (15), dynamique budgétaire (10) et taille (10). C'est une aide à la priorisation, pas une probabilité d'obtenir un marché. <a href="{% url 'radar:methode' %}">Comprendre le score</a>.</p>
+    </section>
+  </div>
+</div>
+{% endblock %}

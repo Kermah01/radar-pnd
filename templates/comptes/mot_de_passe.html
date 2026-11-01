@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Changer de mot de passe{% endblock %}
+{% block content %}
+<div class="wrap"><div class="auth">
+  <div class="kicker">Mon compte</div><h1>Changer de mot de passe</h1>
+  <div class="panel"><form method="post">{% csrf_token %}
+    {% for field in form %}{% include "comptes/_field.html" %}{% endfor %}
+    <button class="btn" type="submit" style="width:100%">Enregistrer</button>
+  </form></div>
+</div></div>
+{% endblock %}

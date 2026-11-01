@@ -1,0 +1,4 @@
+{% if a_acces %}<form class="js-toggle" method="post" action="{% url 'radar:selection_toggle' a.code %}">{% csrf_token %}<input type="hidden" name="next" value="{{ request.get_full_path }}">
+  <button class="btn btn-ghost btn-sm btn-star" type="submit" aria-pressed="{% if a.id in ids_sel %}true{% else %}false{% endif %}" data-on="Retenue" data-off="Retenir" title="Ajouter à ma sélection ou l'en retirer">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.6l1.9 4 4.4.5-3.3 3 .9 4.3L8 11.2l-3.9 2.2.9-4.3-3.3-3 4.4-.5z" fill="currentColor"/></svg><span class="lbl">{% if a.id in ids_sel %}Retenue{% else %}Retenir{% endif %}</span></button>
+</form>{% endif %}
