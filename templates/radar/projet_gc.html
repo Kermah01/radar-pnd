@@ -42,7 +42,7 @@
         <summary><h2>Actions de la matrice du même secteur</h2><span class="meta">{{ nb_actions }}</span><span class="chev"><svg class="ico"><use href="#i-chevron"/></svg></span></summary>
         <div class="fold-body">
           {% if actions %}<p class="note" style="margin:0 0 12px">Les {{ actions|length }} actions les plus dotées du secteur {{ p.secteur_code }} sur {{ nb_actions }}, coûts programmés 2026-2030. Le projet et ces actions relèvent du même secteur du PND.</p>
-          {% include "radar/partials/table_actions.html" with lignes=actions %}
+          {% include "radar/partials/table_actions.html" with lignes=actions compact=True %}
           {% if p.secteur %}<a class="link-more" href="{% url 'radar:explorer' %}?secteur={{ p.secteur.code }}">Toutes les actions du secteur<svg class="ico"><use href="#i-right"/></svg></a>{% endif %}
           {% else %}<p class="muted" style="margin:0">Ce projet n'est rattaché à aucun secteur de la matrice d'actions prioritaires.</p>{% endif %}
         </div>

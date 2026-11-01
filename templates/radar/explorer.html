@@ -26,7 +26,7 @@
     </div>
   </form>
 
-  <nav class="hscroll quick" aria-label="Filtrer par pilier">
+  <nav class="hscroll quick wrap-desk" aria-label="Filtrer par pilier">
     <a class="qchip" href="{% url_param pilier=None secteur=None page=None %}" {% if not f.pilier %}aria-current="true"{% endif %}>Tous les piliers</a>
     {% for p in piliers %}<a class="qchip" style="--pc:{{ p.couleur }}" href="{% url_param pilier=p.numero secteur=None page=None %}" {% if p.numero == f.pilier %}aria-current="true"{% endif %}><span class="dot"></span>{{ p.numero }}. {{ p.numero|pilier_court }}</a>{% endfor %}
   </nav>

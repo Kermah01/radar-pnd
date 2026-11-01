@@ -88,6 +88,8 @@
   /* ------------------------------------------------ recherche de l'accueil : actions ou projets */
   const qf = $("#qbox-form");
   if (qf) {
+    const qi = $("input[data-ph-court]", qf);
+    if (qi && window.matchMedia("(max-width: 479.98px)").matches) qi.placeholder = qi.dataset.phCourt;
     const sync = () => { const r = $("input[name=cible]:checked", qf); if (r) qf.action = r.dataset.action; };
     qf.addEventListener("change", sync); sync();
     qf.addEventListener("submit", () => $$("input[name=cible]", qf).forEach((r) => (r.disabled = true)));

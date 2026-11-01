@@ -7,18 +7,18 @@
   <div class="wrap hero-in">
     <div>
       <span class="eyebrow"><span class="live" aria-hidden="true"></span>PND 2026-2030 · Côte d'Ivoire</span>
-      <h1>Les actions du PND qui <span class="grad">vous concernent</span>, en une minute.</h1>
+      <h1>Les actions du PND qui <span class="grad">vous concernent</span>, en une minute</h1>
       <p class="lede">Radar PND classe les {{ chiffres.nb_actions|nombre }} actions prioritaires et les {{ chiffres_gc.nb_projets }} projets du Plan National de Développement selon votre métier, puis vous aide à rédiger l'alignement de vos offres.</p>
       <form class="qform" id="qbox-form" method="get" action="{% url 'radar:explorer' %}" role="search">
         <div class="qbox">
           <svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>
           <label class="sr-only" for="hero-q">Rechercher dans le PND</label>
-          <input type="search" id="hero-q" name="q" placeholder="Rechercher une action, un projet, un secteur…" enterkeyhint="search" autocomplete="off">
+          <input type="search" id="hero-q" name="q" placeholder="Rechercher une action, un projet, un secteur…" data-ph-court="Action, projet, secteur…" enterkeyhint="search" autocomplete="off">
           <button class="btn btn-primary" type="submit" aria-label="Rechercher"><span>Rechercher</span><svg class="ico" aria-hidden="true"><use href="#i-right"/></svg></button>
         </div>
         <div class="qscope" role="radiogroup" aria-label="Où chercher">
-          <label><input type="radio" name="cible" value="actions" data-action="{% url 'radar:explorer' %}" checked><span>Dans la matrice d'actions</span></label>
-          <label><input type="radio" name="cible" value="projets" data-action="{% url 'radar:projets_gc' %}"><span>Dans les projets GCPND</span></label>
+          <label><input type="radio" name="cible" value="actions" data-action="{% url 'radar:explorer' %}" checked><span>Matrice d'actions</span></label>
+          <label><input type="radio" name="cible" value="projets" data-action="{% url 'radar:projets_gc' %}"><span>Projets GCPND</span></label>
         </div>
       </form>
       <div class="qhints"><span>Exemples :</span>{% for m in "routes,santé,numérique,eau potable,formation"|split_virgule %}<a href="{% url 'radar:explorer' %}?q={{ m|urlencode }}">{{ m }}</a>{% endfor %}</div>
@@ -156,7 +156,7 @@
 <section class="section" style="padding-top:8px">
   <div class="wrap">
     <div class="section-head"><div><div class="kicker">Pour qui</div><h2>Neuf profils préréglés, ajustables</h2></div></div>
-    <div class="hscroll profils">
+    <div class="hscroll profils wrap-desk">
       {% for p in profils %}<span class="qchip">{{ p.nom }}</span>{% endfor %}
     </div>
     <p class="muted small" style="margin-top:10px">Chaque profil préremplit les familles de prestations et les secteurs suivis. Vous les ajustez ensuite librement.</p>

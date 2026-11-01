@@ -1,5 +1,5 @@
 {% load radar_tags %}
-<ul class="alist only-mob"{% if paged %} id="liste-cartes"{% endif %}>
+<ul class="alist{% if not compact %} only-mob{% endif %}"{% if paged %} id="liste-cartes"{% endif %}>
   {% for a in lignes %}
   <li class="acard" style="--pc:{{ a.couleur }}">
     <div class="meta"><span class="code">{{ a.code }}</span><span aria-hidden="true">·</span><span class="sec">{{ a.secteur.nom }}</span></div>
@@ -15,7 +15,7 @@
   <li class="alist-empty">Aucune action ne correspond. Élargissez les filtres ou modifiez la recherche.</li>
   {% endfor %}
 </ul>
-<div class="tblwrap only-desk"><table class="t-actions"{% if paged %} id="liste-table"{% endif %}>
+{% if not compact %}<div class="tblwrap only-desk"><table class="t-actions"{% if paged %} id="liste-table"{% endif %}>
   <thead><tr><th>Code</th><th>Action</th><th>Structure responsable</th><th class="num">Total</th><th>2026 à 2030</th><th>Tendance</th></tr></thead>
   <tbody>
   {% for a in lignes %}
@@ -31,4 +31,4 @@
     <tr><td colspan="6">Aucune action ne correspond. Élargissez les filtres ou modifiez la recherche.</td></tr>
   {% endfor %}
   </tbody>
-</table></div>
+</table></div>{% endif %}

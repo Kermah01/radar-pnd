@@ -18,10 +18,17 @@ Une réalisation d'**Analytics & Impact Consulting (AIC)**, *From data to impact
 | Exports Word et CSV | `radar/services/export.py` |
 | Comptes, codes d'accès, inscription | `comptes/` |
 | Gabarits HTML | `templates/` |
-| CSS, JS, polices et Chart.js 4.4.7 auto-hébergés | `static/` |
+| CSS, JS, police Plus Jakarta Sans (OFL, via @fontsource) et Chart.js 4.4.7 auto-hébergés | `static/` |
 | Données extraites du Tome 3 | `data/pnd.json` |
 | Projets et opportunités du Groupe consultatif (gcpnd.gouv.ci, consulté le 1er novembre 2026) | `data/gcpnd.json` |
-| Captures d'écran | `docs/screenshots/` |
+| Captures d'écran (interface actuelle à 390 px et 1280 px) | `docs/screenshots/v2/` |
+
+### Interface
+
+Mobile d'abord : barre d'onglets en bas d'écran (Accueil, Radar, Explorer, Projets, Ma sélection), filtres en feuille
+du bas, cartes sur mobile et tableaux à partir de 900 px, profil du radar en trois étapes, fiches avec panneaux repliables
+et barre d'actions fixe. Tout fonctionne sans JavaScript (amélioration progressive) ; les animations respectent
+`prefers-reduced-motion`.
 
 ### Pages
 
@@ -31,6 +38,12 @@ Une réalisation d'**Analytics & Impact Consulting (AIC)**, *From data to impact
   Ma sélection (notes, export Word et CSV), fiche Word d'une action.
 
 ### Groupe consultatif pour le financement du PND (GCPND)
+
+Le Groupe consultatif s'est tenu à Abidjan les 8 et 9 juillet 2026 pour présenter le PND et mobiliser son financement
+(jour 1 : partie publique avec les partenaires techniques et financiers ; jour 2 : secteur privé). Les projets publiés sur
+gcpnd.gouv.ci sont des projets du PND déjà identifiés et mûris, présentés aux financeurs : ils ne forment pas la liste
+exhaustive des projets du PND. La matrice d'actions prioritaires (Tome 3) reste le document qui détaille l'ensemble des
+actions prévues. La plateforme présente les deux comme complémentaires (`templates/radar/partials/gc_explication.html`).
 
 * **Projets GCPND** (`/projets-gcpnd/`) : 337 projets publics (207), en partenariat public-privé (98) et privés (32),
   filtrables par type, pilier, secteur, tranche de coût et mot-clé, avec lien vers la fiche officielle (PDF).
