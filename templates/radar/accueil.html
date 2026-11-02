@@ -3,54 +3,36 @@
 {% block title %}Les actions du PND 2026-2030 qui vous concernent{% endblock %}
 {% block content %}
 <section class="hero">
-  <div class="hero-bg" aria-hidden="true"><i></i><i></i><i></i></div>
   <div class="wrap hero-in">
     <div>
-      <span class="eyebrow"><span class="live" aria-hidden="true"></span>PND 2026-2030 · Côte d'Ivoire</span>
-      <h1>Les actions du PND qui <span class="grad">vous concernent</span>, en une minute</h1>
-      <p class="lede">Radar PND classe les {{ chiffres.nb_actions|nombre }} actions prioritaires et les {{ chiffres_gc.nb_projets }} projets du Plan National de Développement selon votre métier, puis vous aide à rédiger l'alignement de vos offres.</p>
+      <span class="eyebrow">PND 2026-2030 · Côte d'Ivoire</span>
+      <h1>Les actions du PND qui <span class="grad">vous concernent</span></h1>
+      <p class="lede">Repérez, parmi les {{ chiffres.nb_actions|nombre }} actions et les {{ chiffres_gc.nb_projets }} projets du plan, celles qui correspondent à votre métier.</p>
       <form class="qform" id="qbox-form" method="get" action="{% url 'radar:explorer' %}" role="search">
         <div class="qbox">
           <svg class="ico" aria-hidden="true"><use href="#i-search"/></svg>
           <label class="sr-only" for="hero-q">Rechercher dans le PND</label>
-          <input type="search" id="hero-q" name="q" placeholder="Rechercher une action, un projet, un secteur…" data-ph-court="Action, projet, secteur…" enterkeyhint="search" autocomplete="off">
+          <input type="search" id="hero-q" name="q" placeholder="Rechercher une action, un secteur…" data-ph-court="Action, secteur…" enterkeyhint="search" autocomplete="off">
           <button class="btn btn-primary" type="submit" aria-label="Rechercher"><span>Rechercher</span><svg class="ico" aria-hidden="true"><use href="#i-right"/></svg></button>
         </div>
-        <div class="qscope" role="radiogroup" aria-label="Où chercher">
-          <label><input type="radio" name="cible" value="actions" data-action="{% url 'radar:explorer' %}" checked><span>Matrice d'actions</span></label>
-          <label><input type="radio" name="cible" value="projets" data-action="{% url 'radar:projets_gc' %}"><span>Projets GCPND</span></label>
-        </div>
       </form>
-      <div class="qhints"><span>Exemples :</span>{% for m in "routes,santé,numérique,eau potable,formation"|split_virgule %}<a href="{% url 'radar:explorer' %}?q={{ m|urlencode }}">{{ m }}</a>{% endfor %}</div>
       <div class="hero-cta">
         {% if a_acces %}
           <a class="btn btn-primary" href="{% url 'radar:radar' %}"><svg class="ico"><use href="#i-radar"/></svg>Ouvrir mon radar</a>
-          <a class="btn btn-ondark" href="{% url 'radar:selection' %}">Ma sélection</a>
         {% else %}
           <a class="btn btn-primary" href="{% url 'comptes:inscription' %}"><svg class="ico"><use href="#i-key"/></svg>Activer mon accès</a>
-          <a class="btn btn-ondark" href="{% url 'radar:tendances' %}">Voir l'aperçu gratuit</a>
         {% endif %}
       </div>
       <p class="hero-note">
-        {% if user.is_authenticated %}Connecté en tant que {{ user.email }}.{% else %}Accès personnel par code, remis avec l'ebook.
-        {% if chariow_url %}<a href="{{ chariow_url }}">Acheter l'ebook</a> ·{% endif %}
-        Déjà inscrit ? <a href="{% url 'comptes:connexion' %}">Se connecter</a>{% endif %}
+        {% if user.is_authenticated %}Connecté en tant que {{ user.email }}.{% else %}Code d'accès remis avec l'ebook. Déjà inscrit ? <a href="{% url 'comptes:connexion' %}">Se connecter</a>{% endif %}
       </p>
     </div>
     <div class="hero-radar">
       <svg viewBox="0 0 500 500" role="img" aria-labelledby="radar-t">
         <title id="radar-t">Coût programmé par pilier du PND 2026-2030</title>
-        <defs>
-          <radialGradient id="sw" cx="250" cy="250" r="240" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#F77F00" stop-opacity="0"/>
-            <stop offset="1" stop-color="#F77F00" stop-opacity=".3"/>
-          </radialGradient>
-        </defs>
         <circle class="ring" cx="250" cy="250" r="70"/>
         <circle class="ring" cx="250" cy="250" r="150"/>
         <circle class="ring" cx="250" cy="250" r="230" stroke-dasharray="2 5"/>
-        <line class="spoke" x1="250" y1="14" x2="250" y2="486"/><line class="spoke" x1="45.6" y1="132" x2="454.4" y2="368"/><line class="spoke" x1="45.6" y1="368" x2="454.4" y2="132"/>
-        <path class="sweep" d="M250,250 L250,20 A230,230 0 0 1 365,50.8 Z" fill="url(#sw)"><animateTransform attributeName="transform" type="rotate" from="0 250 250" to="360 250 250" dur="10s" repeatCount="indefinite"/></path>
         {% for p in piliers %}
         <a href="{{ p.get_absolute_url }}" aria-label="Pilier {{ p.numero }} : {{ p.nom }}, {{ p.total_md|fcfa }}">
           <path class="wedge" d="{{ p.wedge }}" fill="{{ p.couleur }}"/>
@@ -67,13 +49,10 @@
 
 <section class="figures" aria-label="Chiffres clés">
   <div class="wrap">
-    <div class="kpis">
-      <div class="kpi accent"><b>{{ chiffres.total|md_nombre }}<small>Md</small></b><span>FCFA programmés 2026-2030</span></div>
+    <div class="kpis kpis-3">
+      <div class="kpi"><b>{{ chiffres.total|md_nombre }}<small>Md</small></b><span>FCFA programmés</span></div>
       <div class="kpi"><b>{{ chiffres.nb_actions|nombre }}</b><span>actions prioritaires</span></div>
-      <div class="kpi"><b>{{ chiffres_gc.nb_projets }}</b><span>projets présentés au Groupe consultatif</span></div>
-      <div class="kpi"><b>{{ chiffres.nb_secteurs }}</b><span>secteurs, 6 piliers</span></div>
-      <div class="kpi"><b>{{ chiffres.nb_indicateurs|nombre }}</b><span>indicateurs avec cibles</span></div>
-      <div class="kpi"><b>70<small>%</small></b><span>du financement attendu du secteur privé</span></div>
+      <div class="kpi"><b>{{ chiffres_gc.nb_projets }}</b><span>projets du Groupe consultatif</span></div>
     </div>
   </div>
 </section>
@@ -81,119 +60,66 @@
 <section class="section">
   <div class="wrap">
     <div class="section-head">
-      <div><div class="kicker">Six piliers, une seule matrice</div><h2>Où se concentre l'effort du PND</h2></div>
-      <a class="link-more" href="{% url 'radar:tendances' %}">Toutes les tendances<svg class="ico"><use href="#i-right"/></svg></a>
+      <div><div class="kicker">Six piliers</div><h2>Où se concentre l'effort du PND</h2></div>
+      <a class="link-more" href="{% url 'radar:tendances' %}">Tendances<svg class="ico"><use href="#i-right"/></svg></a>
     </div>
     <div class="pil-grid">
       {% for p in piliers %}
-      <a class="pil-tile reveal" href="{{ p.get_absolute_url }}" style="--pc:{{ p.couleur }}">
+      <a class="pil-tile" href="{{ p.get_absolute_url }}" style="--pc:{{ p.couleur }}">
         <span class="top"><span class="nb">{{ p.numero }}</span><span class="pct">{{ p.part|nombre:1 }} %</span></span>
         <span class="court">{{ p.numero|pilier_court }}</span>
-        <span class="long">{{ p.nom }}</span>
         <span class="tot">{{ p.total_md|md_nombre }} <small>Md FCFA</small></span>
         <span class="bar" aria-hidden="true"><i style="width:{{ p.part|floatformat:'1u' }}%"></i></span>
-        <span class="meta">{{ p.nb_secteurs }} secteurs · {{ p.nb_actions|nombre }} actions</span>
       </a>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<section class="section" style="padding-top:8px">
+<section class="section section-alt">
   <div class="wrap">
     <div class="section-head">
-      <div><div class="kicker">Comment ça marche</div><h2>Trois étapes, de votre métier à votre offre</h2></div>
-      <a class="link-more" href="{% url 'radar:methode' %}">La méthode RADAR<svg class="ico"><use href="#i-right"/></svg></a>
+      <div><div class="kicker">Comment ça marche</div><h2>De votre métier à votre offre</h2></div>
+      <a class="link-more" href="{% url 'radar:methode' %}">La méthode<svg class="ico"><use href="#i-right"/></svg></a>
     </div>
-    <ol class="how" style="list-style:none;margin:0;padding:0">
-      <li class="how-step reveal">
-        <span class="n">1</span>
-        <h3>Votre profil</h3>
-        <p>Choisissez qui vous êtes parmi neuf profils, vos secteurs et votre horizon. Tout reste ajustable.</p>
-        <div class="how-demo" aria-hidden="true"><div class="chips"><span class="pill fam">Entreprise du BTP</span><span class="pill fam">Travaux &amp; infrastructures</span><span class="pill t-new">Pic 2028-2030</span></div></div>
-      </li>
-      <li class="how-step reveal">
-        <span class="n">2</span>
-        <h3>Votre radar</h3>
-        <p>Les actions et projets sont classés sur 100, avec les raisons du score, le montant et le calendrier.</p>
-        <div class="how-demo" aria-hidden="true">
-          <div class="mini-card"><span class="score hi" style="--s:92;width:38px;height:38px"><b style="width:30px;height:30px;font-size:12px">92</b></span><span class="lines"><i></i><i></i></span></div>
-          <div class="mini-card"><span class="score" style="--s:71;width:38px;height:38px"><b style="width:30px;height:30px;font-size:12px">71</b></span><span class="lines"><i></i><i></i></span></div>
-        </div>
-      </li>
-      <li class="how-step reveal">
-        <span class="n">3</span>
-        <h3>Votre alignement</h3>
-        <p>Un paragraphe d'alignement au PND prêt à copier dans vos offres, exportable en Word avec vos notes.</p>
-        <div class="how-demo" aria-hidden="true"><div class="mini-para">L'action 5.01.2.1.6 du PND 2026-2030 prévoit… Le projet y contribuera à travers <mark>[votre apport]</mark>.</div></div>
-      </li>
+    <ol class="steps">
+      <li><span class="n">1</span><div><h3>Votre profil</h3><p>Votre métier, vos secteurs, votre horizon.</p></div></li>
+      <li><span class="n">2</span><div><h3>Votre radar</h3><p>Les actions et projets classés sur 100, avec montant et calendrier.</p></div></li>
+      <li><span class="n">3</span><div><h3>Votre alignement</h3><p>Un paragraphe prêt à copier dans vos offres, exportable en Word.</p></div></li>
     </ol>
   </div>
 </section>
 
-<section class="section" style="padding-top:8px">
+<section class="section">
   <div class="wrap">
-    <div class="gc-band reveal">
+    <div class="gc-simple">
+      <div class="kicker">Groupe consultatif · 8 et 9 juillet 2026</div>
+      <h2>Les projets présentés aux financeurs</h2>
+      <p>{{ chiffres_gc.nb_projets }} projets du PND déjà mûris et {{ chiffres_gc.nb_opportunites }} fiches d'opportunités d'investissement, reliés à la matrice d'actions.</p>
+      <div class="row">
+        <a class="btn btn-primary btn-sm" href="{% url 'radar:projets_gc' %}">Voir les projets</a>
+        <a class="btn btn-ghost btn-sm" href="{% url 'radar:opportunites' %}">Opportunités</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if not a_acces %}
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="access-simple">
       <div>
-        <div class="kicker">Groupe consultatif · Abidjan, 8 et 9 juillet 2026</div>
-        <h2>Les projets du PND présentés aux financeurs</h2>
-        <p>Le Gouvernement a présenté le PND 2026-2030 aux partenaires techniques et financiers puis aux investisseurs privés pour mobiliser son financement. Les {{ chiffres_gc.nb_projets }} projets publiés à cette occasion sont des projets du PND déjà identifiés et mûris.</p>
-        <p>Ils complètent la matrice d'actions prioritaires, qui détaille l'ensemble de ce que le plan prévoit. Radar PND relie les deux.</p>
-        <div class="row" style="margin-top:16px">
-          <a class="btn btn-primary btn-sm" href="{% url 'radar:projets_gc' %}">Voir les projets<svg class="ico"><use href="#i-right"/></svg></a>
-          <a class="btn btn-ondark btn-sm" href="{% url 'radar:opportunites' %}">Opportunités d'investissement</a>
-        </div>
+        <h2>Votre code est fourni avec l'ebook</h2>
+        <p class="muted">Formule Découverte (3 mois) ou Pro (12 mois). Saisissez votre code à l'inscription, l'accès démarre aussitôt.</p>
       </div>
-      <div class="gc-band-figs">
-        {% for k in chiffres_gc.par_type %}<a class="gc-fig" href="{% url 'radar:projets_gc' %}?type={{ k.type }}"><span class="tbadge tb-{{ k.type|lower }}">{{ k.court }}</span><b>{{ k.t|md_nombre }}<small> Md</small></b><span>{{ k.n }} projets · {{ k.nom|lower }}</span></a>{% endfor %}
-        <a class="gc-fig" href="{% url 'radar:opportunites' %}"><span class="tbadge">Opportunités</span><b>{{ chiffres_gc.nb_opportunites }}</b><span>fiches sectorielles d'investissement</span></a>
-      </div>
-      <p class="gc-band-src">Source : Groupe consultatif pour le financement du PND 2026-2030 (gcpnd.gouv.ci). Coûts estimatifs indicatifs, à ne pas additionner aux coûts programmés de la matrice.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="padding-top:8px">
-  <div class="wrap">
-    <div class="section-head"><div><div class="kicker">Pour qui</div><h2>Neuf profils préréglés, ajustables</h2></div></div>
-    <div class="hscroll profils wrap-desk">
-      {% for p in profils %}<span class="qchip">{{ p.nom }}</span>{% endfor %}
-    </div>
-    <p class="muted small" style="margin-top:10px">Chaque profil préremplit les familles de prestations et les secteurs suivis. Vous les ajustez ensuite librement.</p>
-  </div>
-</section>
-
-<section class="section" style="padding-top:8px">
-  <div class="wrap offer">
-    <div class="panel intro">
-      <div class="kicker">Accès</div>
-      <h2>Votre code est fourni avec l'ebook</h2>
-      <p>À l'achat de l'ebook « Tirer parti du PND 2026-2030 » sur Chariow, vous recevez un code d'accès personnel. Saisissez-le à l'inscription : votre accès démarre immédiatement.</p>
-      <div class="row" style="margin-top:16px">
+      <div class="row">
         <a class="btn btn-primary" href="{% url 'comptes:inscription' %}">Activer mon accès</a>
-        {% if chariow_url %}<a class="btn btn-ondark" href="{{ chariow_url }}">Acheter l'ebook</a>{% endif %}
+        {% if chariow_url %}<a class="btn btn-ghost" href="{{ chariow_url }}">Acheter l'ebook</a>{% endif %}
       </div>
     </div>
-    <div class="panel">
-      <span class="tag o">Découverte · 3 mois</span>
-      <h3>Pour démarrer</h3>
-      <ul class="ticks">
-        <li>Mon radar personnalisé et score de pertinence</li>
-        <li>Explorateur complet des {{ chiffres.nb_actions|nombre }} actions</li>
-        <li>Fiches action et projet, paragraphes d'alignement</li>
-        <li>Sélection, notes et exports Word et CSV</li>
-      </ul>
-    </div>
-    <div class="panel">
-      <span class="tag">Pro · 12 mois</span>
-      <h3>Pour suivre dans la durée</h3>
-      <ul class="ticks">
-        <li>Tout le contenu Découverte, sur douze mois</li>
-        <li>Mises à jour des données au fil de la mise en œuvre</li>
-        <li>Accès prolongé automatiquement si vous cumulez les codes</li>
-      </ul>
-    </div>
   </div>
-  <div class="wrap"><p class="disclaimer">Les coûts présentés sont des coûts programmés dans la matrice d'actions prioritaires du PND 2026-2030. Ils ne constituent ni des budgets votés ni des marchés publics. Radar PND est un service indépendant d'Analytics &amp; Impact Consulting, sans lien avec l'administration.</p></div>
 </section>
+{% endif %}
+
+<div class="wrap"><p class="disclaimer">Coûts programmés de la matrice d'actions prioritaires du PND 2026-2030 : ni budgets votés, ni marchés publics. Coûts des projets du Groupe consultatif : estimations indicatives (gcpnd.gouv.ci). Radar PND est un service indépendant d'Analytics &amp; Impact Consulting.</p></div>
 {% endblock %}

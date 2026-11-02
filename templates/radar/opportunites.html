@@ -7,7 +7,7 @@
   <div class="phead">
     <div class="kicker">Opportunités · Investir</div>
     <h1>Opportunités d'investissement</h1>
-    <p class="lede">{{ chiffres_gc.nb_opportunites }} fiches sectorielles présentées aux investisseurs lors de la journée du secteur privé du Groupe consultatif (Abidjan, 9 juillet 2026) : segments porteurs, chiffres clés, incitations et emplois attendus. {{ chiffres_gc.nb_opportunites_detaillees }} d'entre elles sont résumées ici ; toutes renvoient à leur fiche officielle sur gcpnd.gouv.ci.</p>
+    <p class="lede">{{ chiffres_gc.nb_opportunites }} fiches sectorielles présentées aux investisseurs privés le 9 juillet 2026.</p>
   </div>
 </div>
 <nav class="chipnav" aria-label="Piliers"><div class="wrap"><div class="hscroll">{% for g in groupes %}<a class="qchip" style="--pc:{{ g.pilier.couleur }}" href="#pilier-{{ g.pilier.numero }}"><span class="dot"></span>{{ g.pilier.numero }}. {{ g.pilier.numero|pilier_court }} <span class="n">{{ g.nb }}</span></a>{% endfor %}</div></div></nav>
