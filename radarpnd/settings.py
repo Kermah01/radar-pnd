@@ -151,6 +151,8 @@ if not DEBUG and not TESTING:
 RADAR = {
     # Lien de la page de vente de l'ebook sur Chariow
     "CHARIOW_URL": env("CHARIOW_URL", default=""),
+    # Prix affiché de l'offre ebook + plateforme
+    "PRIX_OFFRE": env("PRIX_OFFRE", default="8 000 FCFA"),
     "CONTACT_EMAIL": env("CONTACT_EMAIL", default="contact@aic-consulting.ci"),
     # Nombre de lignes visibles dans l'aperçu public de l'explorateur
     "APERCU_LIGNES": int(env("APERCU_LIGNES", default="15")),

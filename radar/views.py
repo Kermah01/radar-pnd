@@ -355,3 +355,8 @@ def export_selection(request, fmt):
 
 def erreur_404(request, exception=None):
     return render(request, "404.html", status=404)
+
+
+def ebook(request):
+    """Page de présentation de l'ebook et de l'offre."""
+    return render(request, "radar/ebook.html")

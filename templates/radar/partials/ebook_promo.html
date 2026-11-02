@@ -1,0 +1,13 @@
+{% load static %}
+<section class="section ebook-promo" id="ebook">
+  <div class="wrap ep-in">
+    <a class="ep-cover" href="{% url 'radar:ebook' %}"><img src="{% static 'img/ebook-cover.jpg' %}" alt="Couverture de l'ebook Tirer parti du PND 2026-2030" width="280" height="396" loading="lazy"></a>
+    <div class="ep-txt">
+      <div class="kicker">L'ebook</div>
+      <h2>Tirer parti du PND 2026-2030</h2>
+      <p>Le guide pratique pour lire le plan comme un planificateur, repérer les actions qui concernent votre activité et vous positionner au bon moment. </p>
+      <p class="ep-price">{% if prix_offre %}<b>{{ prix_offre }}</b> · {% endif %}accès à Radar PND inclus</p>
+      <div class="row">{% include "radar/partials/ebook_cta.html" %}<a class="btn btn-ghost" href="{% url 'radar:ebook' %}">Voir le contenu</a></div>
+    </div>
+  </div>
+</section>

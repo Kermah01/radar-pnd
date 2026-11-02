@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}L'ebook Tirer parti du PND 2026-2030{% endblock %}
+{% block content %}
+<section class="eb-hero">
+  <div class="wrap eb-in">
+    <img class="eb-cover" src="{% static 'img/ebook-cover.jpg' %}" alt="Couverture de l'ebook Tirer parti du PND 2026-2030" width="280" height="396">
+    <div>
+      <div class="kicker">Guide pratique · Édition 2026</div>
+      <h1>Tirer parti du PND 2026-2030</h1>
+      <p class="lede">Le Plan National de Développement prévoit 114 838 milliards de FCFA d'investissements, dont 70 % attendus du secteur privé. Ce guide vous montre comment y trouver votre place.</p>
+      <div class="eb-offer">
+        <div><b>L'ebook + l'accès à Radar PND</b>{% if prix_offre %}<span>{{ prix_offre }}</span>{% endif %}</div>
+        <div class="row">{% include "radar/partials/ebook_cta.html" %}</div>
+      </div>
+      <p class="muted small">Pour les entreprises, les investisseurs, les ONG et les porteurs de projets.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><div><div class="kicker">Au sommaire</div><h2>Sept parties, de la lecture du plan à l'action</h2></div></div>
+    <ol class="eb-parts">
+      <li><span>I</span><div><h3>Comprendre le PND</h3><p>Ce que dit le plan, comment il est construit et ce qu'il attend de vous.</p></div></li>
+      <li><span>II</span><div><h3>Les six piliers à la loupe</h3><p>Montants, secteurs, actions phares et pistes d'opportunités, pilier par pilier.</p></div></li>
+      <li><span>III</span><div><h3>Repérer les opportunités</h3><p>Où va l'argent, à quel moment, et pour quels types de prestations.</p></div></li>
+      <li><span>IV</span><div><h3>Les projets du Groupe consultatif</h3><p>Projets publics, PPP, projets privés et les 66 fiches d'opportunités d'investissement.</p></div></li>
+      <li><span>V</span><div><h3>La méthode RADAR</h3><p>Cinq étapes pour passer de la lecture à l'action.</p></div></li>
+      <li><span>VI</span><div><h3>Cas pratiques</h3><p>La méthode appliquée à six profils d'acteurs.</p></div></li>
+      <li><span>VII</span><div><h3>Boîte à outils</h3><p>Erreurs à éviter, plan d'action et modèles prêts à l'emploi.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head"><div><div class="kicker">Inclus avec l'ebook</div><h2>La plateforme Radar PND</h2></div></div>
+    <ul class="eb-plat">
+      <li><h3>Votre radar personnalisé</h3><p>Indiquez votre métier : les actions et projets du plan sont classés sur 100 selon leur pertinence pour vous.</p></li>
+      <li><h3>Montants et calendrier</h3><p>Pour chaque action, le coût programmé année par année et l'année du pic de dépense.</p></li>
+      <li><h3>Paragraphes d'alignement</h3><p>Un texte prêt à glisser dans vos offres, notes conceptuelles et demandes de financement.</p></li>
+      <li><h3>Sélection et exports</h3><p>Gardez vos pistes, ajoutez vos notes, exportez en Word ou en CSV.</p></li>
+    </ul>
+    <div class="row" style="margin-top:28px">{% include "radar/partials/ebook_cta.html" %}<a class="btn btn-ghost" href="{% url 'comptes:inscription' %}">J'ai déjà un code</a></div>
+  </div>
+</section>
+{% endblock %}

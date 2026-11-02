@@ -11,6 +11,7 @@ urlpatterns = [
     path("tendances/", views.tendances, name="tendances"),
     path("methode-radar/", views.methode, name="methode"),
     path("a-propos/", views.apropos, name="apropos"),
+    path("ebook/", views.ebook, name="ebook"),
     path("pilier/<str:numero>/", views.pilier_detail, name="pilier"),
     path("secteur/<str:code>/", views.secteur_detail, name="secteur"),
     path("action/<str:code>/", views.action_detail, name="action"),

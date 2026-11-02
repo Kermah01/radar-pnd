@@ -57,6 +57,8 @@
   </div>
 </section>
 
+{% include "radar/partials/ebook_promo.html" %}
+
 <section class="section">
   <div class="wrap">
     <div class="section-head">
@@ -114,7 +116,7 @@
       </div>
       <div class="row">
         <a class="btn btn-primary" href="{% url 'comptes:inscription' %}">Activer mon accès</a>
-        {% if chariow_url %}<a class="btn btn-ghost" href="{{ chariow_url }}">Acheter l'ebook</a>{% endif %}
+        <a class="btn btn-ghost" href="{% url 'radar:ebook' %}">Découvrir l'ebook</a>
       </div>
     </div>
   </div>

@@ -13,5 +13,6 @@ def radar(request):
         "a_acces": acces,
         "nb_selection": nb_sel,
         "chariow_url": settings.RADAR.get("CHARIOW_URL") or "",
+        "prix_offre": settings.RADAR.get("PRIX_OFFRE") or "",
         "contact_email": settings.RADAR.get("CONTACT_EMAIL"),
     }

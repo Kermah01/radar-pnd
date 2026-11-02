@@ -45,6 +45,7 @@
   </defs>
 </svg>
 {% with u=request.resolver_match.url_name %}
+<a class="promo-bar" href="{% url 'radar:ebook' %}"><span>Nouveau : l'ebook <b>Tirer parti du PND 2026-2030</b><span class="pb-x">, accès Radar PND inclus</span> →</span></a>
 <header class="hdr">
   <div class="wrap hdr-bar">
     {% block back %}{% endblock %}
@@ -59,6 +60,7 @@
       <a href="{% url 'radar:projets_gc' %}" {% if u == 'projets_gc' or u == 'projet_gc' %}aria-current="page"{% endif %}>Projets GCPND</a>
       <a href="{% url 'radar:opportunites' %}" {% if u == 'opportunites' or u == 'opportunite' %}aria-current="page"{% endif %}>Opportunités</a>
       <a href="{% url 'radar:tendances' %}" {% if u == 'tendances' or u == 'pilier' or u == 'secteur' %}aria-current="page"{% endif %}>Tendances</a>
+      <a href="{% url 'radar:ebook' %}" {% if u == 'ebook' %}aria-current="page"{% endif %}>L'ebook</a>
       <a href="{% url 'radar:selection' %}" {% if u == 'selection' %}aria-current="page"{% endif %}>Ma sélection<span class="count js-sel-count" {% if not nb_selection %}hidden{% endif %}>{{ nb_selection }}</span></a>
     </nav>
     <div class="hdr-tools">
@@ -97,6 +99,7 @@
       <a href="{% url 'radar:tendances' %}" {% if u == 'tendances' %}aria-current="page"{% endif %}><svg class="ico"><use href="#i-chart"/></svg>Tendances</a>
       <a href="{% url 'radar:selection' %}" {% if u == 'selection' %}aria-current="page"{% endif %}><svg class="ico"><use href="#i-star"/></svg>Ma sélection<span class="count js-sel-count" {% if not nb_selection %}hidden{% endif %}>{{ nb_selection }}</span></a>
       <a href="{% url 'radar:methode' %}" {% if u == 'methode' %}aria-current="page"{% endif %}><svg class="ico"><use href="#i-book"/></svg>Méthode RADAR</a>
+      <a href="{% url 'radar:ebook' %}" {% if u == 'ebook' %}aria-current="page"{% endif %}><svg class="ico"><use href="#i-book"/></svg>L'ebook</a>
       <a href="{% url 'radar:apropos' %}" {% if u == 'apropos' %}aria-current="page"{% endif %}><svg class="ico"><use href="#i-info"/></svg>À propos et mentions</a>
     </nav>
     {% if user.is_authenticated %}
